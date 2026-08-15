@@ -12,7 +12,7 @@
     "@vitejs/plugin-react": "latest",
     "openai": "latest",
     "vite": "latest",
-    "typescript": "latest",
+    "typescript": "5.9.3",
     "react": "latest",
     "react-dom": "latest"
   },

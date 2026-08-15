@@ -115,6 +115,16 @@ This expert input supports both the user model and the situations presented to u
 
 Only after that work should the product make stronger claims about cognitive development or compare a user's responses with a role-model model.
 
+### Indic judgment models and societal challenges
+
+One of my larger objectives with this repository is to contribute to putting India on the world map as *Vishwaguru*—a source of wisdom that can contribute to humanity's most difficult problems. GenAI creates an opportunity to explore this through models of judgment grounded in India's spiritual and cultural traditions.
+
+Indic AI labs such as [Sarvam AI](https://www.sarvam.ai/) are uniquely positioned to explore this direction. A future research programme could study how the judgment of mahatmas and role models such as Rama might be represented through careful textual, cultural, spiritual, and historical research. Agents configured on such models could interact with world models to understand how complex social, ecological, and economic systems behave, and apply that understanding to problems such as air pollution, sustainability, climate change, affordable housing, rural development, ecology conservation, and other societal challenges.
+
+In this framing, the world model helps an agent understand what is happening, what may happen next, and which interventions could change the system. The judgment model helps it reason about what ought to be protected, whose interests deserve attention, and how to act with wisdom, duty, compassion, and long-term responsibility. The combination could become a research foundation for agents that work with people on complex societal challenges.
+
+The research question is whether agents grounded in models of higher judgment can help people reason about these challenges with greater concern for long-term consequences, dignity, interdependence, duty, and the needs of communities that are often overlooked. This would require collaboration with advanced sadhaks, gurus, scholars, psychologists, behavioural scientists, domain experts, and communities directly affected by the problems being studied. It would also require rigorous evaluation of how such agents reason, whose values they represent, where they fail, and how human decision-makers should use their guidance.
+
 ### Immersive scenario research
 
 Another research direction is whether GenAI can generate rich, context-sensitive scenarios and convert them into multimodal immersive experiences, including virtual-reality environments. GenAI could produce the visual environment, characters, dialogue, ambient sound, and changing events of a situation. A user might experience a decision-maker's deadline pressure through spatial context, spoken interaction, competing signals, time pressure, and the consequences of different actions.

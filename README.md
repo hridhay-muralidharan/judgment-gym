@@ -80,9 +80,11 @@ This is a directional audience proxy, not a validated TAM or a forecast of users
 
 The broader opportunity includes seekers across many traditions and secular users. The [official Isha list of digital handles](https://isha.sadhguru.org/en/official-digital-handles) supports account identity, while the [June 2026 audience snapshot](https://app.chartmetric.com/artist/841786) provides the platform-level figures used for this proxy.
 
-## Hackathon MVP
+## A research direction, with a hackathon prototype
 
-Version 1 focuses on building a provisional model of the user's expressed judgment to support self-awareness. The MVP is intended to demonstrate:
+Judgment Gym should be understood as an emerging research direction, not only as a product with a conventional v1, v2, and v3 roadmap. The underlying research question is how people can deliberately practise judgment and self-awareness as AI systems make cognitive delegation increasingly easy.
+
+The hackathon prototype is an initial probe into that question. It focuses on building a provisional model of the user's expressed judgment to support self-awareness. It is intended to demonstrate:
 
 - scenario-based reflection;
 - structured capture of feelings, speech, actions, reasoning, uncertainty, and trade-offs;
@@ -102,7 +104,7 @@ The v1 model is an **operational reflection profile**, not a psychological diagn
 
 The current prototype stores responses, corrections, thread status, scenario context, and revision history. Its two demo threads are fixtures that make the interaction legible; they are not claims about the user and are not derived from a validated psychological framework. The live model route is instructed to ground interpretations in the user's response and return two or three tentative threads plus one unresolved tension. It does not infer hidden traits, assign scores, diagnose, moralise, or claim to know the user's true personality.
 
-This is an intentional training-wheel model: it helps a person externalise and inspect their own judgment. It should become more useful through repeated evidence and user correction, but it should not be presented as scientifically validated until the constructs, prompts, review process, and outcomes have been studied.
+This is an intentional training-wheel model: it helps a person externalise and inspect their own judgment. It may become more useful through repeated evidence and user correction, but it should not be presented as scientifically validated until the constructs, prompts, review process, and outcomes have been studied.
 
 Future versions need two distinct research tracks:
 
@@ -112,6 +114,14 @@ Future versions need two distinct research tracks:
 This expert input is needed not only to build a better model of the user, but also to define and continuously improve the situations presented to them. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
 
 Only after that work should the product make stronger claims about cognitive development or compare a user's responses with a role-model model.
+
+### Immersive scenario research
+
+Another research direction is whether GenAI can generate rich, context-sensitive scenarios and convert them into immersive experiences, including virtual-reality environments. Instead of only reading that a decision-maker is under deadline pressure, a user might experience a simulated situation through spatial context, dialogue, competing signals, time pressure, and the consequences of different actions.
+
+The hypothesis is that a more embodied and emotionally legible situation could produce a more honest response than a short written prompt, giving the user and the system richer evidence about how judgment operates under pressure. This remains a hypothesis. Immersion could also introduce its own distortions: the medium may intensify emotion, over-prime a response, reduce reflection, blur simulation and reality, or make the scenario feel persuasive without making it psychologically valid.
+
+Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour. It would also require explicit safeguards around consent, distressing content, debriefing, and the boundary between reflective practice and behavioural manipulation. VR scenario generation is therefore a separate research track, not a promised feature of the hackathon prototype.
 
 ## Boundaries and safety
 

@@ -53,7 +53,7 @@ export default async function handler(req: any, res: any) {
       model: process.env.OPENAI_MODEL || 'gpt-5',
       store: false,
       instructions: constitution,
-      input: `Prior reflections (may be empty):\n${JSON.stringify(history)}\n\nCurrent scenario:\n${scenario}\n\nCurrent user response:\n${response}\n\nReturn 2–3 tentative threads for the current response, one unresolved tension, and a cautious cross-scenario synthesis. The synthesis must distinguish recurring themes, possible changes, and connections across situations. If there is not enough history, say so plainly rather than inventing evolution.`,
+      input: `Prior reflections (may be empty):\n${JSON.stringify(history)}\n\nCurrent scenario:\n${scenario}\n\nCurrent user response:\n${response}\n\nReturn 2–3 tentative threads for the current response, one unresolved tension, and a cautious cross-scenario synthesis. The synthesis must distinguish recurring themes, possible changes, and connections across situations. When history is limited, describe the model as provisional and grounded in the available evidence.`,
       text: { format: { type: 'json_schema', name: 'judgment_reflection', strict: true, schema } },
     })
 

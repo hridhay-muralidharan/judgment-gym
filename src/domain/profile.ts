@@ -12,7 +12,7 @@ export function fallbackSynthesis(history: Reflection[]): Synthesis | undefined 
   const corrections = history.filter((entry) => entry.correction.trim()).length
   const completed = history.length
   return {
-    summary: completed >= scenarios.length ? `Across all ${completed} scenarios, your responses now form a record of how judgment moves with context—not a fixed label.` : `Your first ${completed} reflection${completed === 1 ? '' : 's'} now form${completed === 1 ? 's' : ''} a starting point. More scenarios will show what repeats, changes, or depends on context.`,
+    summary: completed >= scenarios.length ? `Across all ${completed} scenarios, your responses now form a record of how judgment moves with context and circumstance.` : `Your first ${completed} reflection${completed === 1 ? '' : 's'} now form${completed === 1 ? 's' : ''} a starting point. More scenarios will show what repeats, changes, or depends on context.`,
     recurringThemes: recurringThemes.length ? recurringThemes : ['No recurring pattern yet'],
     changes: corrections ? [`You have added or revised your interpretation in ${corrections} scenario${corrections === 1 ? '' : 's'}.`] : ['More scenarios will give this model something to compare.'],
     connections: completed >= 2 ? [`The profile currently links evidence across ${completed} completed scenarios.`] : ['Each scenario will remain available as evidence.'],

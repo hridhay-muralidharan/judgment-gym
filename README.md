@@ -2,32 +2,32 @@
 
 Judgment Gym is a reflective practice for training self-awareness and judgment in an age when increasingly capable AI systems can perform more of our cognitive work.
 
-The project is being built for [GrowthX's Build for India hackathon](https://growthx.club/events/build-for-india-blr). Its central question is simple:
+I am building this project for [GrowthX's Build for India hackathon](https://growthx.club/events/build-for-india-blr). The question I am exploring is simple:
 
 > If we deliberately train our bodies because machines have reduced the amount of physical effort required in daily life, should we also deliberately train our judgment as AI systems reduce the amount of mental effort required in knowledge work?
 
-This is a product hypothesis, not a claim that AI has already made people less intelligent. The evidence for that long-term claim is not yet settled. Judgment Gym is an attempt to build a useful training environment while studying the question responsibly.
+Judgment Gym is an emerging research direction into how people can deliberately train judgment and self-awareness as AI systems take on more cognitive work. The hackathon prototype is an initial training environment for exploring that question responsibly.
 
 ## The problem
 
 Industrialisation, urbanisation, motorised transport, household automation, and desk-based work have reduced the amount of incidental physical activity in many people's daily lives. Physical inactivity and sedentary behaviour are now established public-health concerns, associated with higher risks across cardiovascular disease, type 2 diabetes, some cancers, and mortality. That is why people intentionally make time for walking, strength training, yoga, sport, and other forms of exercise.
 
-AI introduces an analogous possibility for mental work. Writing, research, planning, analysis, summarisation, and even parts of decision-making can increasingly be delegated to AI systems. Delegation can be valuable, but it can also create opportunities for **cognitive offloading**: the person may spend less time forming an independent view, noticing uncertainty, weighing competing values, or explaining why a decision is sound.
+AI introduces a parallel research question for mental work. Writing, research, planning, analysis, summarisation, and parts of decision-making can increasingly be delegated to AI systems. This creates opportunities for **cognitive offloading**: a person may spend less time forming an independent view, noticing uncertainty, weighing competing values, or explaining why a decision is sound.
 
-Existing research gives us reasons to investigate this risk, but not grounds for sweeping conclusions:
+Existing research gives us useful starting points for investigating this question:
 
 - The literature on [cognitive offloading](https://doi.org/10.1016/j.tics.2016.07.002) describes how people use external tools and environments to reduce cognitive demand.
 - A classic study on the [Google effect](https://pubmed.ncbi.nlm.nih.gov/21764755/) found that when people expected information to remain available externally, they were more likely to remember where to find it than the information itself.
-- A 2025 [Microsoft Research / Carnegie Mellon study](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/?lang=en) reports self-reported reductions in cognitive effort among knowledge workers using GenAI. It is a survey study, so it does not establish that GenAI causes a lasting decline in critical-thinking ability.
-- A 2025 [preprint on LLM-assisted essay writing](https://arxiv.org/abs/2506.08872) reports neural and behavioural differences between study conditions. Because it is a preprint with a narrow task and sample, its findings should be treated as preliminary rather than definitive evidence of general cognitive decline.
+- A 2025 [Microsoft Research / Carnegie Mellon study](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/?lang=en) reports self-reported reductions in cognitive effort among knowledge workers using GenAI. The study offers evidence about perceived effort and critical-thinking behaviour in a survey context.
+- A 2025 [preprint on LLM-assisted essay writing](https://arxiv.org/abs/2506.08872) reports neural and behavioural differences between study conditions. The work examines a specific task and sample, making it an early contribution to a broader research programme.
 
-The product opportunity is therefore not “AI is making everyone mentally weaker.” It is: **people may need deliberate practice to remain active participants in their own judgment when AI makes cognitive delegation frictionless.**
+The research opportunity is: **people may need deliberate practice to remain active participants in their own judgment when AI makes cognitive delegation frictionless.**
 
 ## The proposed solution
 
-Judgment Gym creates a training environment in which a user encounters meaningful, ambiguous situations and practices responding before asking an AI system for help.
+I propose a training environment in which a user encounters meaningful, ambiguous situations and practises responding before asking an AI system for help.
 
-The loop is:
+The practice loop is:
 
 1. Encounter a scenario.
 2. Record an honest response: what the user feels, believes, says, and would do.
@@ -36,33 +36,33 @@ The loop is:
 5. Correct the interpretation when it is incomplete or wrong.
 6. Revisit similar situations over time and observe how judgment evolves.
 
-The AI acts as a **mirror and practice partner**, not as a moral authority. It models the user's expressed judgment; it does not claim to know the user's true personality, assign moral scores, diagnose them, or decide what they should do.
+The AI serves as a **mirror and practice partner**. It builds a tentative model from what the user has expressed, while the user remains the authority on their own experience, values, and decisions.
 
 This mirrors a familiar learning pattern:
 
 - a training environment where a person can practise, make mistakes, clarify doubts, and receive feedback;
 - a live environment where the person applies the skill to real circumstances.
 
-Judgment Gym is intended to support the first environment. Real life remains the second.
+Judgment Gym supports the training environment. Real life is where the user applies the skill and gathers further feedback.
 
 ## Cultural inspiration
 
-The product is inspired by Sanatana Dharma, particularly the practice of cultivating *viveka*—discernment or the ability to distinguish wisely—through sustained *sadhana* and reflection.
+My thinking is inspired by Sanatana Dharma, particularly the practice of cultivating *viveka*—discernment or the ability to distinguish wisely—through sustained *sadhana* and reflection.
 
 In many Sanatana Dharma traditions, a seeker may orient their conduct around an ideal role model. Rama, for example, is often described as an ideal human being. A practitioner may use the question “What would Rama do?” as a reflective lens when facing a difficult situation. Through repeated practice, they examine the gap between their present response and their understanding of ideal conduct, while both their self-understanding and that ideal continue to develop.
 
-Judgment Gym translates the structure of that practice into a digital training tool without claiming to reproduce spiritual attainment or speak for any guru, sampradaya, or tradition. It is designed to be usable by people who do not share this religious framing and simply want to become more self-aware.
+Judgment Gym carries the structure of that practice into a digital training tool. It does not speak for any guru, sampradaya, or tradition, and it does not attempt to reproduce spiritual attainment. The same tool can serve people who share this religious framing and people who are exploring self-awareness through a secular lens.
 
 ## Target audience
 
-The initial audience is:
+My initial target segment is:
 
 - spiritual seekers rooted in or familiar with Sanatana Dharma;
 - white-collar knowledge workers living in urban environments;
 - English-proficient users who already have some exposure to GenAI tools;
 - people interested in self-awareness, reflective practice, and better judgment.
 
-The broader audience is anyone who wants to inspect how they respond to difficult situations and build a more deliberate relationship with AI assistance.
+The broader audience includes anyone who wants to inspect how they respond to difficult situations and build a more deliberate relationship with AI assistance.
 
 ### Directional TAM proxy
 
@@ -76,13 +76,13 @@ As a top-of-funnel proxy, Sadhguru's primary English-language social accounts re
 | X | 4.0M followers |
 | **Gross total** | **39.9M** |
 
-This is a directional audience proxy, not a validated TAM or a forecast of users. The total double-counts people who follow Sadhguru on multiple platforms, includes people outside India and outside the intended demographic, and includes inactive or low-intent accounts. The actual serviceable segment—urban, English-proficient, white-collar spiritual seekers who use GenAI and want a judgment-training product—will be materially smaller and needs primary market research to estimate.
+This is a directional audience proxy for early exploration. The total includes people who follow Sadhguru on multiple platforms, people outside India and outside the intended demographic, and inactive or low-intent accounts. The serviceable segment—urban, English-proficient, white-collar spiritual seekers who use GenAI and want a judgment-training product—requires primary market research to estimate.
 
 The broader opportunity includes seekers across many traditions and secular users. The [official Isha list of digital handles](https://isha.sadhguru.org/en/official-digital-handles) supports account identity, while the [June 2026 audience snapshot](https://app.chartmetric.com/artist/841786) provides the platform-level figures used for this proxy.
 
 ## A research direction, with a hackathon prototype
 
-Judgment Gym should be understood as an emerging research direction, not only as a product with a conventional v1, v2, and v3 roadmap. The underlying research question is how people can deliberately practise judgment and self-awareness as AI systems make cognitive delegation increasingly easy.
+I see Judgment Gym as an emerging research direction, with the hackathon prototype serving as its first practical experiment. The underlying research question is how people can deliberately practise judgment and self-awareness as AI systems make cognitive delegation increasingly easy.
 
 The hackathon prototype is an initial probe into that question. It focuses on building a provisional model of the user's expressed judgment to support self-awareness. It is intended to demonstrate:
 
@@ -95,39 +95,39 @@ The hackathon prototype is an initial probe into that question. It focuses on bu
 
 ### What the v1 user model is based on
 
-The v1 model is an **operational reflection profile**, not a psychological diagnosis or validated personality model. It is based on four deliberately modest inputs:
+The v1 model is an **operational reflection profile**. It is an early prototype for organising four deliberately modest inputs:
 
 1. the user's own words about a concrete situation;
 2. tentative, plain-language threads extracted from that response;
 3. the user's acceptance, correction, rejection, or qualification of those threads; and
 4. unresolved tensions and the scenarios that provide evidence for them.
 
-The current prototype stores responses, corrections, thread status, scenario context, and revision history. Its two demo threads are fixtures that make the interaction legible; they are not claims about the user and are not derived from a validated psychological framework. The live model route is instructed to ground interpretations in the user's response and return two or three tentative threads plus one unresolved tension. It does not infer hidden traits, assign scores, diagnose, moralise, or claim to know the user's true personality.
+The current prototype stores responses, corrections, thread status, scenario context, and revision history. Its two demo threads make the interaction legible and serve as interaction fixtures. They are not derived from a validated psychological framework. The live model route grounds interpretations in the user's response and returns two or three tentative threads plus one unresolved tension. The profile stays close to observable responses and user corrections.
 
-This is an intentional training-wheel model: it helps a person externalise and inspect their own judgment. It may become more useful through repeated evidence and user correction, but it should not be presented as scientifically validated until the constructs, prompts, review process, and outcomes have been studied.
+This is an intentional training-wheel model: it helps a person externalise and inspect their own judgment. Repeated evidence and user correction can make the profile more useful. Scientific validation would require study of the constructs, prompts, review process, and outcomes.
 
-Future versions need two distinct research tracks:
+Taking this direction further would require two distinct research tracks:
 
 - **Role-model research:** offline textual and cultural research with advanced sadhaks, gurus, and scholars to build responsible models of figures such as Rama without fabricating their judgment.
 - **User-model and scenario research:** offline collaboration with psychologists, behavioural scientists, metacognition researchers, and related experts to determine which aspects of judgment and self-awareness can be represented, what evidence is appropriate, how bias and overinterpretation should be controlled, how scenarios should be designed and sequenced, which scenarios are psychologically meaningful without being manipulative or leading, and how the product should be evaluated.
 
-This expert input is needed not only to build a better model of the user, but also to define and continuously improve the situations presented to them. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
+This expert input supports both the user model and the situations presented to users. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
 
 Only after that work should the product make stronger claims about cognitive development or compare a user's responses with a role-model model.
 
 ### Immersive scenario research
 
-Another research direction is whether GenAI can generate rich, context-sensitive scenarios and convert them into multimodal immersive experiences, including virtual-reality environments. GenAI could produce the visual environment, characters, dialogue, ambient sound, and changing events of a situation. Instead of only reading that a decision-maker is under deadline pressure, a user might experience a simulated situation through spatial context, spoken interaction, competing signals, time pressure, and the consequences of different actions.
+Another research direction is whether GenAI can generate rich, context-sensitive scenarios and convert them into multimodal immersive experiences, including virtual-reality environments. GenAI could produce the visual environment, characters, dialogue, ambient sound, and changing events of a situation. A user might experience a decision-maker's deadline pressure through spatial context, spoken interaction, competing signals, time pressure, and the consequences of different actions.
 
-The simulated experience could connect to a microphone and voice-AI interface so the user can respond naturally by speaking while the situation unfolds, rather than stopping to compose a written answer. The system could preserve the user's spoken words, pauses, questions, tone-related signals where ethically and scientifically justified, and choices made during the interaction. The hypothesis is that a more embodied and emotionally legible situation, combined with spontaneous speech, could produce a more honest response than a short written prompt and give the user and the system richer evidence about how judgment operates under pressure.
+The simulated experience could connect to a microphone and voice-AI interface so the user can respond naturally by speaking while the situation unfolds. The system could preserve the user's spoken words, pauses, questions, tone-related signals where ethically and scientifically justified, and choices made during the interaction. The hypothesis is that a more embodied and emotionally legible situation, combined with spontaneous speech, could produce a more honest response than a short written prompt and give the user and the system richer evidence about how judgment operates under pressure.
 
 This remains a hypothesis. Voice and immersion could also introduce their own distortions: the medium may intensify emotion, over-prime a response, reward verbal fluency, disadvantage users with speech or hearing differences, reduce reflection, blur simulation and reality, or make the scenario feel persuasive without making it psychologically valid. Any voice-AI version would need explicit consent for microphone access, clear transcription and retention controls, support for correction of transcripts, and a strict boundary between observable speech data and speculative inferences about emotion or personality.
 
-Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour. It would also require explicit safeguards around consent, distressing content, debriefing, and the boundary between reflective practice and behavioural manipulation. VR scenario generation is therefore a separate research track, not a promised feature of the hackathon prototype.
+Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour. It would also require explicit safeguards around consent, distressing content, debriefing, and the boundary between reflective practice and behavioural manipulation. VR scenario generation is a separate research track beyond the hackathon prototype.
 
 ### Research collaboration
 
-These questions may be especially relevant to Indic AI labs such as [Sarvam AI](https://www.sarvam.ai/) and others working on language, voice, multimodal systems, and culturally grounded AI. If this research direction is of interest, I would be excited to explore it through a full-time role focused on applied research, product exploration, evaluation, or responsible deployment of Indic AI systems.
+These questions may be especially relevant to Indic AI labs such as [Sarvam AI](https://www.sarvam.ai/) and others working on language, voice, multimodal systems, and culturally grounded AI. If this research direction is of interest, I would like to explore it through a full-time role focused on applied research, product exploration, evaluation, or responsible deployment of Indic AI systems.
 
 ## Boundaries and safety
 

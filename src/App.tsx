@@ -61,7 +61,7 @@ function App() {
 
   const openReflect = () => {
     const nextIndex = nextIncompleteScenarioIndex(history)
-    if (nextIndex === -1) return patch({ stage: 'threads', selectedReflectionId: null })
+    if (nextIndex === -1) return patch({ stage: 'welcome', selectedReflectionId: null })
     const currentComplete = history.some((entry) => entry.scenario.title === scenario.title)
     if (currentComplete || nextIndex !== scenarioIndex) return prepareScenario(nextIndex)
     patch({ stage: 'respond', showContext: false, apiError: '' })
@@ -134,7 +134,7 @@ function App() {
       {stage === 'welcome' && <Welcome onBegin={openReflect} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}
       {stage === 'respond' && <Respond response={state.response} setResponse={(response) => patch({ response })} scenario={scenario} showContext={state.showContext} setShowContext={(showContext) => patch({ showContext })} onSubmit={submitResponse} isReflecting={state.isReflecting} />}
       {stage === 'review' && <Review response={state.response} correction={state.correction} setCorrection={(correction) => patch({ correction })} threads={state.threads} apiError={state.apiError} updateThread={updateThread} onContinue={keepReflection} />}
-      {stage === 'threads' && <Threads threads={state.threads} tension={state.tension} synthesis={profileSynthesis} history={history} selectedReflectionId={state.selectedReflectionId} isComplete={isComplete} onBack={backFromThreads} onNext={nextPractice} onOpenScenario={(id) => patch({ selectedReflectionId: id })} />}
+      {stage === 'threads' && <Threads threads={state.threads} synthesis={profileSynthesis} history={history} selectedReflectionId={state.selectedReflectionId} isComplete={isComplete} onBack={backFromThreads} onNext={nextPractice} onOpenScenario={(id) => patch({ selectedReflectionId: id })} />}
       {stage === 'privacy' && <Privacy onBack={() => setStage('welcome')} onReset={reset} onExport={exportData} onImport={importData} />}
     </main>
     {stage !== 'welcome' && stage !== 'privacy' && <footer className="practice-footer"><span>Your words stay yours.</span><button onClick={() => setStage('privacy')}>View data controls</button></footer>}

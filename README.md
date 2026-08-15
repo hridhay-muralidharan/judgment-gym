@@ -131,10 +131,6 @@ Another research direction is whether GenAI can generate rich, context-sensitive
 
 Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour.
 
-### Research collaboration
-
-These questions may be especially relevant to Indic AI labs such as [Sarvam AI](https://www.sarvam.ai/) and others working on language, voice, multimodal systems, and culturally grounded AI. If this research direction is of interest, I would like to explore it through a full-time role focused on applied research, product exploration, evaluation, or responsible deployment of Indic AI systems.
-
 ## Boundaries and safety
 
 Judgment Gym is a reflection tool, not therapy, counselling, diagnosis, spiritual authority, a personality test, or a substitute for professional or real-world decision support. The agent should preserve ambiguity and contradiction, treat interpretations as provisional, and never shame the user or declare a response morally right or wrong.

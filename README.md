@@ -166,6 +166,7 @@ Planning documents:
 - [Scenario journey](docs/SCENARIO_JOURNEY.md)
 - [Privacy and safety](docs/PRIVACY_AND_SAFETY.md)
 - [Hackathon runbook](docs/HACKATHON_RUNBOOK.md)
+- [Architecture](docs/ARCHITECTURE.md)
 
 ## Evidence and further reading
 

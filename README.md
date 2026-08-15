@@ -107,7 +107,9 @@ This is an intentional training-wheel model: it helps a person externalise and i
 Future versions need two distinct research tracks:
 
 - **Role-model research:** offline textual and cultural research with advanced sadhaks, gurus, and scholars to build responsible models of figures such as Rama without fabricating their judgment.
-- **User-model research:** offline collaboration with psychologists, behavioural scientists, metacognition researchers, and related experts to determine which aspects of judgment and self-awareness can be represented, what evidence is appropriate, how bias and overinterpretation should be controlled, and how the product should be evaluated.
+- **User-model and scenario research:** offline collaboration with psychologists, behavioural scientists, metacognition researchers, and related experts to determine which aspects of judgment and self-awareness can be represented, what evidence is appropriate, how bias and overinterpretation should be controlled, how scenarios should be designed and sequenced, which scenarios are psychologically meaningful without being manipulative or leading, and how the product should be evaluated.
+
+This expert input is needed not only to build a better model of the user, but also to define and continuously improve the situations presented to them. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
 
 Only after that work should the product make stronger claims about cognitive development or compare a user's responses with a role-model model.
 

@@ -119,11 +119,7 @@ Only after that work should the product make stronger claims about cognitive dev
 
 Another research direction is whether GenAI can generate rich, context-sensitive scenarios and convert them into multimodal immersive experiences, including virtual-reality environments. GenAI could produce the visual environment, characters, dialogue, ambient sound, and changing events of a situation. A user might experience a decision-maker's deadline pressure through spatial context, spoken interaction, competing signals, time pressure, and the consequences of different actions.
 
-The simulated experience could connect to a microphone and voice-AI interface so the user can respond naturally by speaking while the situation unfolds. The system could preserve the user's spoken words, pauses, questions, tone-related signals where ethically and scientifically justified, and choices made during the interaction. The hypothesis is that a more embodied and emotionally legible situation, combined with spontaneous speech, could produce a more honest response than a short written prompt and give the user and the system richer evidence about how judgment operates under pressure.
-
-This remains a hypothesis. Voice and immersion could also introduce their own distortions: the medium may intensify emotion, over-prime a response, reward verbal fluency, disadvantage users with speech or hearing differences, reduce reflection, blur simulation and reality, or make the scenario feel persuasive without making it psychologically valid. Any voice-AI version would need explicit consent for microphone access, clear transcription and retention controls, support for correction of transcripts, and a strict boundary between observable speech data and speculative inferences about emotion or personality.
-
-Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour. It would also require explicit safeguards around consent, distressing content, debriefing, and the boundary between reflective practice and behavioural manipulation. VR scenario generation is a separate research track beyond the hackathon prototype.
+Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour.
 
 ### Research collaboration
 
@@ -137,7 +133,7 @@ The MVP is designed around local-first storage, visible data handling, portable 
 
 ## Status
 
-The hackathon build is now in progress. The current slice includes the reflective scenario flow, local draft persistence, tentative mirror review, thread review, privacy controls, export/reset, and a server-side model route with a fixture fallback.
+The hackathon demo is complete and frozen. The current build includes the reflective scenario flow, local draft persistence, tentative mirror review, synthesized cross-scenario threads and tensions, scenario evidence history, privacy controls, JSON export/import/reset, and a server-side model route with a fixture fallback. The demo is deployed on Vercel and the repository is published on GitHub.
 
 ## Run locally
 

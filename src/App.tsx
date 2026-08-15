@@ -13,8 +13,9 @@ type Scenario = {
 }
 
 type Thread = { title: string; description: string; status: ThreadStatus; evidence: string }
-type Reflection = { id: number; scenario: Scenario; response: string; correction: string; threads: Thread[]; tension: string; createdAt: string }
-type StoredPractice = { response: string; correction: string; threads: Thread[]; tension: string; history: Reflection[]; scenarioIndex: number }
+type Synthesis = { summary: string; recurringThemes: string[]; changes: string[]; connections: string[] }
+type Reflection = { id: number; scenario: Scenario; response: string; correction: string; threads: Thread[]; tension: string; synthesis?: Synthesis; createdAt: string }
+type StoredPractice = { response: string; correction: string; threads: Thread[]; tension: string; synthesis?: Synthesis; history: Reflection[]; scenarioIndex: number }
 
 const scenarios: Scenario[] = [
   { eyebrow: 'Scenario 01 · The quiet disagreement', title: 'A decision you know will disappoint someone', body: 'You lead a small team. A deadline is approaching, and one proposed shortcut would protect delivery but create hidden work for a colleague who is already stretched.', context: 'The shortcut is reversible. The colleague has not been asked yet. Your manager values the deadline more than process perfection.', question: 'What would you do, and what would matter most in that moment?', reason: 'A baseline situation to notice what you protect when values pull in different directions.' },
@@ -37,7 +38,9 @@ function App() {
   const [correction, setCorrection] = useState('')
   const [threads, setThreads] = useState<Thread[]>(fixtureThreads)
   const [tension, setTension] = useState('Efficiency and care may both matter to you.')
+  const [synthesis, setSynthesis] = useState<Synthesis | undefined>(undefined)
   const [history, setHistory] = useState<Reflection[]>([])
+  const [selectedReflectionId, setSelectedReflectionId] = useState<number | null>(null)
   const [saved, setSaved] = useState(false)
   const [showContext, setShowContext] = useState(false)
   const [isReflecting, setIsReflecting] = useState(false)
@@ -55,52 +58,54 @@ function App() {
       setCorrection(parsed.correction ?? '')
       setThreads(parsed.threads?.length ? parsed.threads : fixtureThreads)
       setTension(parsed.tension ?? 'Efficiency and care may both matter to you.')
+      setSynthesis(parsed.synthesis)
       setHistory(parsed.history ?? [])
       setScenarioIndex(Math.min(parsed.scenarioIndex ?? 0, scenarios.length - 1))
     } catch { localStorage.removeItem(storageKey) }
   }, [])
 
   useEffect(() => {
-    const payload: StoredPractice = { response, correction, threads, tension, history, scenarioIndex }
+    const payload: StoredPractice = { response, correction, threads, tension, synthesis, history, scenarioIndex }
     localStorage.setItem(storageKey, JSON.stringify(payload))
     setSaved(true)
     const timer = window.setTimeout(() => setSaved(false), 1200)
     return () => window.clearTimeout(timer)
-  }, [response, correction, threads, tension, history, scenarioIndex])
+  }, [response, correction, threads, tension, synthesis, history, scenarioIndex])
 
   const begin = () => { setStage('respond'); setShowContext(false) }
   const submitResponse = async () => {
     if (response.trim().length < 20) return
     setIsReflecting(true); setApiError('')
     try {
-      const result = await fetch('/api/reflect', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ scenario: `${scenario.title}\n${scenario.body}\n${scenario.context}`, response }) })
+      const result = await fetch('/api/reflect', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ scenario: `${scenario.title}\n${scenario.body}\n${scenario.context}`, response, history: history.map((entry) => ({ scenario: entry.scenario.title, response: entry.response, correction: entry.correction, threads: entry.threads, tension: entry.tension })) }) })
       if (!result.ok) throw new Error('Model route unavailable')
-      const data = await result.json() as { threads?: Array<Pick<Thread, 'title' | 'description' | 'evidence'>>; tension?: string }
+      const data = await result.json() as { threads?: Array<Pick<Thread, 'title' | 'description' | 'evidence'>>; tension?: string; synthesis?: Synthesis }
       if (data.threads?.length) setThreads(data.threads.map((thread) => ({ ...thread, status: 'tentative' })))
       if (data.tension) setTension(data.tension)
+      if (data.synthesis) setSynthesis(data.synthesis)
     } catch { setApiError('The live mirror is unavailable, so you are seeing a practice reflection. You can still correct it and continue.') }
     finally { setIsReflecting(false); setStage('review') }
   }
 
   const keepReflection = () => {
-    const entry: Reflection = { id: Date.now(), scenario, response, correction, threads, tension, createdAt: new Date().toISOString() }
+    const entry: Reflection = { id: Date.now(), scenario, response, correction, threads, tension, synthesis, createdAt: new Date().toISOString() }
     setHistory((current) => [...current.filter((item) => item.scenario.title !== scenario.title), entry])
     setStage('threads')
   }
 
   const nextPractice = () => {
     if (scenarioIndex >= scenarios.length - 1) { setStage('history'); return }
-    setScenarioIndex((current) => current + 1); setResponse(''); setCorrection(''); setThreads(fixtureThreads); setTension('The next situation may change what this thread means.'); setApiError(''); setShowContext(false); setStage('respond')
+    setScenarioIndex((current) => current + 1); setResponse(''); setCorrection(''); setThreads(fixtureThreads); setTension('The next situation may change what this thread means.'); setSynthesis(undefined); setSelectedReflectionId(null); setApiError(''); setShowContext(false); setStage('respond')
   }
 
-  const reset = () => { localStorage.removeItem(storageKey); setResponse(''); setCorrection(''); setThreads(fixtureThreads); setTension('Efficiency and care may both matter to you.'); setHistory([]); setScenarioIndex(0); setStage('welcome') }
+  const reset = () => { localStorage.removeItem(storageKey); setResponse(''); setCorrection(''); setThreads(fixtureThreads); setTension('Efficiency and care may both matter to you.'); setSynthesis(undefined); setHistory([]); setScenarioIndex(0); setSelectedReflectionId(null); setStage('welcome') }
   const updateThread = (index: number, status: ThreadStatus) => setThreads((current) => current.map((thread, itemIndex) => itemIndex === index ? { ...thread, status } : thread))
 
-  const exportData = () => downloadJson({ response, correction, threads, tension, history, scenarioIndex }, 'judgment-gym-practice.json')
+  const exportData = () => downloadJson({ response, correction, threads, tension, synthesis, history, scenarioIndex }, 'judgment-gym-practice.json')
   const importData = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]; if (!file) return
     const reader = new FileReader()
-    reader.onload = () => { try { const parsed = JSON.parse(String(reader.result)) as Partial<StoredPractice>; setResponse(parsed.response ?? ''); setCorrection(parsed.correction ?? ''); setThreads(parsed.threads ?? fixtureThreads); setTension(parsed.tension ?? 'Efficiency and care may both matter to you.'); setHistory(parsed.history ?? []); setScenarioIndex(Math.min(parsed.scenarioIndex ?? 0, scenarios.length - 1)); setStage('welcome') } catch { setApiError('That file could not be imported. Choose a Judgment Gym JSON export.') } }
+    reader.onload = () => { try { const parsed = JSON.parse(String(reader.result)) as Partial<StoredPractice>; setResponse(parsed.response ?? ''); setCorrection(parsed.correction ?? ''); setThreads(parsed.threads ?? fixtureThreads); setTension(parsed.tension ?? 'Efficiency and care may both matter to you.'); setSynthesis(parsed.synthesis); setHistory(parsed.history ?? []); setScenarioIndex(Math.min(parsed.scenarioIndex ?? 0, scenarios.length - 1)); setSelectedReflectionId(null); setStage('welcome') } catch { setApiError('That file could not be imported. Choose a Judgment Gym JSON export.') } }
     reader.readAsText(file); event.target.value = ''
   }
 
@@ -111,8 +116,8 @@ function App() {
       {stage === 'welcome' && <Welcome onBegin={begin} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onHistory={() => setStage('history')} />}
       {stage === 'respond' && <Respond response={response} setResponse={setResponse} scenario={scenario} showContext={showContext} setShowContext={setShowContext} onSubmit={submitResponse} isReflecting={isReflecting} />}
       {stage === 'review' && <Review response={response} correction={correction} setCorrection={setCorrection} threads={threads} apiError={apiError} updateThread={updateThread} onContinue={keepReflection} />}
-      {stage === 'threads' && <Threads threads={threads} tension={tension} practiceNumber={scenarioIndex + 1} isComplete={scenarioIndex >= scenarios.length - 1} onBack={() => setStage('review')} onNew={nextPractice} />}
-      {stage === 'history' && <History entries={history} onBack={() => setStage('welcome')} onExport={exportData} />}
+      {stage === 'threads' && <Threads threads={threads} tension={tension} synthesis={synthesis} history={history} selectedReflectionId={selectedReflectionId} practiceNumber={scenarioIndex + 1} isComplete={scenarioIndex >= scenarios.length - 1} onBack={() => setStage(selectedReflectionId ? 'history' : 'review')} onNew={nextPractice} />}
+      {stage === 'history' && <History entries={history} onBack={() => setStage('welcome')} onExport={exportData} onOpenThreads={(id) => { setSelectedReflectionId(id); setStage('threads') }} />}
       {stage === 'privacy' && <Privacy onBack={() => setStage('welcome')} onReset={reset} onExport={exportData} onImport={importData} />}
     </main>
     {stage !== 'welcome' && stage !== 'privacy' && <footer className="practice-footer"><span>Your words stay yours.</span><button onClick={() => setStage('privacy')}>View data controls</button></footer>}
@@ -127,9 +132,16 @@ function Respond({ response, setResponse, scenario, showContext, setShowContext,
 
 function Review({ response, correction, setCorrection, threads, apiError, updateThread, onContinue }: { response: string; correction: string; setCorrection: (value: string) => void; threads: Thread[]; apiError: string; updateThread: (index: number, status: ThreadStatus) => void; onContinue: () => void }) { return <section className="review page-grid"><div className="review-intro"><p className="kicker">The mirror · first pass</p><h2>Here’s what I might be noticing.</h2><p>These are provisional reflections, grounded only in what you wrote. Keep what feels true. Correct what doesn’t.</p><div className="tentative-note"><span>◌</span> Nothing here is a diagnosis or a score.</div></div><div className="review-content">{apiError && <div className="model-notice">◌ {apiError}</div>}<div className="your-words"><div className="section-label"><span>Your words</span><span>Original response</span></div><blockquote>“{response}”</blockquote></div><div className="thread-list">{threads.map((thread, index) => <article className="thread-card" key={`${thread.title}-${index}`}><div className="thread-card-top"><span className="thread-number">0{index + 1}</span><span className={`tentative-tag status-${thread.status}`}>{thread.status}</span></div><h3>{thread.title}</h3><p>{thread.description}</p><div className="thread-evidence">↳ {thread.evidence}</div><div className="thread-actions"><button onClick={() => updateThread(index, 'confirmed')}>Feels true</button><button onClick={() => updateThread(index, 'context-dependent')}>It depends</button><button onClick={() => updateThread(index, 'tentative')}>Needs work</button></div></article>)}</div><label className="correction-label" htmlFor="correction">What did I miss, get wrong, or oversimplify?</label><textarea id="correction" value={correction} onChange={(event) => setCorrection(event.target.value)} placeholder="Add a condition, exception, or correction…" /><button className="primary-button continue-button" onClick={onContinue}>Keep this reflection <span>→</span></button></div></section> }
 
-function Threads({ threads, tension, practiceNumber, isComplete, onBack, onNew }: { threads: Thread[]; tension: string; practiceNumber: number; isComplete: boolean; onBack: () => void; onNew: () => void }) { return <section className="threads-page page-narrow"><div className="threads-header"><div><p className="kicker">Practice {practiceNumber} · your evolving model</p><h2>Threads, not labels.</h2><p>Patterns stay connected to the situations that gave rise to them. They can change.</p></div><button className="primary-button" onClick={onNew}>{isComplete ? 'View history' : 'Next practice'} <span>→</span></button></div><div className="thread-overview">{threads.map((thread, index) => <article className="overview-row" key={`${thread.title}-${index}`}><span className="thread-number">0{index + 1}</span><div><h3>{thread.title}</h3><p>{thread.description}</p></div><span className={`status status-${thread.status}`}>{thread.status}</span></article>)}</div><div className="tension-box"><span className="tension-mark">∿</span><div><p className="kicker">Unresolved tension</p><h3>{tension}</h3><p>This tension is being held open. A future scenario can change the conditions and see what moves.</p></div></div><button className="back-button" onClick={onBack}>← Back to mirror review</button></section> }
+function Threads({ threads, tension, synthesis, history, selectedReflectionId, practiceNumber, isComplete, onBack, onNew }: { threads: Thread[]; tension: string; synthesis?: Synthesis; history: Reflection[]; selectedReflectionId: number | null; practiceNumber: number; isComplete: boolean; onBack: () => void; onNew: () => void }) {
+  const selected = selectedReflectionId ? history.find((entry) => entry.id === selectedReflectionId) : undefined
+  const visibleThreads = selected?.threads ?? threads
+  const visibleTension = selected?.tension ?? tension
+  return <section className="threads-page page-narrow"><div className="threads-header"><div><p className="kicker">{selected ? selected.scenario.eyebrow : `Practice ${practiceNumber} · your evolving model`}</p><h2>{selected ? 'This reflection.' : 'Threads, not labels.'}</h2><p>{selected ? 'The threads and tension generated from this scenario remain connected to its original response.' : 'Patterns stay connected to the situations that gave rise to them. They can change.'}</p></div>{!selected && <button className="primary-button" onClick={onNew}>{isComplete ? 'View history' : 'Next practice'} <span>→</span></button>}</div>{!selected && history.length > 1 && <Evolution synthesis={synthesis} history={history} />}{selected && <div className="selected-response"><span className="section-label">Original response</span><blockquote>“{selected.response}”</blockquote></div>}<div className="thread-overview">{visibleThreads.map((thread, index) => <article className="overview-row" key={`${thread.title}-${index}`}><span className="thread-number">0{index + 1}</span><div><h3>{thread.title}</h3><p>{thread.description}</p><span className="thread-evidence">↳ {thread.evidence}</span></div><span className={`status status-${thread.status}`}>{thread.status}</span></article>)}</div><div className="tension-box"><span className="tension-mark">∿</span><div><p className="kicker">Unresolved tension</p><h3>{visibleTension}</h3><p>This tension is being held open. A future scenario can change the conditions and see what moves.</p></div></div><button className="back-button" onClick={onBack}>← Back {selected ? 'to history' : 'to mirror review'}</button></section>
+}
 
-function History({ entries, onBack, onExport }: { entries: Reflection[]; onBack: () => void; onExport: () => void }) { return <section className="history-page page-narrow"><button className="back-button" onClick={onBack}>← Back</button><div className="threads-header"><div><p className="kicker">Your record</p><h2>Practice history.</h2><p>Earlier responses remain available as evidence. Your model is allowed to change.</p></div><button className="secondary-button" onClick={onExport}>Export all data</button></div>{entries.length === 0 ? <div className="empty-history"><p>No completed practices yet.</p><button className="primary-button" onClick={onBack}>Begin a practice <span>→</span></button></div> : <div className="history-list">{entries.slice().reverse().map((entry) => <article className="history-entry" key={entry.id}><div><span className="kicker">{entry.scenario.eyebrow}</span><h3>{entry.scenario.title}</h3><p>{new Date(entry.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</p></div><blockquote>“{entry.response}”</blockquote><div className="history-evidence">{entry.threads.length} tentative threads · {entry.correction ? 'correction added' : 'no correction added'}</div></article>)}</div>}</section> }
+function Evolution({ synthesis, history }: { synthesis?: Synthesis; history: Reflection[] }) { const fallback = history.length > 1 ? `Across ${history.length} completed scenarios, your responses are now becoming evidence of movement rather than isolated answers.` : ''; return <div className="evolution-panel"><div className="evolution-heading"><p className="kicker">The second reflection</p><h3>{synthesis?.summary ?? fallback}</h3><p>The point is not a score. It is seeing what repeats, what changes, and what depends on the situation.</p></div><div className="evolution-columns"><div><span className="section-label">Recurring threads</span><ul>{(synthesis?.recurringThemes ?? ['Care and consequence', 'Responsibility under pressure']).map((item) => <li key={item}>{item}</li>)}</ul></div><div><span className="section-label">What may be changing</span><ul>{(synthesis?.changes ?? ['The meaning of a principle may shift when your role changes']).map((item) => <li key={item}>{item}</li>)}</ul></div><div><span className="section-label">Connections</span><ul>{(synthesis?.connections ?? ['This profile will become more useful as the same threads appear in different situations']).map((item) => <li key={item}>{item}</li>)}</ul></div></div></div> }
+
+function History({ entries, onBack, onExport, onOpenThreads }: { entries: Reflection[]; onBack: () => void; onExport: () => void; onOpenThreads: (id: number) => void }) { return <section className="history-page page-narrow"><button className="back-button" onClick={onBack}>← Back</button><div className="threads-header"><div><p className="kicker">Your record</p><h2>Practice history.</h2><p>Earlier responses remain available as evidence. Open any scenario to inspect its threads and tension.</p></div><button className="secondary-button" onClick={onExport}>Export all data</button></div>{entries.length === 0 ? <div className="empty-history"><p>No completed practices yet.</p><button className="primary-button" onClick={onBack}>Begin a practice <span>→</span></button></div> : <div className="history-list">{entries.slice().reverse().map((entry) => <button className="history-entry" key={entry.id} onClick={() => onOpenThreads(entry.id)}><div><span className="kicker">{entry.scenario.eyebrow}</span><h3>{entry.scenario.title}</h3><p>{new Date(entry.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</p></div><blockquote>“{entry.response}”</blockquote><div className="history-evidence">View {entry.threads.length} threads →<br />{entry.correction ? 'correction added' : 'no correction added'}</div></button>)}</div>}</section> }
 
 function Privacy({ onBack, onReset, onExport, onImport }: { onBack: () => void; onReset: () => void; onExport: () => void; onImport: (event: ChangeEvent<HTMLInputElement>) => void }) { return <section className="privacy-page page-narrow"><button className="back-button" onClick={onBack}>← Back</button><p className="kicker">Privacy and boundaries</p><h2>A practice should feel private.</h2><p className="privacy-lede">This prototype stores your reflection in this browser. It does not need an account, and nothing is published automatically.</p><div className="privacy-list"><div><span>01</span><div><h3>Local by default</h3><p>Your draft, profile, and history are stored in browser storage on this device.</p></div></div><div><span>02</span><div><h3>You are the authority</h3><p>The AI proposes interpretations. You can accept, revise, reject, or leave them unresolved.</p></div></div><div><span>03</span><div><h3>Always portable</h3><p>Export a copy of your whole practice or import it on another device.</p></div></div></div><div className="privacy-actions"><button className="secondary-button" onClick={onExport}>Export my practice</button><label className="secondary-button file-button">Import practice<input type="file" accept="application/json,.json" onChange={onImport} /></label><button className="danger-button" onClick={onReset}>Delete local practice</button></div></section> }
 

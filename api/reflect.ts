@@ -25,8 +25,19 @@ const schema = {
       },
     },
     tension: { type: 'string' },
+    synthesis: {
+      type: 'object',
+      additionalProperties: false,
+      properties: {
+        summary: { type: 'string' },
+        recurringThemes: { type: 'array', items: { type: 'string' }, minItems: 1, maxItems: 3 },
+        changes: { type: 'array', items: { type: 'string' }, minItems: 1, maxItems: 3 },
+        connections: { type: 'array', items: { type: 'string' }, minItems: 1, maxItems: 3 },
+      },
+      required: ['summary', 'recurringThemes', 'changes', 'connections'],
+    },
   },
-  required: ['threads', 'tension'],
+  required: ['threads', 'tension', 'synthesis'],
 }
 
 export default async function handler(req: any, res: any) {
@@ -34,7 +45,7 @@ export default async function handler(req: any, res: any) {
   if (!process.env.OPENAI_API_KEY) return res.status(503).json({ error: 'Model route is not configured' })
 
   try {
-    const { scenario, response } = req.body ?? {}
+    const { scenario, response, history = [] } = req.body ?? {}
     if (typeof response !== 'string' || response.trim().length < 20) return res.status(400).json({ error: 'A response is required' })
 
     const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
@@ -42,7 +53,7 @@ export default async function handler(req: any, res: any) {
       model: process.env.OPENAI_MODEL || 'gpt-5',
       store: false,
       instructions: constitution,
-      input: `Scenario:\n${scenario}\n\nUser response:\n${response}\n\nReturn 2–3 tentative threads and one unresolved tension.`,
+      input: `Prior reflections (may be empty):\n${JSON.stringify(history)}\n\nCurrent scenario:\n${scenario}\n\nCurrent user response:\n${response}\n\nReturn 2–3 tentative threads for the current response, one unresolved tension, and a cautious cross-scenario synthesis. The synthesis must distinguish recurring themes, possible changes, and connections across situations. If there is not enough history, say so plainly rather than inventing evolution.`,
       text: { format: { type: 'json_schema', name: 'judgment_reflection', strict: true, schema } },
     })
 

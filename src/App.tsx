@@ -31,6 +31,24 @@ const fixtureThreads: Thread[] = [
 ]
 const storageKey = 'judgment-gym-demo'
 
+function fallbackSynthesis(history: Reflection[]): Synthesis | undefined {
+  if (history.length === 0) return undefined
+  const themeCounts = new Map<string, number>()
+  history.flatMap((entry) => entry.threads).forEach((thread) => {
+    const key = thread.title.trim()
+    themeCounts.set(key, (themeCounts.get(key) ?? 0) + 1)
+  })
+  const recurringThemes = [...themeCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([title, count]) => count > 1 ? `${title} · appears in ${count} scenarios` : title)
+  const corrections = history.filter((entry) => entry.correction.trim()).length
+  const completed = history.length
+  return {
+    summary: completed >= scenarios.length ? `Across all ${completed} scenarios, your responses now form a record of how judgment moves with context—not a fixed label.` : `Your first ${completed} reflection${completed === 1 ? '' : 's'} now form${completed === 1 ? 's' : ''} a starting point. More scenarios will show what repeats, changes, or depends on context.`,
+    recurringThemes: recurringThemes.length ? recurringThemes : ['No recurring pattern yet'],
+    changes: corrections ? [`You have added or revised your interpretation in ${corrections} scenario${corrections === 1 ? '' : 's'}.`] : ['More scenarios will give this model something to compare.'],
+    connections: completed >= 2 ? [`The profile currently links evidence across ${completed} completed scenarios.`] : ['Each scenario will remain available as evidence.'],
+  }
+}
+
 function App() {
   const [stage, setStage] = useState<Stage>('welcome')
   const [scenarioIndex, setScenarioIndex] = useState(0)
@@ -47,6 +65,7 @@ function App() {
   const [apiError, setApiError] = useState('')
 
   const scenario = scenarios[scenarioIndex]
+  const profileSynthesis = synthesis ?? fallbackSynthesis(history)
   const progress = stage === 'welcome' || stage === 'privacy' ? 0 : stage === 'respond' ? 1 : 2
 
   useEffect(() => {
@@ -58,8 +77,8 @@ function App() {
       setCorrection(parsed.correction ?? '')
       setThreads(parsed.threads?.length ? parsed.threads : fixtureThreads)
       setTension(parsed.tension ?? 'Efficiency and care may both matter to you.')
-      setSynthesis(parsed.synthesis)
       setHistory(parsed.history ?? [])
+      setSynthesis(parsed.synthesis ?? fallbackSynthesis(parsed.history ?? []))
       setScenarioIndex(Math.min(parsed.scenarioIndex ?? 0, scenarios.length - 1))
     } catch { localStorage.removeItem(storageKey) }
   }, [])
@@ -129,7 +148,7 @@ function App() {
   const importData = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]; if (!file) return
     const reader = new FileReader()
-    reader.onload = () => { try { const parsed = JSON.parse(String(reader.result)) as Partial<StoredPractice>; setResponse(parsed.response ?? ''); setCorrection(parsed.correction ?? ''); setThreads(parsed.threads ?? fixtureThreads); setTension(parsed.tension ?? 'Efficiency and care may both matter to you.'); setSynthesis(parsed.synthesis); setHistory(parsed.history ?? []); setScenarioIndex(Math.min(parsed.scenarioIndex ?? 0, scenarios.length - 1)); setSelectedReflectionId(null); setStage('welcome') } catch { setApiError('That file could not be imported. Choose a Judgment Gym JSON export.') } }
+    reader.onload = () => { try { const parsed = JSON.parse(String(reader.result)) as Partial<StoredPractice>; const importedHistory = parsed.history ?? []; setResponse(parsed.response ?? ''); setCorrection(parsed.correction ?? ''); setThreads(parsed.threads ?? fixtureThreads); setTension(parsed.tension ?? 'Efficiency and care may both matter to you.'); setSynthesis(parsed.synthesis ?? fallbackSynthesis(importedHistory)); setHistory(importedHistory); setScenarioIndex(Math.min(parsed.scenarioIndex ?? 0, scenarios.length - 1)); setSelectedReflectionId(null); setStage('welcome') } catch { setApiError('That file could not be imported. Choose a Judgment Gym JSON export.') } }
     reader.readAsText(file); event.target.value = ''
   }
 
@@ -140,7 +159,7 @@ function App() {
       {stage === 'welcome' && <Welcome onBegin={begin} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onHistory={() => { setSelectedReflectionId(null); setStage('threads') }} allComplete={history.length >= scenarios.length} />}
       {stage === 'respond' && <Respond response={response} setResponse={setResponse} scenario={scenario} showContext={showContext} setShowContext={setShowContext} onSubmit={submitResponse} isReflecting={isReflecting} />}
       {stage === 'review' && <Review response={response} correction={correction} setCorrection={setCorrection} threads={threads} apiError={apiError} updateThread={updateThread} onContinue={keepReflection} />}
-      {stage === 'threads' && <Threads threads={threads} tension={tension} synthesis={synthesis} history={history} selectedReflectionId={selectedReflectionId} practiceNumber={scenarioIndex + 1} isComplete={scenarioIndex >= scenarios.length - 1} onBack={() => { if (selectedReflectionId) { setSelectedReflectionId(null); setStage('threads') } else setStage('review') }} onNew={nextPractice} onOpenScenario={(id) => setSelectedReflectionId(id)} />}
+      {stage === 'threads' && <Threads threads={threads} tension={tension} synthesis={profileSynthesis} history={history} selectedReflectionId={selectedReflectionId} practiceNumber={scenarioIndex + 1} isComplete={history.length >= scenarios.length} onBack={() => { if (selectedReflectionId) { setSelectedReflectionId(null); setStage('threads') } else setStage('review') }} onNew={nextPractice} onOpenScenario={(id) => setSelectedReflectionId(id)} />}
       {stage === 'privacy' && <Privacy onBack={() => setStage('welcome')} onReset={reset} onExport={exportData} onImport={importData} />}
     </main>
     {stage !== 'welcome' && stage !== 'privacy' && <footer className="practice-footer"><span>Your words stay yours.</span><button onClick={() => setStage('privacy')}>View data controls</button></footer>}

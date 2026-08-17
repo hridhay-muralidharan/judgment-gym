@@ -1,6 +1,6 @@
 # Curated Demo Scenario Journey
 
-The public MVP uses five original, secular reflection prompts. They support one coherent self-awareness journey rather than unrelated journaling exercises.
+The public MVP uses five original reflection prompts. They support one coherent self-awareness journey rather than unrelated journaling exercises.
 
 ## Sequence
 

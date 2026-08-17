@@ -23,13 +23,13 @@ Existing research gives us useful starting points for investigating this questio
 
 The research opportunity is: **people may need deliberate practice to remain active participants in their own judgment when AI makes cognitive delegation frictionless.**
 
-## The mental-health extension
+## The mental-health and personal-development extension
 
-The same pattern matters for mental health and personal development. A person who wants to strengthen self-awareness and judgment can use a between-session practice to slow down an experience, distinguish what happened from the meaning they made of it, and notice what changes with context. They may bring those observations into therapy as a coaching-style space for exploration, reflection, and skill-building when that fits their goals.
+The same pattern matters for mental health and personal development. A person who wants to strengthen self-awareness and judgment can use a reflective practice to slow down an experience, distinguish what happened from the meaning they made of it, and notice what changes with context. They may bring those observations into a conversation with a therapist, coach, or other support professional when that fits their goals.
 
-The product hypothesis is that better self-observation can give a person clearer material for collaborative conversations with a therapist or coach. This remains a research hypothesis; clinical efficacy requires dedicated study.
+The product hypothesis is that better self-observation can give a person clearer material for collaborative conversations with a therapist, coach, or other support professional. This remains a research hypothesis; clinical efficacy requires dedicated study.
 
-Judgment Gym is therefore being re-oriented as a secular self-awareness layer for mental-health AI and digital therapy products. It can help users create clearer examples, questions, and observations that they may choose to bring into a session with a qualified clinician.
+Judgment Gym is therefore being re-oriented as a self-awareness layer for mental-health AI and digital therapy products. It can help users create clearer examples, questions, and observations that they may choose to bring into a conversation with a qualified professional.
 
 ## The proposed solution
 
@@ -42,26 +42,33 @@ The practice loop is:
 3. Explain the reasoning, uncertainty, needs, and trade-offs behind that response.
 4. Review the AI's tentative interpretation of recurring patterns, conditions, tensions, and changes.
 5. Correct the interpretation when it is incomplete or wrong.
-6. Revisit similar situations over time and identify a question or example the user may choose to bring to therapy.
+6. Revisit similar situations over time and identify a question or example the user may choose to bring into a support conversation.
 
 The AI serves as a **mirror and practice partner**. It builds a tentative model from what the user has expressed, while the user remains the authority on their own experience, values, and decisions.
 
 This mirrors a familiar learning pattern:
 
 - a training environment where a person can practise, make mistakes, clarify doubts, and receive feedback;
-- a live environment where the person applies the skill to real circumstances or brings the material into a human-led therapy session.
+- a live environment where the person applies the skill to real circumstances or brings the material into a human-led support conversation.
 
-Judgment Gym supports the training environment. Real life and professional care are where the user applies the skill and gathers further feedback.
+Judgment Gym supports the practice environment. Real life and professional support are where the user applies the skill and gathers further feedback.
 
 ## Target audience
 
-The strongest initial audience is a focused B2B2C segment with a clear development-oriented use case:
+The strongest initial audience is a focused B2B2C segment with a clear self-awareness development use case:
 
-**Primary buyer:** digital therapy platforms, telehealth providers, and AI-enabled mental-health companies that already have an ongoing relationship with a user and want to improve between-session engagement and session readiness.
+**Primary buyer:** digital therapy platforms, telehealth providers, and AI-enabled mental-health companies that already have an ongoing relationship with a user and want to support reflective practice between care conversations.
 
-**Initial end-user segment:** adults aged 26–49 who are already receiving therapy or another form of mental-health treatment through a digital or hybrid channel, and who struggle to remember concrete examples or identify patterns between sessions.
+**Initial end-user segment:** adults actively seeking to improve self-awareness and judgment, with an initial focus on people aged 26–49 who use therapy, coaching, or another structured support service through a digital or hybrid channel.
 
 This is a good beachhead because the product can be introduced inside an existing support relationship. The company already owns the activation, the user already has a reason to return, and the outcome can be evaluated through self-awareness practice, reflection quality, goal progress, and continuity of engagement.
+
+### Stakeholder fit
+
+- **For users:** a private place to slow down experience, name patterns, test interpretations, and choose what feels worth discussing.
+- **For therapists and coaches:** user-authored observations and corrections that can give a support conversation more context while leaving interpretation and direction with the professional and the user.
+- **For mental-health AI companies:** a structured engagement layer with explicit uncertainty, user correction, privacy controls, and measurable activation points.
+- **For care and safety teams:** a bounded system that preserves the distinction between reflection support, professional care, and crisis response.
 
 ### Directional market context
 
@@ -73,7 +80,7 @@ This is a good beachhead because the product can be introduced inside an existin
 
 These figures provide directional market context. Judgment Gym market sizing requires dedicated research, and the treatment and telehealth categories overlap, so each figure should be read separately. The figures come from the [2023 SAMHSA National Survey on Drug Use and Health](https://www.samhsa.gov/data/sites/default/files/reports/rpt47095/National%20Report/National%20Report/2023-nsduh-annual-national.htm) and the [WHO mental-health overview](https://www.who.int/en/health-topics/mental-health).
 
-Potential evaluation questions include whether users bring more concrete examples to sessions, whether clinicians report better session focus, whether users can correct model interpretations, and whether the tool improves engagement alongside monitoring for distress or over-reliance on AI.
+Potential evaluation questions include whether users produce more concrete examples for support conversations, whether professionals report better conversational context, whether users can correct model interpretations, and whether the tool improves engagement alongside monitoring for distress or over-reliance on AI.
 
 ## A research direction, with a hackathon prototype
 

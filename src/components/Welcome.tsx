@@ -5,7 +5,7 @@ export function Welcome({ onBegin, onPrivacy, hasHistory, onThreads, allComplete
     <div className="welcome-copy">
       <p className="kicker">A self-awareness layer for mental health care</p>
       <h1>Bring more of yourself<br /><em>into the conversation.</em></h1>
-      <p className="lede">A private between-session practice that helps people slow down, notice patterns, and arrive with clearer material for the next therapy conversation.</p>
+      <p className="lede">A private practice between support conversations that helps people slow down, notice patterns, and bring clearer material into the next conversation.</p>
       <div className="welcome-actions">
         <button className="primary-button" onClick={onBegin}>{allComplete ? 'Review your model' : hasHistory ? 'Continue practice' : 'Try a reflection'} <span>→</span></button>
         <button className="text-button" onClick={onPrivacy}>Privacy and safety <span>↗</span></button>

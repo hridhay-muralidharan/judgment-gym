@@ -101,7 +101,7 @@ The current prototype stores responses, corrections, thread status, scenario con
 
 This is an intentional training-wheel model: it helps a person externalise and inspect their own experience. Repeated evidence and user correction can make the profile more useful. Scientific validation would require study of the constructs, prompts, review process, clinical workflow, and outcomes.
 
-Taking this direction further would require collaboration with psychologists, behavioural scientists, metacognition researchers, clinicians, safety experts, and people with lived experience to determine which aspects of self-awareness can be represented, what evidence is appropriate, how bias and overinterpretation should be controlled, how scenarios should be designed and sequenced, which scenarios are psychologically meaningful without being manipulative or leading, and how the product should be evaluated.
+Taking this direction further would require collaboration with psychologists, behavioural scientists, metacognition researchers, clinicians, safety experts, and people with lived experience to determine which aspects of self-awareness can be represented, what evidence is appropriate, how bias and overinterpretation should be controlled, how scenarios should be designed and sequenced, which scenarios are psychologically meaningful, respectful, and non-leading, and how the product should be evaluated.
 
 This expert input supports both the user model and the situations presented to users. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
 
@@ -130,7 +130,7 @@ npm install
 npm run dev
 ```
 
-The app shows a bounded fixture reflection by default. To enable live reflections locally, copy `.env.example` to `.env`, add `OPENAI_API_KEY`, and restart the dev server. The key is read only by the server-side route under `api/reflect.ts`.
+The app shows a bounded fixture reflection by default. To enable live reflections locally, copy `.env.example` to `.env`, add `OPENAI_API_KEY`, and restart the dev server. The key is read exclusively by the server-side route under `api/reflect.ts`.
 
 Build verification:
 

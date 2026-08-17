@@ -25,9 +25,9 @@ The research opportunity is: **people may need deliberate practice to remain act
 
 ## The mental-health extension
 
-The same pattern matters in mental health. Therapy sessions are time-limited, and people often arrive with a global feeling—“I am overwhelmed”, “something felt off”, or “I keep doing this”—without enough concrete observations to explore. A between-session practice can help a person slow down an experience, distinguish what happened from the meaning they made of it, and notice what changes with context.
+The same pattern matters for mental health and personal development. A person who wants to strengthen self-awareness and judgment can use a between-session practice to slow down an experience, distinguish what happened from the meaning they made of it, and notice what changes with context. They may bring those observations into therapy as a coaching-style space for exploration, reflection, and skill-building when that fits their goals.
 
-The product hypothesis is that better self-observation can make therapy conversations more specific and collaborative. This is a research hypothesis, not a clinical efficacy claim.
+The product hypothesis is that better self-observation can give a person clearer material for collaborative conversations with a therapist or coach. This remains a research hypothesis; clinical efficacy requires dedicated study.
 
 Judgment Gym is therefore being re-oriented as a secular self-awareness layer for mental-health AI and digital therapy products. It can help users create clearer examples, questions, and observations that they may choose to bring into a session with a qualified clinician.
 
@@ -55,25 +55,25 @@ Judgment Gym supports the training environment. Real life and professional care 
 
 ## Target audience
 
-The strongest initial audience is not a broad wellness population. It is a focused B2B2C segment:
+The strongest initial audience is a focused B2B2C segment with a clear development-oriented use case:
 
 **Primary buyer:** digital therapy platforms, telehealth providers, and AI-enabled mental-health companies that already have an ongoing relationship with a user and want to improve between-session engagement and session readiness.
 
 **Initial end-user segment:** adults aged 26–49 who are already receiving therapy or another form of mental-health treatment through a digital or hybrid channel, and who struggle to remember concrete examples or identify patterns between sessions.
 
-This is a good beachhead because the product can be introduced inside an existing care relationship. The company already owns the activation, the user already has a reason to return, and the outcome can be evaluated against session preparation and continuity rather than vague wellness engagement.
+This is a good beachhead because the product can be introduced inside an existing support relationship. The company already owns the activation, the user already has a reason to return, and the outcome can be evaluated through self-awareness practice, reflection quality, goal progress, and continuity of engagement.
 
 ### Directional market context
 
 - In the United States in 2023, **58.7 million adults (22.8%)** experienced any mental illness in the past year. Adults aged 26–49 represented the largest age-group count: **30.3 million**.
 - **31.3 million U.S. adults** received mental-health treatment via telehealth in 2023. Among adults aged 26–49, the figure was **16.7 million**.
 - Among U.S. adults with any mental illness, **37.6% received outpatient treatment** in 2023; among 26–49-year-olds with any mental illness, the figure was **39.2%**.
-- In 2023, **6.2 million adults with any mental illness** reported an unmet need for treatment. This is evidence of need for mental-health support broadly, but it should not be treated as the immediate serviceable market for a between-session product.
-- Globally, the WHO estimates that **970 million people** were living with a mental disorder in 2019. This supports the scale of the category, but the first commercial wedge should remain the narrower, therapy-engaged segment above.
+- In 2023, **6.2 million adults with any mental illness** reported an unmet need for treatment. This signals broad unmet need for mental-health support; the immediate serviceable market for a between-session product remains the narrower, therapy-engaged segment above.
+- Globally, the WHO estimates that **970 million people** were living with a mental disorder in 2019. This supports the scale of the category; the first commercial wedge remains the narrower, therapy-engaged segment above.
 
-These figures are directional market context, not a Judgment Gym market-size claim. The treatment and telehealth categories overlap, so the numbers must not be added together. The figures come from the [2023 SAMHSA National Survey on Drug Use and Health](https://www.samhsa.gov/data/sites/default/files/reports/rpt47095/National%20Report/National%20Report/2023-nsduh-annual-national.htm) and the [WHO mental-health overview](https://www.who.int/en/health-topics/mental-health).
+These figures provide directional market context. Judgment Gym market sizing requires dedicated research, and the treatment and telehealth categories overlap, so each figure should be read separately. The figures come from the [2023 SAMHSA National Survey on Drug Use and Health](https://www.samhsa.gov/data/sites/default/files/reports/rpt47095/National%20Report/National%20Report/2023-nsduh-annual-national.htm) and the [WHO mental-health overview](https://www.who.int/en/health-topics/mental-health).
 
-Potential evaluation questions include whether users bring more concrete examples to sessions, whether clinicians report better session focus, whether users can correct model interpretations, and whether the tool improves engagement without increasing distress or over-reliance on AI.
+Potential evaluation questions include whether users bring more concrete examples to sessions, whether clinicians report better session focus, whether users can correct model interpretations, and whether the tool improves engagement alongside monitoring for distress or over-reliance on AI.
 
 ## A research direction, with a hackathon prototype
 
@@ -97,7 +97,7 @@ The v1 model is an **operational reflection profile**. It is an early prototype 
 3. the user's acceptance, correction, rejection, or qualification of those threads; and
 4. unresolved tensions and the scenarios that provide evidence for them.
 
-The current prototype stores responses, corrections, thread status, scenario context, and revision history. Its two demo threads make the interaction legible and serve as interaction fixtures. They are not derived from a validated psychological framework. The live model route grounds interpretations in the user's response and returns two or three tentative threads plus one unresolved tension. The profile stays close to observable responses and user corrections.
+The current prototype stores responses, corrections, thread status, scenario context, and revision history. Its two demo threads make the interaction legible and serve as interaction fixtures. Validation of the psychological framework remains future research. The live model route grounds interpretations in the user's response and returns two or three tentative threads plus one unresolved tension. The profile stays close to observable responses and user corrections.
 
 This is an intentional training-wheel model: it helps a person externalise and inspect their own experience. Repeated evidence and user correction can make the profile more useful. Scientific validation would require study of the constructs, prompts, review process, clinical workflow, and outcomes.
 
@@ -113,11 +113,11 @@ Developing this direction would require research into scenario generation, virtu
 
 ## Boundaries and safety
 
-Judgment Gym is a reflection tool, not a therapist, crisis service, diagnostic tool, risk assessor, personality test, or substitute for professional care. The agent should preserve ambiguity and contradiction, treat interpretations as provisional, and never shame the user, prescribe treatment, or declare a response clinically right or wrong.
+Judgment Gym supports reflection, self-awareness practice, and preparation for conversations with qualified professionals. The product scope excludes crisis care, diagnosis, risk assessment, personality testing, and treatment prescription. The agent preserves ambiguity and contradiction, treats interpretations as provisional, and uses respectful, non-shaming language.
 
-If a user describes immediate danger or serious distress, a production version must provide an appropriate, static route to qualified human or emergency support. It must not pretend to provide crisis care.
+If a user describes immediate danger or serious distress, a production version provides an appropriate, static route to qualified human or emergency support.
 
-The MVP is designed around local-first storage, visible data handling, portable JSON export/import, reset, and deletion. Personal reflections, API keys, and private user profiles should not be committed to the public repository. Encrypted export is a follow-up hardening task before treating exports as safe for sensitive long-term storage.
+The MVP is designed around local-first storage, visible data handling, portable JSON export/import, reset, and deletion. The public repository excludes personal reflections, API keys, and private user profiles. Encrypted export is a follow-up hardening task before treating exports as safe for sensitive long-term storage.
 
 ## Status
 
@@ -130,7 +130,7 @@ npm install
 npm run dev
 ```
 
-The app works without an API key by showing a bounded fixture reflection. To enable live reflections locally, copy `.env.example` to `.env`, add `OPENAI_API_KEY`, and restart the dev server. The key is read only by the server-side route under `api/reflect.ts`.
+The app shows a bounded fixture reflection by default. To enable live reflections locally, copy `.env.example` to `.env`, add `OPENAI_API_KEY`, and restart the dev server. The key is read only by the server-side route under `api/reflect.ts`.
 
 Build verification:
 
@@ -140,7 +140,7 @@ npm run build
 
 ## Deploy
 
-This project is configured for Vercel. Deploy the repository, then add `OPENAI_API_KEY` as a sensitive production environment variable in the Vercel project and redeploy. Never commit the key or paste it into the frontend.
+This project is configured for Vercel. Deploy the repository, then add `OPENAI_API_KEY` as a sensitive production environment variable in the Vercel project and redeploy. Keep the key in the server-side environment and out of the frontend.
 
 Planning documents:
 

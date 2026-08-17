@@ -46,7 +46,7 @@ Use one coherent five-scenario path:
 4. unresolved tension;
 5. transfer or user-authored scenario.
 
-The path must demonstrate orientation, honest response, tentative interpretation, free-form correction, pattern refinement, adaptive scenario selection, worldview review, export, and reset.
+The path must demonstrate a clear first prompt, honest reflection, tentative interpretation, free-form correction, pattern refinement, adaptive scenario selection, open-question review, export, and reset.
 
 ## Completion criteria
 

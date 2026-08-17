@@ -1,6 +1,6 @@
 # Curated Demo Scenario Journey
 
-The public MVP uses six source-derived seeds across three source lenses: biography/autobiography, historical event, and verified public-domain fiction. The seeds support one coherent five-scenario judging journey rather than six unrelated examples.
+The public MVP uses five original, secular reflection prompts. They support one coherent self-awareness journey rather than unrelated journaling exercises.
 
 ## Sequence
 
@@ -16,14 +16,14 @@ Each scenario records its source trajectory, purpose, change from the previous s
 
 ## Source handling
 
-Record title, author/authority, edition, URL, access date, licence basis, content hash, and event identifier. Use full excerpts only from verified public-domain editions. Otherwise use original summaries and links. Never claim to reproduce the source person's mind or worldview.
+Prompts should be original, culturally inclusive, non-leading, and reviewed for psychological safety. Do not claim to reproduce a person's mind, diagnose a user, or impose a worldview.
 
 ## Demo outcome
 
 The judge should see:
 
 ```text
-Orientation → response → tentative interpretation → correction
-→ changed context → role reversal → unresolved tension
-→ transfer → evolving worldview → export/reset
+Prompt → reflection → tentative interpretation → correction
+→ changed condition → perspective shift → unresolved tension
+→ bring-forward question → self-awareness map → export/reset
 ```

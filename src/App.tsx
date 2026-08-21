@@ -150,7 +150,7 @@ function App() {
       if (!response.ok) throw new Error('Journey model unavailable')
       patch({ journeyModel: await response.json(), isReflecting: false })
     } catch {
-      patch({ isReflecting: false, apiError: 'The live model is unavailable. This is a provisional local model to edit and discuss; no private narrative was sent.' })
+      patch({ isReflecting: false, apiError: 'The live model did not return a model. This provisional local model is available to edit and discuss; try again when the hosted route is configured.' })
     }
   }
   const openExplore = () => state.probe ? patch({ stage: 'explore', simulationResponse: '', transferNote: '' }) : openReflect()

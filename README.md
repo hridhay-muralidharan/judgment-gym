@@ -120,6 +120,7 @@ Judgment Gym is not a therapist, diagnostic system, crisis service, risk assesso
 - [Evaluation plan](docs/EVALUATION_PLAN.md)
 - [Therapist review packet](docs/THERAPIST_REVIEW_PACKET.md)
 - [Product name review](docs/PRODUCT_NAME_REVIEW.md)
+- [Product naming research](docs/NAME_RESEARCH.md)
 - [Architecture](docs/ARCHITECTURE.md)
 
 ## Run locally

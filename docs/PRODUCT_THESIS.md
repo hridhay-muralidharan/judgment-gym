@@ -1,8 +1,8 @@
-# Judgment Gym 2.0 — Product thesis
+# Working title: Judgment Gym — Product thesis
 
 ## Core thesis
 
-Judgment Gym helps people practise systematic metacognitive reflection: examining how they form judgments in lived experiences, noticing patterns in how they respond, and using carefully bounded constructed situations to explore what remains unclear.
+The working product helps people become more self-aware by reflecting on how they experience situations, make judgments, and respond over time.
 
 The product does not treat a person's account as a story to summarize. It treats each account as evidence for an evolving, user-correctable model of the self in context.
 
@@ -42,15 +42,19 @@ The user responds to a bounded variation: a changed condition, altered stakes, r
 
 The user compares the constructed response with the lived situation. Similarity, difference, uncertainty, and rejection are all valid outcomes. The user decides what the model should carry forward.
 
+## The human outcome
+
+Judgment Gym is designed to improve self-awareness. The research work must connect that improvement to outcomes people care about: emotional regulation, decision-making, self-regulation, values-aligned action, relationships, and better preparation for therapy or coaching conversations.
+
+Each outcome will have its own evidence review. The product will use a finding when the construct, population, intervention, and measured outcome are a natural fit. A useful connection that remains early or indirect will be labelled as a hypothesis.
+
 ## Why this opportunity exists now
 
-Metacognitive reflection is more specific than having an elaborate account of oneself. It involves monitoring one's thinking, calibrating confidence, noticing uncertainty, and learning from the relationship between a judgment, an action, and its consequence. In a process-tracing experiment, systematic metacognitive reflection helped participants discover adaptive, far-sighted decision strategies faster than participants who moved directly to the next decision. [Becker et al., 2023](https://doi.org/10.1017/jdm.2023.16)
+GenAI creates a new opportunity to make reflection interactive, personal, continuous, and available between human conversations. An interactive system can ask situation-specific questions, retain a user-correctable history, generate a related situation, and help compare what changed.
 
-GenAI creates a new product opportunity around this mechanism. An interactive system can ask situation-specific questions, retain a user-correctable history, generate a controlled variation, and help compare what changed. That makes a form of systematic reflection possible at a frequency and level of personal continuity that is difficult to sustain through occasional conversations alone.
+The product tests whether this form of reflection can improve a person's self-awareness and help them use that understanding in daily life. The model keeps observations grounded in lived situations, invites correction, and shows how each pattern was formed.
 
-Judgment Gym therefore tests whether GenAI can become a reflection instrument that improves the quality of a person's own judgment without taking judgment away from them. It does not assume that reflection is always helpful: unstructured introspection can become rumination or overconfidence, so the product must remain evidence-linked, calibrated, revisable, and evaluated.
-
-The physical gym is an optional analogy, not the evidence for the product. The evidence comes from metacognitive reflection and decision-learning research. The motivating hypothesis is that GenAI now makes deliberate judgment practice unusually accessible.
+The name remains open. “Judgment Gym” will stay only if judgment continues to describe the central practice and human value after the research review.
 
 Judgment Gym explores whether a careful AI-mediated practice can help people generate better material for their own reflection and for conversations with qualified professionals, while preserving the distinction between reflection support and care.
 

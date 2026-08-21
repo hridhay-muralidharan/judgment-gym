@@ -2,13 +2,13 @@
 
 ## Objective
 
-Build and share a trustworthy research prototype for systematic metacognitive reflection, longitudinal personal modeling, and judgment learning across lived and constructed situations.
+Build and share a trustworthy research prototype for improving self-awareness through reflection across lived and constructed situations.
 
 The public repository will contain the generalised method. Personal reflections and the user's personal worldview remain private.
 
 ## Product boundary
 
-The product is not a counselling or therapy system, personality test, moral evaluator, model-comparison benchmark, or coding-agent wrapper. It is a reflective practice that helps users form, inspect, correct, and revisit their own judgment. Its central research question is whether GenAI can make systematic metacognitive reflection practical and useful without replacing the user's judgment.
+The product is not a counselling or therapy system, personality test, moral evaluator, model-comparison benchmark, or coding-agent wrapper. It is a reflective practice that helps users understand their feelings, thoughts, values, patterns, and responses. Its central research question is whether GenAI can make systematic reflection practical and useful in daily life.
 
 The agent must preserve ambiguity and contradiction, distinguish user words from model interpretation, and treat every inference as provisional until the user reviews it.
 

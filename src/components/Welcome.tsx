@@ -15,6 +15,6 @@ export function Welcome({ onBegin, onPrivacy, hasHistory, onThreads, allComplete
       <button className="resume-link" onClick={onPrivacy}>Read the privacy and safety boundary →</button>
     </div>
     <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">JG</div><div className="art-caption">Lived moment · model ·<br />constructed situation · return.</div></div>
-    <div className="pitch-strip"><span className="pitch-label">The practice loop</span><strong>A real situation gives the model somewhere honest to begin.</strong><span>Judgment Gym connects lived accounts, tentative self/psyche patterns, and bounded text or voice explorations that can lead back to the user's own experience.</span></div>
+    <div className="pitch-strip"><span className="pitch-label">The practice loop</span><strong>A real situation gives the model somewhere honest to begin.</strong><span>This practice connects lived accounts, tentative self/psyche patterns, and bounded text or voice explorations that can lead back to the user's own experience.</span></div>
   </section>
 }

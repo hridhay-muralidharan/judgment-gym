@@ -1,10 +1,10 @@
-# Judgment Gym
+# Working title: Judgment Gym
 
-Judgment Gym is a research prototype for systematic metacognitive reflection: helping people examine how they form judgments in lived situations, test what changes across contexts, and revise their understanding over time.
+Judgment Gym is the working title for a research prototype that helps people become more self-aware by reflecting on how they experience situations, make judgments, and respond over time.
 
 The product explores a practical question:
 
-> Can GenAI make systematic metacognitive reflection practical enough to help people discover better ways of judging and responding to situations, without claiming authority over what their experiences mean?
+> Can GenAI make systematic reflection practical enough to help people understand themselves better and use that understanding in daily life?
 
 ## The core loop
 
@@ -20,11 +20,11 @@ The product is designed to preserve ambiguity. A similarity, difference, excepti
 
 ## Why this opportunity matters
 
-Research distinguishes generic self-awareness from more useful metacognitive capabilities: monitoring how one is thinking, calibrating confidence, noticing uncertainty, and revising a strategy. In an experimental study, systematic metacognitive reflection helped people discover adaptive, far-sighted decision strategies faster than participants who did not reflect between decisions. [Becker et al., 2023](https://www.cambridge.org/core/journals/judgment-and-decision-making/article/systematic-metacognitive-reflection-helps-people-discover-farsighted-decision-strategies-a-processtracing-experiment/BA25E058C30249E1A22D464A6145165E)
+The product starts from a lived situation. The person describes what happened, what they felt, thought, said, did, wanted, and noticed afterward. The system helps them identify possible patterns, explore a related situation, and carry useful understanding back into life.
 
-GenAI creates an opportunity to make this kind of reflection interactive, personalised, longitudinal, and available between human conversations. It can help a person reconstruct what happened, identify the assumptions and feelings that shaped a judgment, generate a bounded variation, and compare the response across conditions. Judgment Gym tests whether this can produce clearer questions and observations for the user and, when they choose, for a qualified professional.
+The research programme will identify which forms of self-awareness connect to tangible outcomes such as emotional regulation, decision-making, self-regulation, values-aligned action, and relationships. Each connection must be supported by research or clearly marked as a hypothesis.
 
-This is a research hypothesis. Judgment Gym does not claim clinical efficacy.
+This is a research prototype. It does not claim clinical efficacy.
 
 ## The self/psyche model
 
@@ -84,6 +84,7 @@ npm run build
 - [Product thesis](docs/PRODUCT_THESIS.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
 - [Judgment and self-awareness research](docs/JUDGMENT_SELF_AWARENESS_RESEARCH.md)
+- [Product name review](docs/PRODUCT_NAME_REVIEW.md)
 - [Agent model](docs/AGENT_MODEL.md)
 - [Frontend journey](docs/FRONTEND_JOURNEY.md)
 - [Lived-to-constructed journey](docs/SCENARIO_JOURNEY.md)

@@ -1,8 +1,14 @@
 # Room to Respond — product thesis
 
-Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where specific capacities could be exercised through specific routines.
+Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where people could exercise the capacities that daily life no longer exercised enough.
 
-Room to Respond extends this idea to the faculties people use to live. People constantly use attention, perception, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning. These faculties work together, and they can be deliberately examined and practised without treating them as literal muscles.
+## Why a gym for mental faculties?
+
+Research has identified several pressures created by modern life: social media, notifications, and smartphones compete for attention; digital environments shape how people experience and regulate emotion; search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding; and faster communication and more complex work create more frequent social and practical judgments.
+
+These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
+
+Physical gyms provide a useful organising idea. A complete workout combines exercises for different capacities into a practical routine that develops the body within a limited amount of time. Room to Respond applies the same thinking to mental faculties: coherent, complete, and time-efficient workouts for the ways people meet life.
 
 Room to Respond explores whether GenAI can make that practice personal, continuous, and interactive.
 
@@ -22,7 +28,7 @@ The product does not ask the model to announce what a person truly is. It helps 
 
 ## The workout model
 
-The physical-gym analogy is a design starting point, not a scientific claim that mental faculties are muscles. Each workout must be linked to a real-life demand, a faculty or combination of faculties, a specific exercise, a measurable outcome, and an appropriate safety boundary.
+Each workout must be linked to a real-life demand, a faculty or combination of faculties, a specific exercise, a measurable outcome, and an appropriate safety boundary.
 
 The research map currently groups workouts into four areas:
 

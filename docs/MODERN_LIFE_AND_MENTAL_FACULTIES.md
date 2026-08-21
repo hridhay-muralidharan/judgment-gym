@@ -6,20 +6,22 @@ Modern life changed the physical demands of daily life. Cars replaced some walki
 
 The evidence does not say that every convenience is harmful or that cities have one uniform effect. It shows that environments influence whether movement is built into daily routines. Reviews of urban design find relationships between access to public space, active transport, walking, and sedentary behaviour. The [WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153), the [WHO analysis of urbanization and physical inactivity](https://www.emro.who.int/emhj-volume-25-2019/volume-25-issue-12/move-for-health-addressing-the-built-environment-in-oman.html), and a [systematic review of dense urban public spaces](https://pubmed.ncbi.nlm.nih.gov/35580456/) are useful starting points.
 
-Gyms emerged as deliberate environments for restoring and developing physical capacities. They organise routines around capacities and body parts: walking, running, lifting, balancing, and strengthening. The useful part of the analogy is deliberate practice matched to a capacity. The analogy should not be stretched into the claim that mental faculties are literally muscles.
+Gyms emerged as deliberate environments for restoring and developing physical capacities. They organise routines around capacities and body parts: walking, running, lifting, balancing, and strengthening. A complete workout combines the necessary exercises into a practical routine that develops the body within a limited amount of time.
 
-## The mental parallel
+## Why a gym for mental faculties?
 
-Modern life also changes the situations in which mental faculties are used.
+Research has identified several pressures created by modern life:
 
-- Digital environments compete for attention and create frequent interruptions.
-- Search, recommendation, and automation reduce the need to remember or compare some information ourselves.
-- Fast communication increases the number and speed of social decisions.
-- Work and family roles create overlapping demands, ambiguity, and evaluation.
-- Algorithmic systems can present choices before a person has clarified what matters to them.
-- Conversation, journaling, and deliberate reflection can be displaced by rapid consumption and rapid response.
+- Social media, notifications, and smartphones compete for attention, alongside widespread concern about shorter attention spans.
+- Digital environments shape how people experience, express, and regulate emotion.
+- Search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding.
+- Faster communication and more complex work create more frequent social and practical judgments.
 
-These are design hypotheses, not a single claim that modern life has damaged the mind. The research must examine each faculty and each environment separately.
+These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
+
+Research on cognitive offloading shows that external tools can improve task performance while changing the demands placed on internal memory and metacognition. [Gilbert and colleagues' review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/) covers reminders, GPS, written notes, search engines, and other external tools. Research on generative AI as a cognitive tool is still developing; Room to Respond should treat AI-assisted offloading as an open research question rather than a settled harm.
+
+Room to Respond applies the organising principle of the physical gym to these faculties: coherent, complete, and time-efficient workouts for the ways people meet life.
 
 For attention, experimental work has found cognitive costs associated with the presence of a smartphone, while later studies show that the effect varies by task and context. The [smartphone-presence experiment](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/) is evidence for a specific attentional cost, not proof of a universal attention decline.
 

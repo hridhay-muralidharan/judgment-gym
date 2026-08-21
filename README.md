@@ -1,12 +1,19 @@
 # Room to Respond
 
-Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where specific capacities could be exercised through specific routines.
+Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where people could exercise the capacities that daily life no longer exercised enough.
 
-Modern life also changes the situations in which mental faculties are used. Digital systems compete for attention, automation changes what people remember and compare, fast communication increases social decisions, and work and family life create overlapping demands. Room to Respond extends the gym idea to the faculties people use to live.
+## Why a gym for mental faculties?
 
-People use attention, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning to move through life. A mental gym can organise deliberate practice around those faculties without treating them as literal muscles.
+Research has identified several pressures created by modern life:
 
-The product starts with real situations. GenAI helps a person examine the situation, choose a direction for practice, explore a carefully bounded variation, and carry useful understanding back into life.
+- social media, notifications, and smartphones compete for attention, alongside widespread concern about shorter attention spans;
+- digital environments shape how people experience, express, and regulate emotion;
+- search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding;
+- faster communication and more complex work create more frequent social and practical judgments.
+
+These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
+
+Physical gyms provide a useful organising idea. A complete workout combines exercises for different capacities into a practical routine that develops the body within a limited amount of time. Room to Respond applies the same thinking to mental faculties: coherent, complete, and time-efficient workouts for the ways people meet life.
 
 ## The idea
 

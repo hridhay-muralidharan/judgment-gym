@@ -14,6 +14,12 @@ The model has five layers:
 
 This is a working product model. It is not a clinical formulation, personality test, or theory of the whole psyche.
 
+## What is actually implemented in v1
+
+The current prototype implements a simpler version of this model. It records the situation, the person's account of what they felt, thought, said, did, wanted, and noticed afterward; tentative observations; the person's corrections; an unresolved tension; a constructed variation; and what changed when the person compared the two responses. The longer journey view adds periods, faculties, possible evolution, and open questions.
+
+The research lenses below are references for future design and therapist review. They are not currently encoded as diagnostic or clinical assessments in the product. The current model should not be described as a CBT formulation, schema-therapy formulation, or narrative-identity assessment.
+
 ## Layer 1 — Narrative identity
 
 Narrative identity is the organizing layer for longitudinal work. McAdams describes identity as an internalized, evolving life story that gives experiences unity and purpose. Research on life stories also examines chapters, key scenes, turning points, self-event connections, and autobiographical reasoning.
@@ -54,7 +60,7 @@ Schema therapy offers language for recurring beliefs, unmet needs, and coping mo
 
 Source: [Bär et al., Early Maladaptive Schemas and Schema Modes in Clinical Disorders](https://doi.org/10.1111/papt.12465), and [Muste et al., A Systematic Review of the Heterogeneity of Schema Therapy](https://pubmed.ncbi.nlm.nih.gov/37002933/).
 
-## Why these layers belong together
+## Why these research lenses belong together
 
 They answer different questions:
 
@@ -65,7 +71,7 @@ They answer different questions:
 | What happened in this episode? | CBT-style map | situation, interpretation, emotion, action, consequence |
 | What may recur under pressure? | Schema/coping language | tentative protective pattern, conditions, exceptions |
 
-The model must preserve the distinction between observation, interpretation, and clinical concept. It should show the evidence that led to a hypothesis and invite correction.
+These lenses answer different questions and may inform future workouts. They should remain visibly separate from the product's observations. The model must preserve the distinction between observation, interpretation, and clinical concept. It should show the evidence that led to a hypothesis and invite correction.
 
 ## v1 claim contract
 

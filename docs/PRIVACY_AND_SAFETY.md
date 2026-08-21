@@ -19,7 +19,7 @@ The long-term opportunity is capable language models running privately on person
 
 ## Safety boundary
 
-The system is a reflection and exploration tool. It is not a therapist, counsellor, diagnostician, crisis service, risk assessor, treatment recommender, or decision substitute.
+The system is a reflection and exploration tool. It is not a therapist, counsellor, diagnostician, crisis service, risk assessor, treatment recommender, or decision substitute. Its changed situations are hypothetical prompts for reflection; they are not exposure therapy, behavioural prescriptions, predictions, or assessments of a stable trait.
 
 Constructed situations are explicitly labelled as constructed. The system must not infer clinical states from a user's text, voice, pauses, accent, or emotional tone. It must not diagnose, prescribe, shame, moralize, or declare that a response reveals the user's true self.
 

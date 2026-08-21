@@ -1,5 +1,7 @@
 # Room to Respond — product thesis
 
+Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. It supports reflection; it does not provide therapy or clinical judgment.
+
 Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where people could exercise the capacities that daily life no longer exercised enough.
 
 ## Why a gym for mental faculties?
@@ -21,15 +23,15 @@ The first working map groups faculties by the part they play in meeting a situat
 - **Choose:** values, motivation, judgment, decisions, and self-regulation. Self-determination theory connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)).
 - **Adapt:** cognitive flexibility, imagination, foresight, feedback, and learning. Research links executive flexibility and prospection with changing strategy, planning, and action ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750); [Szpunar](https://pmc.ncbi.nlm.nih.gov/articles/PMC4074678/)).
 
-These groups organise a workout. They are not separate parts of a person. A single situation can move through all four.
+These are Room to Respond's working groups, not an established taxonomy of the psyche. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
 
 ## Prototype: one mental workout
 
 A person brings in a real event, describes what happened and how they responded, reviews a few tentative observations, tries a changed version of the situation, and compares the two responses.
 
-The current workout mainly exercises emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may appear in the account, but this prototype does not claim to develop them directly.
+The current workout invites practice in emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may appear in the account, but this prototype does not claim to develop them directly.
 
-More research is needed to define useful exercises for a wider range of faculties and to learn how they can be combined into complete, efficient mental workout routines.
+More research is needed to determine whether these prompts develop any faculty, which outcomes they affect, and how exercises for a wider range of faculties can be combined into complete, efficient mental workout routines.
 
 ## Why GenAI marks the inflection point for Room to Respond
 
@@ -44,7 +46,7 @@ GenAI can make the practice personal and continuous by:
 - helping compare situations across time;
 - supporting text and future voice interaction.
 
-The person supplies the experience, reviews the interpretation, and decides what to carry forward. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice.
+The person supplies the experience, reviews the interpretation, and decides what to carry forward. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
 
 ## Research and validation
 
@@ -65,7 +67,7 @@ The [Human Faculties Map](HUMAN_FACULTIES_MAP.md) is the current research base. 
 
 Longitudinal practice can become more useful when the system can remember situations, patterns, and changes over time. It also becomes more sensitive.
 
-Users may hesitate to place that material inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control. The strongest opportunity for a privacy-first product will come when capable language models can run offline on personal devices with reasoning quality that is useful for this work.
+Users may hesitate to place that material inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control. The go-to-market trigger is a hypothesis: capable language models may eventually run offline on personal devices with reasoning quality that is useful for this work.
 
 Until then, Room to Respond needs validated workouts and outcome measures, therapist and user review, a user-controlled model of experiences and uncertainty, text and voice interaction designs, local storage and deletion safeguards, selective sharing, a portable model layer, and distribution relationships with therapists and mental-health organisations. The current prototype uses hosted inference when configured and does not claim on-device privacy today.
 

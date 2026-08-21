@@ -1,5 +1,7 @@
 # Room to Respond
 
+Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. It is designed to support reflection, not to replace therapy or make clinical judgments.
+
 Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where people could exercise the capacities that daily life no longer exercised enough.
 
 Urban design, transport, and access to public space all influence how much movement is part of daily life. The [WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153) and reviews of urban environments and physical activity provide the research basis for this starting point.
@@ -21,12 +23,12 @@ Physical gyms provide a useful organising idea. A complete workout combines exer
 
 The first working map groups faculties by the part they play in meeting a situation:
 
-- **Notice** — attention, perception, emotion awareness, and bodily signals. Executive-function research describes attention, inhibition, and cognitive control as core capacities for selecting what matters and pausing before responding ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750)).
+- **Notice** — attention, perception, emotion awareness, and bodily signals. Executive-function research describes attention, inhibition, and cognitive control as core capacities for selecting what matters and pausing before responding ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750)). Emotion-regulation research adds the importance of identifying emotional responses and the point at which a person can influence them ([Gross](https://doi.org/10.1080/1047840X.2014.940781)).
 - **Understand** — memory, meaning-making, metacognition, assumptions, and perspective. Autobiographical-memory research describes how people connect experiences with identity and life narratives ([Fivush](https://doi.org/10.1080/00207594.2011.596541)); metacognition helps people examine how they reached a conclusion.
-- **Choose** — values, motivation, judgment, decisions, and self-regulation. Self-determination research connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)).
+- **Choose** — values, motivation, judgment, decisions, and self-regulation. Self-determination research connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)). Decision research shows that structured reflection can improve the discovery of far-sighted strategies ([Becker et al.](https://doi.org/10.1017/jdm.2023.16)).
 - **Adapt** — cognitive flexibility, imagination, foresight, feedback, and learning. Executive-function research identifies flexibility as a core capacity, while prospection research connects imagining possible futures with planning and action ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750); [Szpunar](https://pmc.ncbi.nlm.nih.gov/articles/PMC4074678/)).
 
-These are organising groups, not separate parts of a person. A single situation can move through all four.
+These are Room to Respond's working groups, not an established taxonomy of the psyche. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
 
 ## Prototype: one mental workout
 
@@ -40,7 +42,7 @@ The system then:
 4. asks the person to imagine how they might respond in that changed situation;
 5. compares the two responses and asks what could be useful in real life.
 
-This workout currently exercises:
+This workout currently invites practice in:
 
 - emotion awareness — noticing feelings and bodily responses;
 - metacognition — examining thoughts, assumptions, and certainty;
@@ -48,7 +50,7 @@ This workout currently exercises:
 - prospection — considering what may happen next;
 - learning — comparing responses and carrying forward a question or strategy.
 
-Memory, values, social cognition, and meaning-making may appear in the account, but the current prototype does not claim to develop each of them directly. More research is needed to define useful exercises for a wider range of faculties and to learn how they can be combined into efficient mental workout routines.
+Memory, values, social cognition, and meaning-making may appear in the account, but the current prototype does not claim to develop each of them directly. More research is needed to determine whether these prompts develop any faculty, which outcomes they affect, and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
 
 ## The practice loop
 
@@ -62,11 +64,11 @@ Situation
 → carry the learning back into life
 ```
 
-The system can help a person examine feelings, body responses, thoughts, assumptions, wants, values, words, actions, consequences, and later meaning. It keeps interpretations provisional and gives the person control over what fits, what changes, and what remains unresolved.
+The system can help a person examine feelings, body responses, thoughts, assumptions, wants, values, words, actions, consequences, and later meaning. It keeps interpretations provisional and gives the person control over what fits, what changes, and what remains unresolved. The changed situation is a hypothetical exercise, not exposure therapy, a prediction, or evidence of a stable trait.
 
 ## Why GenAI marks the inflection point for Room to Respond
 
-GenAI makes it possible to build a workout around the person's own situation rather than giving everyone the same exercise. It can:
+GenAI marks an inflection point because it can build a workout around the person's own situation rather than giving everyone the same exercise. It can:
 
 - ask questions about a specific situation;
 - follow the person's own words and context;
@@ -78,7 +80,7 @@ GenAI makes it possible to build a workout around the person's own situation rat
 - support text and future voice interactions;
 - help compare what changed over time.
 
-The person supplies the experience, reviews the interpretation, and decides what to carry forward. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice.
+The person supplies the experience, reviews the interpretation, and decides what to carry forward. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
 
 The [Human Faculties Map](docs/HUMAN_FACULTIES_MAP.md) is the current research starting point. It includes attention and cognitive control, emotion regulation, metacognition, autobiographical memory, motivation, values, social cognition, imagination, and learning.
 
@@ -90,7 +92,7 @@ Some workouts become more valuable when the system can remember a person's situa
 
 Today, people may hesitate to place intimate memories, emotional patterns, voice recordings, and personal models inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control.
 
-The strongest opportunity for a privacy-first product will come when capable language models can run offline on personal devices with reasoning quality that is useful for this work. Until then, sending intimate longitudinal material to a hosted product remains a major trust barrier.
+The go-to-market trigger is a hypothesis: capable language models may eventually run offline on personal devices with reasoning quality that is useful for this work. Until that is possible and validated, sending intimate longitudinal material to a hosted product remains a major trust barrier.
 
 Until that point, Room to Respond needs to have the following in place:
 

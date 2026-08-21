@@ -1,84 +1,84 @@
-# Working title: Judgment Gym — Product thesis
+# Judgment Gym — product thesis
 
-## Core thesis
+Judgment Gym is the working name for a mental gym for the faculties people use to live.
 
-The working product helps people become more self-aware by reflecting on how they experience situations, make judgments, and respond over time.
+The product starts from a simple observation: people constantly use attention, perception, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning to move through life. These faculties work together. They can be exercised, understood, and developed in different ways.
 
-The product does not treat a person's account as a story to summarize. It treats each account as evidence for an evolving, user-correctable model of the self in context.
+Judgment Gym explores whether GenAI can make that practice personal, continuous, and interactive.
 
-## The core loop
+## The product loop
 
 ```text
-Lived situation
-→ detailed experience capture
-→ tentative self/psyche model
-→ model-guided probe
-→ constructed text or voice situation
-→ transfer back to lived experience
-→ user correction
-→ model revision
-→ optional human conversation
+Real situation
+→ describe what happened
+→ notice the faculties involved
+→ choose a direction for practice
+→ try a bounded variation
+→ compare the responses
+→ carry useful learning into life
 ```
 
-### Lived situation
+The product does not ask the model to announce what a person truly is. It helps the person examine their own experience and build a user-controlled record of practice.
 
-The user describes what happened, what they felt, thought, said, did, wanted, protected, and noticed afterward. Free expression comes first; structured prompts deepen the account without forcing a clinical questionnaire.
+## The workout model
 
-### Self/psyche model
+The research map currently groups workouts into four areas:
 
-The system organizes evidence through multiple lenses: narrative identity, values and needs, episode-level interpretation and action, coping responses, relational patterns, conditions, contradictions, and unresolved questions.
+- **Notice:** attention, perception, emotion awareness, and bodily signals;
+- **Understand:** memory, meaning-making, metacognition, assumptions, and perspective;
+- **Choose:** values, motivation, judgment, decisions, and self-regulation;
+- **Adapt:** cognitive flexibility, imagination, foresight, feedback, and learning.
 
-The model distinguishes observations from interpretations. It does not announce the user's true self, assign a diagnosis, or resolve contradictions on the user's behalf.
+These areas remain provisional until each one has a clear exercise, evidence base, safety boundary, and progress measure.
 
-### Model-guided probe
+## The first workout
 
-The system selects an unexplored dimension or uncertainty from the lived account. It explains why the direction was selected and lets the user accept, skip, or correct it.
+The current prototype implements a situation lab. A person brings in a real moment and describes what happened, what they felt, thought, said, did, wanted, and noticed afterward. The system offers a tentative reflection and a carefully bounded variation. The person compares the two and decides what, if anything, should be carried forward.
 
-### Constructed situation
+The first workout brings together emotion awareness, metacognition, cognitive flexibility, prospection, and learning. It is the first room in a larger gym.
 
-The user responds to a bounded variation: a changed condition, altered stakes, role reversal, alternative interpretation, boundary conversation, or transfer to another domain. The situation is clearly labelled as constructed. It is not a test of personality and not a simulation of reality.
+## The role of GenAI
 
-### Transfer and revision
+GenAI can make the practice more personal and continuous by:
 
-The user compares the constructed response with the lived situation. Similarity, difference, uncertainty, and rejection are all valid outcomes. The user decides what the model should carry forward.
+- asking context-specific questions;
+- retaining a user-correctable practice history;
+- offering multiple interpretations;
+- generating changed conditions and alternative perspectives;
+- supporting role-play and dialogue rehearsal;
+- exploring possible consequences;
+- helping compare situations across time;
+- supporting text and future voice interaction.
 
-## The human outcome
+The person remains the source of lived experience and the final reviewer of meaning. The model supports the exercise and makes the next question easier to find.
 
-Judgment Gym is designed to improve self-awareness. The research work must connect that improvement to outcomes people care about: emotional regulation, decision-making, self-regulation, values-aligned action, relationships, and better preparation for therapy or coaching conversations.
+## Research and validation
 
-Each outcome will have its own evidence review. The product will use a finding when the construct, population, intervention, and measured outcome are a natural fit. A useful connection that remains early or indirect will be labelled as a hypothesis.
+Each faculty needs its own research review. The review should cover:
 
-## Why this opportunity exists now
+- the faculty's role in human life;
+- the difficulties associated with poorer functioning;
+- the outcomes associated with stronger functioning;
+- evidence that the faculty or related process can develop;
+- evidence for transfer beyond the exercise;
+- the appropriate role for GenAI;
+- risks, limitations, and population differences;
+- meaningful progress measures.
 
-GenAI creates a new opportunity to make reflection interactive, personal, continuous, and available between human conversations. An interactive system can ask situation-specific questions, retain a user-correctable history, generate a related situation, and help compare what changed.
-
-The product tests whether this form of reflection can improve a person's self-awareness and help them use that understanding in daily life. The model keeps observations grounded in lived situations, invites correction, and shows how each pattern was formed.
-
-The name remains open. “Judgment Gym” will stay only if judgment continues to describe the central practice and human value after the research review.
-
-Judgment Gym explores whether a careful AI-mediated practice can help people generate better material for their own reflection and for conversations with qualified professionals, while preserving the distinction between reflection support and care.
+The [Human Faculties Map](HUMAN_FACULTIES_MAP.md) is the current research base. It is a map of candidates, not a final product taxonomy.
 
 ## The privacy opportunity
 
-Intimate longitudinal AI has a trust ceiling today. Users may hesitate to place personal memories, emotional patterns, voice recordings, and evolving self-models inside a third-party product whose retention, access, business incentives, or foundation-model relationships they cannot fully control.
+Longitudinal practice can become more useful when the system can remember situations, patterns, and changes over time. It also becomes more sensitive.
 
-As capable language models become practical to run offline on personal devices, that constraint may weaken. Private local inference could make a new category of personal AI possible: systems that can reason over sensitive longitudinal context without routinely transmitting the underlying material to an application provider or foundation-model company.
+Users may hesitate to place that material inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control. As capable language models become practical to run offline on personal devices, private local inference may enable personal AI products that are difficult to offer credibly today.
 
-Judgment Gym's preparation work is therefore to validate the reflection and knowledge layer while the inference environment evolves:
+Judgment Gym's preparation work is to develop the research, exercises, safety systems, consent model, and distribution relationships while the inference environment evolves. The current prototype uses hosted inference when configured and does not claim on-device privacy today.
 
-- research which self/psyche constructs are useful and safe to represent;
-- design lived-scenario capture and model-guided probing;
-- evaluate constructed text and future voice scenarios;
-- test transfer back to lived experience;
-- develop evidence, correction, contradiction, and consent systems;
-- validate safety with therapists and people with lived experience;
-- build distribution relationships with mental-health AI and digital therapy companies;
-- keep the model contract provider-independent so hosted inference can later move on-device.
+## Product name
 
-## Derived outputs
-
-An audience-specific professional narrative may eventually be generated from the reviewed model. It is a secondary rendering of a person's chosen material, never the product's core identity. Private therapeutic material must not be surfaced in professional output by default.
+“Judgment Gym” remains the working name. The final name will follow the research map and the product's central human promise.
 
 ## Boundaries
 
-Judgment Gym is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. It does not infer clinical states from voice, text, pauses, or emotional tone. Production use requires dedicated safety, privacy, and efficacy validation.
+Judgment Gym is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. The system does not infer clinical states from text, voice, pauses, accent, or emotional tone.

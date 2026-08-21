@@ -2,13 +2,13 @@
 
 Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. It is designed to support reflection, not to replace therapy or make clinical judgments.
 
-Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where people could exercise the capacities that daily life no longer exercised enough.
+Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
 
-Urban design, transport, and access to public space all influence how much movement is part of daily life. The [WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153) and reviews of urban environments and physical activity provide the research basis for this starting point.
+Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
 
 ## Why a gym for mental faculties?
 
-Research has identified several pressures created by modern life:
+Modern life also changes how people use their minds:
 
 - social media, notifications, and smartphones compete for attention. Experimental research has found measurable attention costs from smartphone presence, while the wider claim of universally shorter attention spans remains unsettled ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/));
 - digital environments shape how people experience, express, and regulate emotion. Research finds a relationship between emotion dysregulation and problematic smartphone use, with meaningful variation across studies ([systematic review and meta-analysis](https://pubmed.ncbi.nlm.nih.gov/36497921/));
@@ -17,7 +17,7 @@ Research has identified several pressures created by modern life:
 
 These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
 
-Physical gyms provide a useful organising idea. A complete workout combines exercises for different capacities into a practical routine that develops the body within a limited amount of time. Room to Respond applies the same thinking to mental faculties: coherent, complete, and time-efficient workouts for the ways people meet life.
+Room to Respond explores mental workouts for mental faculties. The aim is to bring the relevant exercises together into a practical routine for the way a person is meeting a situation.
 
 ## What are the mental faculties and how do we organise them?
 

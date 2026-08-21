@@ -52,20 +52,6 @@ This workout currently invites practice in:
 
 Memory, values, social cognition, and meaning-making may appear in the account, but the current prototype does not claim to develop each of them directly. More research is needed to determine whether these prompts develop any faculty, which outcomes they affect, and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
 
-## The practice loop
-
-```text
-Situation
-→ notice what is happening
-→ understand the response
-→ choose a faculty to exercise
-→ try a bounded variation
-→ compare what changes
-→ carry the learning back into life
-```
-
-The system can help a person examine feelings, body responses, thoughts, assumptions, wants, values, words, actions, consequences, and later meaning. It keeps interpretations provisional and gives the person control over what fits, what changes, and what remains unresolved. The changed situation is a hypothetical exercise, not exposure therapy, a prediction, or evidence of a stable trait.
-
 ## Why GenAI marks the inflection point for Room to Respond
 
 GenAI marks an inflection point because it can build a workout around the person's own situation rather than giving everyone the same exercise. It can:
@@ -82,17 +68,13 @@ GenAI marks an inflection point because it can build a workout around the person
 
 The person supplies the experience, reviews the interpretation, and decides what to carry forward. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
 
-The [Human Faculties Map](docs/HUMAN_FACULTIES_MAP.md) is the current research starting point. It includes attention and cognitive control, emotion regulation, metacognition, autobiographical memory, motivation, values, social cognition, imagination, and learning.
+## Privacy: the guardrail and the roadblock
 
-The [Modern life and mental faculties](docs/MODERN_LIFE_AND_MENTAL_FACULTIES.md) document explains the physical-gym origin, the evidence for environmental pressure on selected faculties, and the boundaries of the analogy. The [Professional journey model](docs/PROFESSIONAL_JOURNEY_MODEL.md) describes how a private long-form account can become an evidence-linked model of change across contexts.
+Privacy is central because the product works with intimate situations, emotional responses, personal patterns, and changes across time. A hosted product sends that material through an application operator and a model provider. Users may reasonably question who can retain it, access it, use it to improve systems, or connect it with their identity.
 
-## When should a privacy-first product go to market?
+That creates a trust roadblock for privacy-first personal AI products. The product becomes more credible when a capable model can run offline on the user's device, with personal memory and reasoning staying on the device. This is a catalyst for the category, not a complete privacy guarantee: local encryption, deletion, recovery, sharing, and device security still need to be solved.
 
-Some workouts become more valuable when the system can remember a person's situations and patterns over time. Those workouts also involve sensitive material.
-
-Today, people may hesitate to place intimate memories, emotional patterns, voice recordings, and personal models inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control.
-
-The go-to-market trigger is a hypothesis: capable language models may eventually run offline on personal devices with reasoning quality that is useful for this work. Until that is possible and validated, sending intimate longitudinal material to a hosted product remains a major trust barrier.
+The go-to-market trigger is therefore a hypothesis: launch the privacy-first version when on-device models can provide the reasoning quality needed for the workouts and the full privacy system has been validated.
 
 Until that point, Room to Respond needs to have the following in place:
 
@@ -112,7 +94,7 @@ A person brings in a real event that still feels important, confusing, charged, 
 
 The AI offers a few tentative observations. The person can accept them, qualify them, reject them, or add something the AI missed. The prototype then creates a changed version of the situation. The person responds to that version and compares it with the original.
 
-The result is a small record of what may repeat, what changes with context, and what the person wants to keep exploring. A separate journey view can organise a longer personal or professional account into periods, faculties, possible changes, and open questions.
+The result is a small record of what may repeat, what changes with context, and what the person wants to keep exploring. For longer accounts, one text box can be configured to analyse one event, several events within one situation, or several situations across time.
 
 This is a research prototype. It shows how a mental workout might feel; it does not yet prove that the workout develops a faculty or improves mental health.
 

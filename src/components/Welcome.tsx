@@ -12,7 +12,7 @@ export function Welcome({ onBegin, onFloor, onPrivacy, onJourney, hasHistory, on
       </div>
       <div className="principles"><span>01 / Real situations</span><span>02 / Provisional patterns</span><span>03 / Practice returns to life</span></div>
       {hasHistory && <button className="resume-link" onClick={onThreads}>Open my threads →</button>}
-      <button className="resume-link" onClick={onJourney}>Map a longer journey →</button>
+      <button className="resume-link" onClick={onJourney}>Map a longer account →</button>
       <button className="resume-link" onClick={onPrivacy}>Read the privacy and safety boundary →</button>
     </div>
     <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">RR</div><div className="art-caption">Notice · understand ·<br />choose · adapt.</div></div>

@@ -43,6 +43,8 @@ export type JourneyPeriod = {
   evidence: string
 }
 
+export type JourneyMode = 'single-event' | 'one-situation' | 'multiple-situations'
+
 export type JourneyModel = {
   thesis: string
   periods: JourneyPeriod[]
@@ -92,6 +94,7 @@ export type StoredPractice = {
   transferNote?: string
   journeyDraft?: string
   journeyModel?: JourneyModel
+  journeyMode?: JourneyMode
 }
 
 export type PracticeState = {
@@ -113,5 +116,6 @@ export type PracticeState = {
   simulationResponse: string
   transferNote: string
   journeyDraft: string
+  journeyMode: JourneyMode
   journeyModel?: JourneyModel
 }

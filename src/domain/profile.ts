@@ -1,5 +1,5 @@
 import { scenarios } from './scenarios'
-import type { JourneyModel, Reflection, Synthesis } from './types'
+import type { JourneyMode, JourneyModel, Reflection, Synthesis } from './types'
 
 export function fallbackSynthesis(history: Reflection[]): Synthesis | undefined {
   if (history.length === 0) return undefined
@@ -24,9 +24,9 @@ export function nextIncompleteScenarioIndex(history: Reflection[]): number {
   return scenarios.findIndex((scenario) => !completed.has(scenario.title))
 }
 
-export function fallbackJourneyModel(raw: string): JourneyModel {
+export function fallbackJourneyModel(raw: string, mode: JourneyMode): JourneyModel {
   const years = [...new Set(raw.match(/\b(?:19|20)\d{2}\b/g) ?? [])]
-  const labels = years.length >= 4 ? years.slice(0, 5) : ['Early context', 'First transition', 'Learning through work', 'Current direction']
+  const labels = mode === 'single-event' ? ['One event'] : mode === 'one-situation' ? ['Before the situation', 'During the situation', 'After the situation'] : years.length >= 4 ? years.slice(0, 5) : ['Early context', 'First transition', 'Learning through work', 'Current direction']
   const periods = labels.map((label, index) => ({
     label,
     context: index === 0 ? 'An earlier environment shaped the expectations and options available.' : 'A new role or transition created a different set of demands.',

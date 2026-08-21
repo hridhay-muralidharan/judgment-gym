@@ -208,7 +208,7 @@ Progress may include:
 
 Engagement and time spent are not sufficient measures of progress.
 
-## Screen 10 — The privacy opportunity
+## Screen 10 — Privacy: the guardrail and the roadblock
 
 Some workouts become more valuable when the system can remember a person's situations and patterns over time. These are also the workouts most likely to involve sensitive material.
 

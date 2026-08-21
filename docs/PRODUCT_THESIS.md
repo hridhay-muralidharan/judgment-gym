@@ -63,13 +63,13 @@ Each faculty needs its own research review. The review should cover:
 - risks, limitations, and population differences;
 - meaningful progress measures.
 
-The [Human Faculties Map](HUMAN_FACULTIES_MAP.md) is the current research base. It is a map of candidates, not a final product taxonomy.
+## Privacy: the guardrail and the roadblock
 
-## When should a privacy-first product go to market?
+Privacy is central because the product works with intimate situations, emotional responses, personal patterns, and changes across time. A hosted product sends that material through an application operator and a model provider. Users may reasonably question who can retain it, access it, use it to improve systems, or connect it with their identity.
 
-Longitudinal practice can become more useful when the system can remember situations, patterns, and changes over time. It also becomes more sensitive.
+That creates a trust roadblock for privacy-first personal AI products. The product becomes more credible when a capable model can run offline on the user's device, with personal memory and reasoning staying on the device. This is a catalyst for the category, not a complete privacy guarantee: local encryption, deletion, recovery, sharing, and device security still need to be solved.
 
-Users may hesitate to place that material inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control. The go-to-market trigger is a hypothesis: capable language models may eventually run offline on personal devices with reasoning quality that is useful for this work.
+The go-to-market trigger is therefore a hypothesis: launch the privacy-first version when on-device models can provide the reasoning quality needed for the workouts and the full privacy system has been validated.
 
 Until then, Room to Respond needs validated workouts and outcome measures, therapist and user review, a user-controlled model of experiences and uncertainty, text and voice interaction designs, local storage and deletion safeguards, selective sharing, a portable model layer, and distribution relationships with therapists and mental-health organisations. The current prototype uses hosted inference when configured and does not claim on-device privacy today.
 

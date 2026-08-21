@@ -36,7 +36,15 @@ The model may examine whether the account contains changes in:
 
 These are dimensions for inquiry, not conclusions about the person. Every dimension must point back to episodes and remain editable.
 
-## A safe output shape
+## Input configurations and output shape
+
+The long-form map uses one text box with three configurations:
+
+- **One event:** examine one episode in detail.
+- **One situation:** examine several events within one relationship, role, transition, or context.
+- **Several situations:** compare different contexts across time and look for possible changes.
+
+The configuration changes how the model groups and compares the account. It does not change the user's control over the source text or the provisional status of the output.
 
 The generated model should have four views:
 
@@ -46,4 +54,3 @@ The generated model should have four views:
 4. **Open questions** — interpretations that need the user's correction or a therapist's perspective.
 
 The interview narrative is a separate transformation of this model. It should be concise, truthful, and edited by the user. It should never become the canonical version of the person's life.
-

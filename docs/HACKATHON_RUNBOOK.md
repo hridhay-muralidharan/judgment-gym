@@ -22,4 +22,4 @@
 - API keys remain server-side;
 - hosted-model failure falls back safely;
 - mobile and desktop layouts remain usable;
-- public documentation explains the privacy opportunity without claiming on-device capability today.
+- public documentation explains privacy as both a guardrail and a roadblock without claiming on-device capability today.

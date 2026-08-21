@@ -13,7 +13,7 @@ Room to Respond is organised around a lived-situation → model → constructed-
 
 ## State transitions
 
-1. The user starts with a real situation, or opens the longer journey model.
+1. The user starts with a real situation, or opens the long-form account map.
 2. Optional structured details deepen the account.
 3. The model proposes evidence-linked threads and a constructed probe.
 4. The user corrects the model and may try the probe.

@@ -16,7 +16,7 @@ This is a working product model. It is not a clinical formulation, personality t
 
 ## What is actually implemented in v1
 
-The current prototype implements a simpler version of this model. It records the situation, the person's account of what they felt, thought, said, did, wanted, and noticed afterward; tentative observations; the person's corrections; an unresolved tension; a constructed variation; and what changed when the person compared the two responses. The longer journey view adds periods, faculties, possible evolution, and open questions.
+The current prototype implements a simpler version of this model. It records the situation, the person's account of what they felt, thought, said, did, wanted, and noticed afterward; tentative observations; the person's corrections; an unresolved tension; a constructed variation; and what changed when the person compared the two responses. The long-form map accepts one text input and can be configured for one event, several events within one situation, or several situations across time.
 
 The research lenses below are references for future design and therapist review. They are not currently encoded as diagnostic or clinical assessments in the product. The current model should not be described as a CBT formulation, schema-therapy formulation, or narrative-identity assessment.
 

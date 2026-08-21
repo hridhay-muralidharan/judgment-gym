@@ -14,7 +14,7 @@ export function Welcome({ onBegin, onFloor, onPrivacy, hasHistory, onThreads, al
       {hasHistory && <button className="resume-link" onClick={onThreads}>Open my threads →</button>}
       <button className="resume-link" onClick={onPrivacy}>Read the privacy and safety boundary →</button>
     </div>
-    <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">JG</div><div className="art-caption">Notice · understand ·<br />choose · adapt.</div></div>
+    <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">RR</div><div className="art-caption">Notice · understand ·<br />choose · adapt.</div></div>
     <div className="pitch-strip"><span className="pitch-label">The gym model</span><strong>A place to exercise the faculties you use to live.</strong><span>GenAI makes the practice personal and continuous: it can hold the thread, ask the next useful question, and create a bounded situation to explore.</span></div>
   </section>
 }

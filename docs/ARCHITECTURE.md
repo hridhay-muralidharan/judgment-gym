@@ -1,6 +1,6 @@
 # Architecture
 
-Judgment Gym is organised around a lived-situation → model → constructed-exploration loop.
+Room to Respond is organised around a lived-situation → model → constructed-exploration loop.
 
 ## Layers
 
@@ -22,4 +22,4 @@ Judgment Gym is organised around a lived-situation → model → constructed-exp
 
 ## Compatibility
 
-The browser key remains `judgment-gym-demo`. Older practice exports remain readable because new fields are optional. Personal narratives and hosted model requests are not committed to the repository.
+The browser key remains `room-to-respond-demo`. Older practice exports remain readable because new fields are optional. Personal narratives and hosted model requests are not committed to the repository.

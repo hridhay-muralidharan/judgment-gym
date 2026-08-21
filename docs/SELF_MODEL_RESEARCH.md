@@ -1,6 +1,6 @@
 # Self-model research basis for v1
 
-Judgment Gym should not claim to encode one universally accepted model of the psyche. Psychotherapy, personality research, motivation research, and narrative psychology use different constructs for different purposes. V1 therefore uses a transparent layered model.
+Room to Respond should not claim to encode one universally accepted model of the psyche. Psychotherapy, personality research, motivation research, and narrative psychology use different constructs for different purposes. V1 therefore uses a transparent layered model.
 
 ## Layer 1 — Narrative identity
 
@@ -16,7 +16,7 @@ Source: [McAdams, The Psychology of Life Stories](https://doi.org/10.1037/1089-2
 
 ## Layer 2 — Values and motivation
 
-Self-Determination Theory provides a useful lens for examining autonomy, competence, and relatedness. It is especially relevant to Judgment Gym because the user's narrative often involves tension between external expectations, status, mastery, contribution, and self-endorsed direction.
+Self-Determination Theory provides a useful lens for examining autonomy, competence, and relatedness. It is especially relevant to Room to Respond because the user's narrative often involves tension between external expectations, status, mastery, contribution, and self-endorsed direction.
 
 **What it contributes:** possible motives, need tensions, external versus self-endorsed reasons, and conditions that support agency.
 
@@ -69,7 +69,7 @@ No claim should be promoted to “confirmed” merely because a language model p
 
 ## Research gaps
 
-Before making clinical or efficacy claims, Judgment Gym needs expert review and studies of:
+Before making clinical or efficacy claims, Room to Respond needs expert review and studies of:
 
 - whether the prompts elicit useful, non-leading reflection;
 - whether model claims are accurate and well-calibrated;
@@ -83,4 +83,4 @@ Before making clinical or efficacy claims, Judgment Gym needs expert review and 
 
 The model is not only a summarizer. A lived account supplies evidence about a person-in-context. The system can use uncertainty in that account to select a constructed probe: change one condition, reverse a role, explore an underrepresented need, or transfer the pattern to another domain. The resulting response is new evidence about the person's response under that constructed condition, not evidence of a fixed trait.
 
-The important research question is whether comparison between the lived and constructed situations helps a person notice a useful distinction and return to the lived situation with a better question. A simulation that does not transfer back to real experience may be interesting but is not yet a Judgment Gym outcome.
+The important research question is whether comparison between the lived and constructed situations helps a person notice a useful distinction and return to the lived situation with a better question. A simulation that does not transfer back to real experience may be interesting but is not yet a Room to Respond outcome.

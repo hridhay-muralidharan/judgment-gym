@@ -93,4 +93,4 @@ This combines emotion awareness, metacognition, cognitive flexibility, prospecti
 - [The Structure of Social Cognition](https://doi.org/10.1146/annurev-psych-010416-044046)
 - [Hassabis and Maguire, The Role of the Hippocampus in Prediction and Imagination](https://doi.org/10.1146/annurev.psych.60.110707.163508)
 
-These sources establish constructs and research directions. They do not validate a Judgment Gym intervention. Product claims require testing the specific exercise, population, and outcome.
+These sources establish constructs and research directions. They do not validate a Room to Respond intervention. Product claims require testing the specific exercise, population, and outcome.

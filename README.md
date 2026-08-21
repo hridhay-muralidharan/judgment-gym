@@ -1,8 +1,8 @@
-# Judgment Gym
+# Room to Respond
 
-Judgment Gym is the working name for a mental gym for the faculties people use to live.
+Room to Respond is a mental gym for the faculties people use to live.
 
-People use different faculties to notice what is happening, understand it, decide what it means, choose what to do, relate to others, adapt when conditions change, and learn from experience. A physical gym offers different workouts for different capacities. Judgment Gym explores a similar model for these human faculties.
+People use different faculties to notice what is happening, understand it, decide what it means, choose what to do, relate to others, adapt when conditions change, and learn from experience. A physical gym offers different workouts for different capacities. Room to Respond explores a similar model for these human faculties.
 
 The product starts with real situations. GenAI helps a person examine the situation, choose a direction for practice, explore a carefully bounded variation, and carry useful understanding back into life.
 
@@ -87,7 +87,7 @@ Some workouts become more valuable when the system can remember a person's situa
 
 Today, people may hesitate to place intimate memories, emotional patterns, voice recordings, and personal models inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control.
 
-As capable language models become practical to run offline on personal devices, private local inference may enable a new category of personal AI. Judgment Gym can prepare the research, exercises, safety systems, and distribution relationships before that capability becomes widely available.
+As capable language models become practical to run offline on personal devices, private local inference may enable a new category of personal AI. Room to Respond can prepare the research, exercises, safety systems, and distribution relationships before that capability becomes widely available.
 
 The current prototype uses hosted inference when configured. It does not claim to provide on-device privacy today. Its model contracts remain provider-independent so the inference layer can move later.
 
@@ -105,7 +105,7 @@ The current prototype uses hosted inference when configured. It does not claim t
 
 ## Boundaries
 
-Judgment Gym is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. They are not tests of personality or reality. The system must not infer clinical states from text, voice, pauses, accent, or emotional tone.
+Room to Respond is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. They are not tests of personality or reality. The system must not infer clinical states from text, voice, pauses, accent, or emotional tone.
 
 ## Documentation
 

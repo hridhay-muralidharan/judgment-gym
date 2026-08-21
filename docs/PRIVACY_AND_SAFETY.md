@@ -2,7 +2,7 @@
 
 ## Why privacy matters here
 
-Judgment Gym is designed around intimate longitudinal material: lived situations, emotional responses, personal patterns, and model revisions. A hosted system may expose requests to application infrastructure and a model provider according to their policies. That creates a trust constraint for products that want to remember a person's inner life.
+Room to Respond is designed around intimate longitudinal material: lived situations, emotional responses, personal patterns, and model revisions. A hosted system may expose requests to application infrastructure and a model provider according to their policies. That creates a trust constraint for products that want to remember a person's inner life.
 
 The long-term opportunity is capable language models running privately on personal devices. The current prototype prepares the interaction, model, and safety layer for that future; it does not claim that today's hosted demo provides equivalent privacy.
 

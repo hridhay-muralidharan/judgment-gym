@@ -1,4 +1,4 @@
-# Judgment Gym 2.0 — Product and implementation plan
+# Room to Respond 2.0 — Product and implementation plan
 
 ## Objective
 

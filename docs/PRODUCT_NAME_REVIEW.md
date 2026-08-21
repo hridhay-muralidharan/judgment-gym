@@ -2,13 +2,11 @@
 
 ## Current status
 
-“Judgment Gym” is a working title. The repository keeps the name while the product research is being clarified.
+“Room to Respond” is the approved product name. It is now the name of the product, repository, app, documentation, and deployment.
 
 ## Decision question
 
-Does “judgment” describe the central practice and the main human outcome strongly enough to remain the product name?
-
-The answer should follow the research programme. The product may keep the name if judgment remains a central way people build self-awareness and use it in daily life. The product should explore other names if self-awareness becomes the broader centre and judgment becomes one of several outcomes.
+The name should describe the space the product creates for people to notice, understand, practise, and choose across different human faculties. “Room to Respond” describes that promise without narrowing the product to one faculty or one outcome.
 
 ## Naming criteria
 
@@ -21,8 +19,10 @@ The answer should follow the research programme. The product may keep the name i
 
 ## Process
 
-1. Complete the outcome-by-outcome self-awareness research review.
+1. Complete the outcome-by-outcome research review.
 2. Define the central practice and primary user promise.
 3. Generate a small set of names from the validated concept.
 4. Review them with the therapist, target companies, and potential users.
-5. Rename the repository and deployment after the product direction and name are clear.
+5. Adopt the name that best carries the product promise across the research, app, repository, and future company-facing work.
+
+The research and product review led to “Room to Respond.” The former working title is retired.

@@ -16,13 +16,13 @@ These notes record the successful disposable deployment rehearsal completed befo
 
 ## Tested project
 
-Disposable project: `judgment-gym-vercel-smoke-test` under the personal Vercel team.
+Disposable project: `room-to-respond-vercel-smoke-test` under the personal Vercel team.
 
-The project is separate from Judgment Gym and contains no API key. It may be removed manually from the Vercel dashboard later; do not delete it during the hackathon.
+The project is separate from Room to Respond and contains no API key. It may be removed manually from the Vercel dashboard later; do not delete it during the hackathon.
 
 ## Grandma-mode workflow for tomorrow
 
-From the Judgment Gym project directory:
+From the Room to Respond project directory:
 
 ```bash
 npx vercel login
@@ -76,7 +76,7 @@ After deployment:
 If `npx vercel` reports a permission error in the existing npm cache, use a temporary cache:
 
 ```bash
-NPM_CONFIG_CACHE=/tmp/judgment-gym-vercel-npm-cache npx vercel --version
+NPM_CONFIG_CACHE=/tmp/room-to-respond-vercel-npm-cache npx vercel --version
 ```
 
 This avoids deleting or modifying the normal npm cache.

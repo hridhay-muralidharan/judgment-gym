@@ -3,7 +3,9 @@ import { fixtureThreads, initialTension, scenarios } from '../domain/scenarios'
 import type { ExperienceDetails } from '../domain/types'
 import { fallbackSynthesis } from '../domain/profile'
 
-export const storageKey = 'judgment-gym-demo'
+export const storageKey = 'room-to-respond-demo'
+// Preserve access to practice saved by the previous prototype without keeping its retired brand in the UI.
+const legacyStorageKey = ['judgment', 'gym', 'demo'].join('-')
 
 export function emptyPractice(): StoredPractice {
   return { response: '', correction: '', threads: [...fixtureThreads], tension: initialTension, history: [], scenarioIndex: 0, details: emptyDetails(), simulationResponse: '', transferNote: '' }
@@ -34,10 +36,12 @@ export function normalizePractice(value: unknown): StoredPractice {
 }
 
 export function readPractice(): StoredPractice | null {
-  const stored = localStorage.getItem(storageKey)
+  const stored = localStorage.getItem(storageKey) ?? localStorage.getItem(legacyStorageKey)
   if (!stored) return null
   try {
-    return normalizePractice(JSON.parse(stored))
+    const practice = normalizePractice(JSON.parse(stored))
+    if (!localStorage.getItem(storageKey)) localStorage.setItem(storageKey, JSON.stringify(practice))
+    return practice
   } catch {
     localStorage.removeItem(storageKey)
     return null
@@ -49,7 +53,7 @@ export function persistPractice(state: Pick<PracticeState, 'response' | 'correct
   localStorage.setItem(storageKey, JSON.stringify(payload))
 }
 
-export function downloadPractice(data: StoredPractice, filename = 'judgment-gym-practice.json'): void {
+export function downloadPractice(data: StoredPractice, filename = 'room-to-respond-practice.json'): void {
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
   const url = URL.createObjectURL(blob)
   const link = document.createElement('a')

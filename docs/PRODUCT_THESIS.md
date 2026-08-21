@@ -1,10 +1,10 @@
-# Judgment Gym — product thesis
+# Room to Respond — product thesis
 
-Judgment Gym is the working name for a mental gym for the faculties people use to live.
+Room to Respond is a mental gym for the faculties people use to live.
 
 The product starts from a simple observation: people constantly use attention, perception, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning to move through life. These faculties work together. They can be exercised, understood, and developed in different ways.
 
-Judgment Gym explores whether GenAI can make that practice personal, continuous, and interactive.
+Room to Respond explores whether GenAI can make that practice personal, continuous, and interactive.
 
 ## The product loop
 
@@ -73,12 +73,12 @@ Longitudinal practice can become more useful when the system can remember situat
 
 Users may hesitate to place that material inside a third-party product whose infrastructure, retention, access, business incentives, or foundation-model relationships they cannot fully control. As capable language models become practical to run offline on personal devices, private local inference may enable personal AI products that are difficult to offer credibly today.
 
-Judgment Gym's preparation work is to develop the research, exercises, safety systems, consent model, and distribution relationships while the inference environment evolves. The current prototype uses hosted inference when configured and does not claim on-device privacy today.
+Room to Respond's preparation work is to develop the research, exercises, safety systems, consent model, and distribution relationships while the inference environment evolves. The current prototype uses hosted inference when configured and does not claim on-device privacy today.
 
 ## Product name
 
-“Judgment Gym” remains the working name. The final name will follow the research map and the product's central human promise.
+“Room to Respond” is the approved product name. It names the space the product creates for people to notice, understand, practise, and choose across different human faculties.
 
 ## Boundaries
 
-Judgment Gym is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. The system does not infer clinical states from text, voice, pauses, accent, or emotional tone.
+Room to Respond is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. The system does not infer clinical states from text, voice, pauses, accent, or emotional tone.

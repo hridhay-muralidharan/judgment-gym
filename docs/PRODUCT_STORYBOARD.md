@@ -1,8 +1,8 @@
-# Working title: Judgment Gym — product storyboard
+# Working title: Room to Respond — product storyboard
 
 ## What the product is
 
-Judgment Gym is a mental gym for the faculties people use to live: noticing, feeling, remembering, interpreting, deciding, relating, adapting, and learning.
+Room to Respond is a mental gym for the faculties people use to live: noticing, feeling, remembering, interpreting, deciding, relating, adapting, and learning.
 
 Physical gyms have different workouts because people train different capacities. The mental gym follows the same organising idea. Each workout has a faculty, a human purpose, a research basis, an exercise, and a way to notice progress.
 
@@ -236,4 +236,4 @@ The broader workout floor remains visible so the product has a coherent future w
 
 ## The final story
 
-> Judgment Gym is a mental gym for the faculties people use to live. It gives people different ways to practise noticing, understanding, choosing, relating, adapting, and learning. GenAI makes the exercises personal and continuous. Research determines which workouts are useful, how they should work, and how progress should be understood.
+> Room to Respond is a mental gym for the faculties people use to live. It gives people different ways to practise noticing, understanding, choosing, relating, adapting, and learning. GenAI makes the exercises personal and continuous. Research determines which workouts are useful, how they should work, and how progress should be understood.

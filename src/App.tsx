@@ -110,7 +110,7 @@ function App() {
   const updateThread = (index: number, status: ThreadStatus) => patch({ threads: state.threads.map((thread, itemIndex) => itemIndex === index ? { ...thread, status } : thread) })
 
   const reset = () => {
-    localStorage.removeItem('judgment-gym-demo')
+    localStorage.removeItem('room-to-respond-demo')
     setState({ ...initialState, threads: [...fixtureThreads] })
   }
 
@@ -128,7 +128,7 @@ function App() {
         const imported = normalizePractice(JSON.parse(String(reader.result)))
         setState((current) => ({ ...current, ...imported, stage: 'welcome', selectedReflectionId: null, apiError: '' }))
       } catch {
-        patch({ apiError: 'That file could not be imported. Choose a Judgment Gym JSON export.' })
+        patch({ apiError: 'That file could not be imported. Choose a Room to Respond JSON export.' })
       }
     }
     reader.readAsText(file)
@@ -142,7 +142,7 @@ function App() {
   const backFromThreads = () => state.selectedReflectionId === null ? setStage('review') : patch({ selectedReflectionId: null })
 
   return <div className="app-shell">
-    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">JG</span><span>Judgment Gym</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'floor' ? 'active' : ''} onClick={openFloor}>Workout floor</button><button className={stage === 'respond' || stage === 'review' || stage === 'explore' ? 'active' : ''} onClick={openReflect}>Practice</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>Training record</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
+    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">RR</span><span>Room to Respond</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'floor' ? 'active' : ''} onClick={openFloor}>Workout floor</button><button className={stage === 'respond' || stage === 'review' || stage === 'explore' ? 'active' : ''} onClick={openReflect}>Practice</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>Training record</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
     {progress > 0 && <div className="progress-wrap" aria-label={`Step ${progress} of 2`}><div className="progress-label"><span>{stage === 'explore' ? 'Model-guided exploration' : `Practice ${Math.min(scenarioIndex + 1, scenarios.length)} of ${scenarios.length}`}</span><span>{stage === 'explore' ? 'Simulation and transfer' : progress === 1 ? 'Lived account' : 'Model review'}</span></div><div className="progress-line"><span style={{ width: `${progress * 50}%` }} /></div></div>}
     <main>
       {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onFloor={openFloor} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}

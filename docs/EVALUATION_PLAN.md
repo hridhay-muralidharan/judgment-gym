@@ -1,4 +1,4 @@
-# Judgment Gym 2.0 evaluation plan
+# Room to Respond 2.0 evaluation plan
 
 ## Product questions
 

@@ -61,4 +61,4 @@ The physical gym can remain a motivating analogy for deliberate practice. Its re
 
 ## Naming remains open
 
-“Judgment Gym” is a working title. It will remain only if judgment continues to describe the central practice and human value after the self-awareness research review.
+“Room to Respond” is a working title. It will remain only if judgment continues to describe the central practice and human value after the self-awareness research review.

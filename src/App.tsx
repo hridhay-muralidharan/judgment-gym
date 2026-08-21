@@ -5,10 +5,13 @@ import { Respond } from './components/Respond'
 import { Review } from './components/Review'
 import { Threads } from './components/Threads'
 import { Welcome } from './components/Welcome'
+import { Narrative } from './components/Narrative'
 import { fixtureThreads, initialTension, scenarios } from './domain/scenarios'
 import { fallbackSynthesis, nextIncompleteScenarioIndex } from './domain/profile'
 import type { PracticeState, Reflection, Stage, StoredPractice, ThreadStatus } from './domain/types'
 import { requestReflection } from './lib/reflection'
+import { requestStoryModel } from './lib/reflection'
+import { fallbackStoryModel } from './domain/story'
 import { downloadPractice, emptyPractice, normalizePractice, persistPractice, readPractice } from './lib/storage'
 
 const initialState: PracticeState = {
@@ -19,6 +22,9 @@ const initialState: PracticeState = {
   isReflecting: false,
   apiError: '',
   saved: false,
+  storyInput: '',
+  storyModel: undefined,
+  storyError: '',
 }
 
 function App() {
@@ -28,7 +34,7 @@ function App() {
   const scenario = scenarios[scenarioIndex]
   const profileSynthesis = state.synthesis ?? fallbackSynthesis(history)
   const isComplete = history.length >= scenarios.length
-  const progress = stage === 'welcome' || stage === 'privacy' ? 0 : stage === 'respond' ? 1 : 2
+  const progress = stage === 'welcome' || stage === 'privacy' ? 0 : stage === 'respond' || stage === 'story' ? 1 : 2
 
   useEffect(() => {
     const saved = readPractice()
@@ -125,16 +131,28 @@ function App() {
 
   const setStage = (nextStage: Stage) => patch({ stage: nextStage, selectedReflectionId: nextStage === 'threads' ? null : state.selectedReflectionId })
   const openThreads = () => patch({ stage: 'threads', selectedReflectionId: null })
+  const openStory = () => patch({ stage: 'story', storyError: '' })
+  const generateStory = async () => {
+    if (state.storyInput.trim().length < 80) return
+    patch({ isReflecting: true, storyError: '' })
+    try {
+      const storyModel = await requestStoryModel(state.storyInput)
+      patch({ storyModel, isReflecting: false })
+    } catch {
+      patch({ storyModel: fallbackStoryModel(state.storyInput), isReflecting: false, storyError: 'The live model is unavailable, so this is a clearly marked local practice map. Review every claim before using it.' })
+    }
+  }
   const backFromThreads = () => state.selectedReflectionId === null ? setStage('review') : patch({ selectedReflectionId: null })
 
   return <div className="app-shell">
-    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">JG</span><span>Judgment Gym</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'respond' || stage === 'review' ? 'active' : ''} onClick={openReflect}>Reflect</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>My threads</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
-    {progress > 0 && <div className="progress-wrap" aria-label={`Step ${progress} of 2`}><div className="progress-label"><span>Practice {Math.min(scenarioIndex + 1, scenarios.length)} of {scenarios.length}</span><span>{progress === 1 ? 'Response' : 'Mirror review'}</span></div><div className="progress-line"><span style={{ width: `${progress * 50}%` }} /></div></div>}
+    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">JG</span><span>Judgment Gym</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'respond' || stage === 'review' ? 'active' : ''} onClick={openReflect}>Reflect</button><button className={stage === 'story' ? 'active' : ''} onClick={openStory}>Show me</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>My threads</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
+    {progress > 0 && <div className="progress-wrap" aria-label={`Step ${progress} of 2`}><div className="progress-label"><span>{stage === 'story' ? 'Narrative workspace' : `Practice ${Math.min(scenarioIndex + 1, scenarios.length)} of ${scenarios.length}`}</span><span>{stage === 'story' ? 'Show me' : progress === 1 ? 'Response' : 'Mirror review'}</span></div><div className="progress-line"><span style={{ width: `${progress * 50}%` }} /></div></div>}
     <main>
-      {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}
+      {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onStory={openStory} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}
       {stage === 'respond' && <Respond response={state.response} setResponse={(response) => patch({ response })} scenario={scenario} showContext={state.showContext} setShowContext={(showContext) => patch({ showContext })} onSubmit={submitResponse} isReflecting={state.isReflecting} />}
       {stage === 'review' && <Review response={state.response} correction={state.correction} setCorrection={(correction) => patch({ correction })} threads={state.threads} apiError={state.apiError} updateThread={updateThread} onContinue={keepReflection} />}
       {stage === 'threads' && <Threads threads={state.threads} synthesis={profileSynthesis} history={history} selectedReflectionId={state.selectedReflectionId} isComplete={isComplete} onBack={backFromThreads} onNext={nextPractice} onOpenScenario={(id) => patch({ selectedReflectionId: id })} />}
+      {stage === 'story' && <Narrative input={state.storyInput} setInput={(storyInput) => patch({ storyInput })} model={state.storyModel} setModel={(storyModel) => patch({ storyModel })} error={state.storyError} onGenerate={generateStory} isGenerating={state.isReflecting} />}
       {stage === 'privacy' && <Privacy onBack={() => setStage('welcome')} onReset={reset} onExport={exportData} onImport={importData} />}
     </main>
     {stage !== 'welcome' && stage !== 'privacy' && <footer className="practice-footer"><span>Your words stay yours.</span><button onClick={() => setStage('privacy')}>View data controls</button></footer>}

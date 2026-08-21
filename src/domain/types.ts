@@ -1,4 +1,4 @@
-export type Stage = 'welcome' | 'respond' | 'review' | 'threads' | 'privacy'
+export type Stage = 'welcome' | 'respond' | 'review' | 'threads' | 'story' | 'privacy'
 export type ThreadStatus = 'tentative' | 'confirmed' | 'context-dependent'
 
 export type Scenario = {
@@ -22,6 +22,16 @@ export type Synthesis = {
   recurringThemes: string[]
   changes: string[]
   connections: string[]
+}
+
+export type StoryModel = {
+  framing: string
+  evolution: Array<{ period: string; shift: string; evidence: string }>
+  patterns: Array<{ title: string; description: string; status: 'tentative' | 'user-stated' | 'context-dependent'; evidence: string }>
+  currentDirection: string
+  interviewNarrative: string
+  followUps: string[]
+  sharingNote: string
 }
 
 export type Reflection = {
@@ -59,4 +69,7 @@ export type PracticeState = {
   isReflecting: boolean
   apiError: string
   saved: boolean
+  storyInput: string
+  storyModel?: StoryModel
+  storyError: string
 }

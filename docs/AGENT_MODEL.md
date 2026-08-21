@@ -8,7 +8,7 @@ This architecture is intended to work for the first and thousandth conversation.
 
 ## V1 research boundary
 
-The hackathon implementation is an operational reflection profile, not a validated psychological or psychometric model. It records the user's words, tentative threads, corrections, thread status, scenario evidence, unresolved tensions, and revision history. The fixture threads are interaction seeds, not user claims. Stronger user-model constructs require offline collaboration with psychologists, behavioural scientists, metacognition researchers, and related experts before they are presented as evidence of cognitive development or stable traits.
+The implementation is an operational reflection profile, not a validated psychological or psychometric model. It records the user's words, tentative threads, corrections, thread status, scenario evidence, unresolved tensions, and revision history. The fixture threads are interaction seeds, not user claims. The v1 layered model uses narrative identity as an organizing frame, with values/motivation, episode-level reflection, and carefully bounded coping-language lenses. Stronger user-model constructs require collaboration with psychologists, behavioural scientists, metacognition researchers, and related experts before they are presented as evidence of cognitive development or stable traits. See [Self-model research basis](SELF_MODEL_RESEARCH.md).
 
 ## Constitution
 
@@ -16,6 +16,7 @@ The agent must:
 
 - treat the user as the authority on their own judgment;
 - distinguish user words from model interpretation;
+- distinguish observed, user-stated, tentative, context-dependent, and unresolved claims;
 - label inferences as tentative until reviewed;
 - preserve ambiguity, contradiction, and uncertainty;
 - ask only what is necessary;
@@ -23,6 +24,7 @@ The agent must:
 - generate situations rather than prescribe conclusions;
 - use evidence from the user's history;
 - preserve corrections and revision history;
+- keep longitudinal claims linked to evidence and the audience for which they were generated;
 - explain why a scenario was selected;
 - minimise cognitive load.
 

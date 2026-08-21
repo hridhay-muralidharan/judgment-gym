@@ -1,8 +1,8 @@
-# Judgment Gym — Pre-Hackathon Plan
+# Judgment Gym 2.0 — Product and implementation plan
 
 ## Objective
 
-Create and publish a standalone `judgment-gym` repository during the four-hour hackathon. The public product will demonstrate an evolving personal judgment model built through scenario-based conversations with a live AI agent.
+Build and share a trustworthy research prototype for reflective self-awareness, longitudinal personal modeling, and audience-specific narrative generation.
 
 The public repository will contain the generalised method. Personal reflections and the user's personal worldview remain private.
 
@@ -12,19 +12,17 @@ The product is not a counselling or therapy system, personality test, moral eval
 
 The agent must preserve ambiguity and contradiction, distinguish user words from model interpretation, and treat every inference as provisional until the user reviews it.
 
-## Pre-hackathon boundary
-
-Pre-event work is documentation and planning only. Do not write application code, create the public GitHub repository, configure deployment, add API credentials, or execute the during-hackathon runbook.
-
 ## Technical direction
 
 - React, Vite, and TypeScript frontend.
 - Vercel server-side routes for model calls.
 - OpenAI Responses API with structured outputs.
-- Direct live model connectivity during the hackathon; no Codex or coding-agent wrapper.
+- Direct live model connectivity through a server-side provider boundary; no coding-agent wrapper.
 - Local-first browser state with encrypted export/import.
 - API key stored only as a server-side deployment secret.
 - Fixtures reserved for tests and provider-failure recovery.
+- Text first, with voice treated as a future input layer requiring separate consent and evaluation.
+- Provider-independent model contracts so hosted inference can later move to capable on-device models.
 
 ## User model
 
@@ -32,9 +30,9 @@ Store raw responses, tentative signals, user corrections, confirmed or contested
 
 Long-term memory must use recent context, rolling summaries, profile patterns, unresolved tensions, and retrieved evidence rather than sending an entire multi-year history in every prompt.
 
-## Source policy
+## Scenario policy
 
-Use six source-derived seeds across biography/autobiography, historical events, and verified public-domain fiction. Sources provide connected circumstances, not source-person profiles. Record provenance, licence basis, access date, and content hash. Use full excerpts only from verified public-domain editions; otherwise use original summaries and links. Write all user-facing scenarios originally.
+Write user-facing scenarios originally. Keep them culturally inclusive, non-leading, and psychologically bounded. Prompts should invite observation rather than prime a preferred answer, and each scenario should explain why it was selected without implying that the product knows the user's mind.
 
 ## Demo journey
 
@@ -50,4 +48,4 @@ The path must demonstrate a clear first prompt, honest reflection, tentative int
 
 ## Completion criteria
 
-The public MVP is ready when a new user can complete the five-scenario journey without an account, correct the agent's interpretation, see evidence-linked threads and tensions, understand why the next scenario was selected, export or delete data, and use the deployed product from a clean browser.
+The public MVP is ready when a new user can complete the five-scenario journey without an account, correct the agent's interpretation, see evidence-linked threads and tensions, understand why the next scenario was selected, export or delete data, use the narrative workflow, and read the product's model, privacy, safety, and therapist-review documentation from a clean browser.

@@ -1,6 +1,6 @@
-# Four-Hour Hackathon Runbook
+# Build and share runbook
 
-This runbook is intentionally not executed before the hackathon.
+This runbook describes the build, review, and sharing checks for the current prototype.
 
 ## 0:00–0:20 — Repository and deployment
 

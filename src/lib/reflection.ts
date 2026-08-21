@@ -1,4 +1,4 @@
-import type { HistoryInput, ReflectionResult } from './reflectionTypes'
+import type { HistoryInput, ReflectionResult, StoryResult } from './reflectionTypes'
 import type { Scenario } from '../domain/types'
 
 export async function requestReflection(scenario: Scenario, response: string, history: HistoryInput[]): Promise<ReflectionResult> {
@@ -9,4 +9,14 @@ export async function requestReflection(scenario: Scenario, response: string, hi
   })
   if (!result.ok) throw new Error('Model route unavailable')
   return await result.json() as ReflectionResult
+}
+
+export async function requestStoryModel(rawNarrative: string): Promise<StoryResult> {
+  const result = await fetch('/api/reflect', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ mode: 'story', narrative: rawNarrative }),
+  })
+  if (!result.ok) throw new Error('Narrative model unavailable')
+  return await result.json() as StoryResult
 }

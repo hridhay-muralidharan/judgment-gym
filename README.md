@@ -2,11 +2,11 @@
 
 Judgment Gym is a reflective practice for training self-awareness and judgment in an age when increasingly capable AI systems can perform more of our cognitive work.
 
-I am building this project for [GrowthX's Build for India hackathon](https://growthx.club/events/build-for-india-blr). The question I am exploring is simple:
+This project explores a simple question:
 
 > If we deliberately train our bodies because machines have reduced the amount of physical effort required in daily life, should we also deliberately train our judgment as AI systems reduce the amount of mental effort required in knowledge work?
 
-Judgment Gym is an emerging research direction into how people can deliberately train judgment and self-awareness as AI systems take on more cognitive work. The hackathon prototype is an initial training environment for exploring that question responsibly.
+Judgment Gym is an emerging research direction into how people can deliberately train judgment and self-awareness as AI systems take on more cognitive work. The current product is a bounded research prototype for exploring that question responsibly.
 
 ## The problem
 
@@ -23,13 +23,20 @@ Existing research gives us useful starting points for investigating this questio
 
 The research opportunity is: **people may need deliberate practice to remain active participants in their own judgment when AI makes cognitive delegation frictionless.**
 
-## The mental-health and personal-development extension
+## The mental-health and personal-development direction
 
 The same pattern matters for mental health and personal development. A person who wants to strengthen self-awareness and judgment can use a reflective practice to slow down an experience, distinguish what happened from the meaning they made of it, and notice what changes with context. They may bring those observations into a conversation with a therapist, coach, or other support professional when that fits their goals.
 
 The product hypothesis is that better self-observation can give a person clearer material for collaborative conversations with a therapist, coach, or other support professional. This remains a research hypothesis; clinical efficacy requires dedicated study.
 
-Judgment Gym is therefore being re-oriented as a self-awareness layer for mental-health AI and digital therapy products. It can help users create clearer examples, questions, and observations that they may choose to bring into a conversation with a qualified professional.
+Judgment Gym is therefore being re-oriented as a self-awareness and judgment-reflection layer for mental-health AI and digital therapy products. It can help users create clearer examples, questions, and observations that they may choose to bring into a conversation with a qualified professional.
+
+The current product has two connected workflows:
+
+- **Reflect:** work through a concrete situation, review tentative patterns, correct the mirror, and see what changes across contexts.
+- **Show me about yourself:** paste a long-form personal or professional account and receive a reviewable evolution model plus a concise interview narrative. The raw account is not included in this public repository and the generated version must be edited by the user before sharing.
+
+The second workflow is an output of the first product foundation, not a replacement for it. The goal is to preserve depth while making a person's evolution easier for a therapist, coach, or interviewer to understand.
 
 ## The proposed solution
 
@@ -82,11 +89,11 @@ These figures provide directional market context. Judgment Gym market sizing req
 
 Potential evaluation questions include whether users produce more concrete examples for support conversations, whether professionals report better conversational context, whether users can correct model interpretations, and whether the tool improves engagement alongside monitoring for distress or over-reliance on AI.
 
-## A research direction, with a hackathon prototype
+## A research direction, with a working prototype
 
-I see Judgment Gym as an emerging research direction, with the hackathon prototype serving as its first practical experiment. The underlying research question is how people can deliberately practise judgment and self-awareness as AI systems make cognitive delegation increasingly easy.
+I see Judgment Gym as an emerging research direction, with the current prototype serving as a practical experiment. The underlying research question is how people can deliberately practise judgment and self-awareness as AI systems make cognitive delegation increasingly easy.
 
-The hackathon prototype is an initial probe into that question. It focuses on building a provisional model of the user's expressed judgment and self-awareness. It is intended to demonstrate:
+The prototype is an initial probe into that question. It focuses on building a provisional model of the user's expressed judgment and self-awareness. It is intended to demonstrate:
 
 - scenario-based reflection;
 - structured capture of feelings, observations, actions, reasoning, uncertainty, and trade-offs;
@@ -112,11 +119,13 @@ Taking this direction further would require collaboration with psychologists, be
 
 This expert input supports both the user model and the situations presented to users. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
 
-### Immersive scenario research
+### GenAI and privacy-first personal AI
 
-Another research direction is whether GenAI can generate rich, context-sensitive scenarios and convert them into multimodal immersive experiences, including virtual-reality environments. GenAI could produce the visual environment, characters, dialogue, ambient sound, and changing events of a situation. A user might experience a decision-maker's deadline pressure through spatial context, spoken interaction, competing signals, time pressure, and the consequences of different actions.
+The technology focus is deliberately limited to generative AI delivered through text and voice. A long-term opportunity is the arrival of capable language models that can run offline on personal devices. That could enable privacy-first personal AI products whose longitudinal memory and reflection data do not need to be shared with a third-party application provider, a foundation-model company, or both.
 
-Developing this direction would require research into scenario generation, virtual-reality interaction, embodiment, narrative design, presence, emotional safety, accessibility, and the validity of responses produced in simulation compared with real-world behaviour.
+Judgment Gym is preparing for that future through a portable user-model schema, claim provenance, user correction, revision history, local-first storage, explicit sharing controls, and provider-independent interfaces. The architecture should be able to move from hosted inference to on-device inference without changing the user's mental model or surrendering their data.
+
+Voice is a future interaction mode for the same structured reflection loop. It should be treated as an input and accessibility layer, not as evidence that a system can infer a user's psyche from tone, accent, pauses, or emotion. Any voice version would require separate consent, data-retention, bias, and evaluation work.
 
 ## Boundaries and safety
 
@@ -128,7 +137,7 @@ The MVP is designed around local-first storage, visible data handling, portable 
 
 ## Status
 
-The current build includes the reflective scenario flow, local draft persistence, tentative mirror review, synthesized cross-scenario threads and tensions, scenario evidence history, privacy controls, JSON export/import/reset, and a server-side model route with a fixture fallback. The demo is deployed on Vercel and the repository is published on GitHub.
+The current build includes the reflective scenario flow, local draft persistence, tentative mirror review, synthesized cross-scenario threads and tensions, scenario evidence history, privacy controls, JSON export/import/reset, a “Show me about yourself” narrative workflow, and a server-side model route with a fixture fallback. The demo is deployed on Vercel and the repository is published on GitHub.
 
 ## Run locally
 
@@ -152,11 +161,15 @@ This project is configured for Vercel. Deploy the repository, then add `OPENAI_A
 Planning documents:
 
 - [Product plan](PRE_HACKATHON_PLAN.md)
+- [Product thesis](docs/PRODUCT_THESIS.md)
+- [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
+- [Evaluation plan](docs/EVALUATION_PLAN.md)
+- [Therapist review packet](docs/THERAPIST_REVIEW_PACKET.md)
 - [Agent model](docs/AGENT_MODEL.md)
 - [Frontend journey](docs/FRONTEND_JOURNEY.md)
 - [Scenario journey](docs/SCENARIO_JOURNEY.md)
 - [Privacy and safety](docs/PRIVACY_AND_SAFETY.md)
-- [Hackathon runbook](docs/HACKATHON_RUNBOOK.md)
+- [Build and share runbook](docs/HACKATHON_RUNBOOK.md)
 - [Architecture](docs/ARCHITECTURE.md)
 
 ## Evidence and further reading
@@ -167,3 +180,5 @@ Planning documents:
 - [Sparrow, Liu & Wegner: Google Effects on Memory, *Science* (2011)](https://doi.org/10.1126/science.1207745)
 - [Lee et al.: The Impact of Generative AI on Critical Thinking, CHI (2025)](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/?lang=en)
 - [Kosmyna et al.: Your Brain on ChatGPT, arXiv preprint (2025)](https://arxiv.org/abs/2506.08872)
+
+Additional model references and boundaries are documented in [Self-model research basis](docs/SELF_MODEL_RESEARCH.md). The product does not claim that any of these frameworks, individually or together, constitute a validated model of a user's psyche.

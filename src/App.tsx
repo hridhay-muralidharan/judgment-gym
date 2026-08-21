@@ -6,6 +6,7 @@ import { Review } from './components/Review'
 import { Threads } from './components/Threads'
 import { Welcome } from './components/Welcome'
 import { Explore } from './components/Explore'
+import { WorkoutFloor } from './components/WorkoutFloor'
 import { fixtureThreads, initialTension, scenarios } from './domain/scenarios'
 import { fixtureProbe } from './domain/scenarios'
 import { fallbackSynthesis, nextIncompleteScenarioIndex } from './domain/profile'
@@ -34,7 +35,7 @@ function App() {
   const scenario = scenarios[scenarioIndex]
   const profileSynthesis = state.synthesis ?? fallbackSynthesis(history)
   const isComplete = history.length >= scenarios.length
-  const progress = stage === 'welcome' || stage === 'privacy' ? 0 : stage === 'respond' || stage === 'explore' ? 1 : 2
+  const progress = stage === 'welcome' || stage === 'floor' || stage === 'privacy' ? 0 : stage === 'respond' || stage === 'explore' ? 1 : 2
 
   useEffect(() => {
     const saved = readPractice()
@@ -135,15 +136,17 @@ function App() {
   }
 
   const setStage = (nextStage: Stage) => patch({ stage: nextStage, selectedReflectionId: nextStage === 'threads' ? null : state.selectedReflectionId })
+  const openFloor = () => patch({ stage: 'floor' })
   const openThreads = () => patch({ stage: 'threads', selectedReflectionId: null })
   const openExplore = () => state.probe ? patch({ stage: 'explore', simulationResponse: '', transferNote: '' }) : openReflect()
   const backFromThreads = () => state.selectedReflectionId === null ? setStage('review') : patch({ selectedReflectionId: null })
 
   return <div className="app-shell">
-    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">JG</span><span>Judgment Gym</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'respond' || stage === 'review' ? 'active' : ''} onClick={openReflect}>Lived moments</button><button className={stage === 'explore' ? 'active' : ''} onClick={openExplore}>Explore</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>My model</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
+    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">JG</span><span>Judgment Gym</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'floor' ? 'active' : ''} onClick={openFloor}>Workout floor</button><button className={stage === 'respond' || stage === 'review' || stage === 'explore' ? 'active' : ''} onClick={openReflect}>Practice</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>Training record</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
     {progress > 0 && <div className="progress-wrap" aria-label={`Step ${progress} of 2`}><div className="progress-label"><span>{stage === 'explore' ? 'Model-guided exploration' : `Practice ${Math.min(scenarioIndex + 1, scenarios.length)} of ${scenarios.length}`}</span><span>{stage === 'explore' ? 'Simulation and transfer' : progress === 1 ? 'Lived account' : 'Model review'}</span></div><div className="progress-line"><span style={{ width: `${progress * 50}%` }} /></div></div>}
     <main>
-      {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}
+      {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onFloor={openFloor} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}
+      {stage === 'floor' && <WorkoutFloor onStart={openReflect} onBack={() => setStage('welcome')} hasHistory={history.length > 0} onModel={openThreads} />}
       {stage === 'respond' && <Respond response={state.response} setResponse={(response) => patch({ response })} details={state.details} setDetails={(details) => patch({ details })} scenario={scenario} showContext={state.showContext} setShowContext={(showContext) => patch({ showContext })} onSubmit={submitResponse} isReflecting={state.isReflecting} />}
       {stage === 'review' && <Review response={state.response} correction={state.correction} setCorrection={(correction) => patch({ correction })} threads={state.threads} probe={state.probe} apiError={state.apiError} updateThread={updateThread} onExplore={openExplore} onContinue={keepReflection} />}
       {stage === 'threads' && <Threads threads={state.threads} synthesis={profileSynthesis} history={history} selectedReflectionId={state.selectedReflectionId} isComplete={isComplete} onBack={backFromThreads} onNext={nextPractice} onOpenScenario={(id) => patch({ selectedReflectionId: id })} />}

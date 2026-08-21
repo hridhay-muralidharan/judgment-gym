@@ -1,20 +1,20 @@
-type Props = { onBegin: () => void; onPrivacy: () => void; hasHistory: boolean; onThreads: () => void; allComplete: boolean }
+type Props = { onBegin: () => void; onFloor: () => void; onPrivacy: () => void; hasHistory: boolean; onThreads: () => void; allComplete: boolean }
 
-export function Welcome({ onBegin, onPrivacy, hasHistory, onThreads, allComplete }: Props) {
+export function Welcome({ onBegin, onFloor, onPrivacy, hasHistory, onThreads, allComplete }: Props) {
   return <section className="welcome page-grid">
     <div className="welcome-copy">
-      <p className="kicker">Lived experience · model-guided exploration</p>
-      <h1>Start with what happened.<br /><em>See what it opens.</em></h1>
-      <p className="lede">Bring a real situation into view, examine how you experienced it, and use carefully constructed variations to notice what changes, repeats, or remains unresolved.</p>
+      <p className="kicker">A mental gym for human faculties</p>
+      <h1>Exercise the parts of you<br /><em>that meet life.</em></h1>
+      <p className="lede">Different situations call on different capacities. Start with a real moment, choose a direction, and use reflection to notice what you feel, think, choose, and learn.</p>
       <div className="welcome-actions">
-        <button className="primary-button" onClick={onBegin}>{allComplete ? 'Review your model' : hasHistory ? 'Continue practice' : 'Try a reflection'} <span>→</span></button>
-        <button className="text-button" onClick={onBegin}>Start with a lived moment <span>↗</span></button>
+        <button className="primary-button" onClick={onFloor}>Enter the workout floor <span>→</span></button>
+        <button className="text-button" onClick={onBegin}>{allComplete ? 'Review your training record' : hasHistory ? 'Continue a practice' : 'Start with a real moment'} <span>↗</span></button>
       </div>
-      <div className="principles"><span>01 / Lived moments first</span><span>02 / Patterns stay tentative</span><span>03 / Simulation returns to life</span></div>
+      <div className="principles"><span>01 / Real situations</span><span>02 / Provisional patterns</span><span>03 / Practice returns to life</span></div>
       {hasHistory && <button className="resume-link" onClick={onThreads}>Open my threads →</button>}
       <button className="resume-link" onClick={onPrivacy}>Read the privacy and safety boundary →</button>
     </div>
-    <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">JG</div><div className="art-caption">Lived moment · model ·<br />constructed situation · return.</div></div>
-    <div className="pitch-strip"><span className="pitch-label">The practice loop</span><strong>A real situation gives the model somewhere honest to begin.</strong><span>This practice connects lived accounts, tentative self/psyche patterns, and bounded text or voice explorations that can lead back to the user's own experience.</span></div>
+    <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">JG</div><div className="art-caption">Notice · understand ·<br />choose · adapt.</div></div>
+    <div className="pitch-strip"><span className="pitch-label">The gym model</span><strong>A place to exercise the faculties you use to live.</strong><span>GenAI makes the practice personal and continuous: it can hold the thread, ask the next useful question, and create a bounded situation to explore.</span></div>
   </section>
 }

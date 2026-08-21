@@ -1,10 +1,10 @@
 # Judgment Gym
 
-Judgment Gym is a research prototype for examining lived experience through structured reflection and carefully bounded constructed situations.
+Judgment Gym is a research prototype for systematic metacognitive reflection: helping people examine how they form judgments in lived situations, test what changes across contexts, and revise their understanding over time.
 
 The product explores a practical question:
 
-> Can an AI system help a person notice how they experience and respond to situations without claiming authority over what those experiences mean?
+> Can GenAI make systematic metacognitive reflection practical enough to help people discover better ways of judging and responding to situations, without claiming authority over what their experiences mean?
 
 ## The core loop
 
@@ -18,9 +18,11 @@ The user starts with a real event and can describe what happened, what they felt
 
 The product is designed to preserve ambiguity. A similarity, difference, exception, rejection, or unresolved question is more useful than a confident label.
 
-## Why this problem matters
+## Why this opportunity matters
 
-People often carry many meaningful experiences but lack a structured way to examine the sequence of context, perception, emotion, speech, action, and consequence across situations. Judgment Gym tests whether a careful reflective practice can produce clearer questions and observations for the user and, when they choose, for a conversation with a qualified professional.
+Research distinguishes generic self-awareness from more useful metacognitive capabilities: monitoring how one is thinking, calibrating confidence, noticing uncertainty, and revising a strategy. In an experimental study, systematic metacognitive reflection helped people discover adaptive, far-sighted decision strategies faster than participants who did not reflect between decisions. [Becker et al., 2023](https://www.cambridge.org/core/journals/judgment-and-decision-making/article/systematic-metacognitive-reflection-helps-people-discover-farsighted-decision-strategies-a-processtracing-experiment/BA25E058C30249E1A22D464A6145165E)
+
+GenAI creates an opportunity to make this kind of reflection interactive, personalised, longitudinal, and available between human conversations. It can help a person reconstruct what happened, identify the assumptions and feelings that shaped a judgment, generate a bounded variation, and compare the response across conditions. Judgment Gym tests whether this can produce clearer questions and observations for the user and, when they choose, for a qualified professional.
 
 This is a research hypothesis. Judgment Gym does not claim clinical efficacy.
 
@@ -81,6 +83,7 @@ npm run build
 
 - [Product thesis](docs/PRODUCT_THESIS.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
+- [Judgment and self-awareness research](docs/JUDGMENT_SELF_AWARENESS_RESEARCH.md)
 - [Agent model](docs/AGENT_MODEL.md)
 - [Frontend journey](docs/FRONTEND_JOURNEY.md)
 - [Lived-to-constructed journey](docs/SCENARIO_JOURNEY.md)
@@ -96,5 +99,7 @@ npm run build
 - [Bär et al.: Early Maladaptive Schemas and Schema Modes](https://doi.org/10.1111/papt.12465)
 - [Muste et al.: Systematic Review of Schema Therapy](https://pubmed.ncbi.nlm.nih.gov/37002933/)
 - [Risko and Gilbert: Cognitive Offloading](https://doi.org/10.1016/j.tics.2016.07.002)
+- [Becker et al.: Systematic Metacognitive Reflection and Decision Strategies](https://doi.org/10.1017/jdm.2023.16)
+- [Sunderaraman et al.: Self-awareness for Financial Decision-making](https://doi.org/10.1371/journal.pone.0235558)
 
 These references inform the research direction. They do not validate Judgment Gym's model or establish clinical efficacy.

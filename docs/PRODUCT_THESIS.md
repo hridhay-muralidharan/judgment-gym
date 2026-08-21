@@ -2,7 +2,7 @@
 
 ## Core thesis
 
-Judgment Gym helps people examine lived experiences, notice patterns in how they perceive and respond to situations, and use carefully bounded constructed scenarios to explore what remains unclear.
+Judgment Gym helps people practise systematic metacognitive reflection: examining how they form judgments in lived experiences, noticing patterns in how they respond, and using carefully bounded constructed situations to explore what remains unclear.
 
 The product does not treat a person's account as a story to summarize. It treats each account as evidence for an evolving, user-correctable model of the self in context.
 
@@ -42,9 +42,15 @@ The user responds to a bounded variation: a changed condition, altered stakes, r
 
 The user compares the constructed response with the lived situation. Similarity, difference, uncertainty, and rejection are all valid outcomes. The user decides what the model should carry forward.
 
-## Why this matters now
+## Why this opportunity exists now
 
-People often have many experiences but lack a safe, structured way to examine how perception, emotion, action, and context interact across them. A human professional may help with this work, but the material available in a conversation is limited by memory, time, and the user's ability to describe what happened.
+Metacognitive reflection is more specific than having an elaborate account of oneself. It involves monitoring one's thinking, calibrating confidence, noticing uncertainty, and learning from the relationship between a judgment, an action, and its consequence. In a process-tracing experiment, systematic metacognitive reflection helped participants discover adaptive, far-sighted decision strategies faster than participants who moved directly to the next decision. [Becker et al., 2023](https://doi.org/10.1017/jdm.2023.16)
+
+GenAI creates a new product opportunity around this mechanism. An interactive system can ask situation-specific questions, retain a user-correctable history, generate a controlled variation, and help compare what changed. That makes a form of systematic reflection possible at a frequency and level of personal continuity that is difficult to sustain through occasional conversations alone.
+
+Judgment Gym therefore tests whether GenAI can become a reflection instrument that improves the quality of a person's own judgment without taking judgment away from them. It does not assume that reflection is always helpful: unstructured introspection can become rumination or overconfidence, so the product must remain evidence-linked, calibrated, revisable, and evaluated.
+
+The physical gym is an optional analogy, not the evidence for the product. The evidence comes from metacognitive reflection and decision-learning research. The motivating hypothesis is that GenAI now makes deliberate judgment practice unusually accessible.
 
 Judgment Gym explores whether a careful AI-mediated practice can help people generate better material for their own reflection and for conversations with qualified professionals, while preserving the distinction between reflection support and care.
 
@@ -54,7 +60,7 @@ Intimate longitudinal AI has a trust ceiling today. Users may hesitate to place 
 
 As capable language models become practical to run offline on personal devices, that constraint may weaken. Private local inference could make a new category of personal AI possible: systems that can reason over sensitive longitudinal context without routinely transmitting the underlying material to an application provider or foundation-model company.
 
-Judgment Gym's preparation work is therefore to validate the interaction and knowledge layer before that capability arrives:
+Judgment Gym's preparation work is therefore to validate the reflection and knowledge layer while the inference environment evolves:
 
 - research which self/psyche constructs are useful and safe to represent;
 - design lived-scenario capture and model-guided probing;

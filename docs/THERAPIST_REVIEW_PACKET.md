@@ -6,6 +6,10 @@ This packet requests expert feedback on a product concept and one user-generated
 
 ## What to review
 
+Room to Respond currently works like this: a person brings in a real situation, describes what happened and how they responded, reviews a few tentative observations from the AI, and corrects them. The AI then creates a carefully limited variation of the situation. The person responds to the variation, compares it with the original, and decides what is worth carrying into life or into therapy.
+
+The current workout mainly exercises emotion awareness, metacognition, cognitive flexibility, prospection, and learning. The longer journey view applies the same model across several periods of a person's life or career.
+
 Please review:
 
 1. one lived-situation capture;

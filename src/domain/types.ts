@@ -1,4 +1,4 @@
-export type Stage = 'welcome' | 'floor' | 'respond' | 'review' | 'threads' | 'explore' | 'privacy'
+export type Stage = 'welcome' | 'floor' | 'respond' | 'review' | 'threads' | 'explore' | 'journey' | 'privacy'
 export type ThreadStatus = 'tentative' | 'confirmed' | 'context-dependent'
 
 export type Scenario = {
@@ -32,6 +32,23 @@ export type Synthesis = {
   recurringThemes: string[]
   changes: string[]
   connections: string[]
+}
+
+export type JourneyPeriod = {
+  label: string
+  context: string
+  turningPoint: string
+  faculties: string[]
+  shift: string
+  evidence: string
+}
+
+export type JourneyModel = {
+  thesis: string
+  periods: JourneyPeriod[]
+  evolution: string[]
+  openQuestions: string[]
+  interviewNarrative: string
 }
 
 export type Probe = {
@@ -73,6 +90,8 @@ export type StoredPractice = {
   probe?: Probe
   simulationResponse?: string
   transferNote?: string
+  journeyDraft?: string
+  journeyModel?: JourneyModel
 }
 
 export type PracticeState = {
@@ -93,4 +112,6 @@ export type PracticeState = {
   probe?: Probe
   simulationResponse: string
   transferNote: string
+  journeyDraft: string
+  journeyModel?: JourneyModel
 }

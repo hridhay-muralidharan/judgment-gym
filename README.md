@@ -1,8 +1,10 @@
 # Room to Respond
 
-Room to Respond is a mental gym for the faculties people use to live.
+Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where specific capacities could be exercised through specific routines.
 
-People use different faculties to notice what is happening, understand it, decide what it means, choose what to do, relate to others, adapt when conditions change, and learn from experience. A physical gym offers different workouts for different capacities. Room to Respond explores a similar model for these human faculties.
+Modern life also changes the situations in which mental faculties are used. Digital systems compete for attention, automation changes what people remember and compare, fast communication increases social decisions, and work and family life create overlapping demands. Room to Respond extends the gym idea to the faculties people use to live.
+
+People use attention, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning to move through life. A mental gym can organise deliberate practice around those faculties without treating them as literal muscles.
 
 The product starts with real situations. GenAI helps a person examine the situation, choose a direction for practice, explore a carefully bounded variation, and carry useful understanding back into life.
 
@@ -77,6 +79,8 @@ Each workout needs its own evidence. The research review will cover:
 
 The [Human Faculties Map](docs/HUMAN_FACULTIES_MAP.md) is the current research starting point. It includes attention and cognitive control, emotion regulation, metacognition, autobiographical memory, motivation, values, social cognition, imagination, and learning.
 
+The [Modern life and mental faculties](docs/MODERN_LIFE_AND_MENTAL_FACULTIES.md) document explains the physical-gym origin, the evidence for environmental pressure on selected faculties, and the boundaries of the analogy. The [Professional journey model](docs/PROFESSIONAL_JOURNEY_MODEL.md) describes how a private long-form account can become an evidence-linked model of change across contexts.
+
 The map includes both positive and negative framing. It examines what stronger faculties may support and what poorer functioning may make more difficult. Product claims will follow the strength of the evidence.
 
 Relevant starting sources include [Diamond on executive functions](https://doi.org/10.1146/annurev-psych-113011-143750), [Sheppes, Suri, and Gross on emotion regulation](https://doi.org/10.1146/annurev-clinpsy-032814-112739), [Becker et al. on metacognitive reflection and decision strategies](https://doi.org/10.1017/jdm.2023.16), [Fivush on autobiographical memory](https://doi.org/10.1146/annurev.psych.121208.131702), and [Heckhausen, Wrosch, and Schulz on agency and motivation](https://doi.org/10.1146/annurev-psych-010418-103043).
@@ -100,6 +104,7 @@ The current prototype uses hosted inference when configured. It does not claim t
 - model-guided constructed text exploration;
 - comparison and transfer back to the lived situation;
 - evolving training record with patterns, tensions, and evidence;
+- private long-form journey mapping into contexts, faculties, evolution, and open questions;
 - local persistence, JSON export/import, reset, and deletion;
 - server-side structured model route with a deterministic fallback.
 
@@ -113,6 +118,8 @@ Room to Respond is not a therapist, diagnostic system, crisis service, risk asse
 - [Product storyboard](docs/PRODUCT_STORYBOARD.md)
 - [Product thesis](docs/PRODUCT_THESIS.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
+- [Modern life and mental faculties](docs/MODERN_LIFE_AND_MENTAL_FACULTIES.md)
+- [Professional journey model](docs/PROFESSIONAL_JOURNEY_MODEL.md)
 - [Agent model](docs/AGENT_MODEL.md)
 - [Frontend journey](docs/FRONTEND_JOURNEY.md)
 - [Lived-to-constructed journey](docs/SCENARIO_JOURNEY.md)

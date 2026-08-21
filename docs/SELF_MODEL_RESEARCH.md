@@ -1,6 +1,18 @@
 # Self-model research basis for v1
 
-Room to Respond should not claim to encode one universally accepted model of the psyche. Psychotherapy, personality research, motivation research, and narrative psychology use different constructs for different purposes. V1 therefore uses a transparent layered model.
+Room to Respond should not claim to encode one universally accepted model of the psyche. Psychotherapy, personality research, motivation research, and narrative psychology use different constructs for different purposes. V1 therefore uses a transparent episode-and-development model.
+
+## The model used in the product
+
+The model has five layers:
+
+1. **Context:** environment, role, relationships, incentives, constraints, culture, and life stage.
+2. **Lived episode:** what happened; what the person noticed; body and emotion; thought and interpretation; what they said and did; what they wanted; consequence; and later meaning.
+3. **Faculties:** attention, emotion regulation, memory, meaning-making, metacognition, cognitive flexibility, motivation, values, judgment, social cognition, imagination, and learning.
+4. **Development:** repeated patterns, context shifts, new strategies, unresolved tensions, and evidence of change.
+5. **Epistemic status:** observation, user interpretation, model hypothesis, uncertainty, contradiction, and user correction.
+
+This is a working product model. It is not a clinical formulation, personality test, or theory of the whole psyche.
 
 ## Layer 1 — Narrative identity
 
@@ -16,7 +28,7 @@ Source: [McAdams, The Psychology of Life Stories](https://doi.org/10.1037/1089-2
 
 ## Layer 2 — Values and motivation
 
-Self-Determination Theory provides a useful lens for examining autonomy, competence, and relatedness. It is especially relevant to Room to Respond because the user's narrative often involves tension between external expectations, status, mastery, contribution, and self-endorsed direction.
+Self-Determination Theory provides a useful lens for examining autonomy, competence, and relatedness. It is especially relevant to Room to Respond because lived narratives often involve tension between external expectations, status, mastery, contribution, and self-endorsed direction.
 
 **What it contributes:** possible motives, need tensions, external versus self-endorsed reasons, and conditions that support agency.
 

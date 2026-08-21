@@ -48,8 +48,8 @@ export function readPractice(): StoredPractice | null {
   }
 }
 
-export function persistPractice(state: Pick<PracticeState, 'response' | 'correction' | 'threads' | 'tension' | 'synthesis' | 'history' | 'scenarioIndex' | 'details' | 'probe' | 'simulationResponse' | 'transferNote'>): void {
-  const payload: StoredPractice = { response: state.response, correction: state.correction, threads: state.threads, tension: state.tension, synthesis: state.synthesis, history: state.history, scenarioIndex: state.scenarioIndex, details: state.details, probe: state.probe, simulationResponse: state.simulationResponse, transferNote: state.transferNote }
+export function persistPractice(state: Pick<PracticeState, 'response' | 'correction' | 'threads' | 'tension' | 'synthesis' | 'history' | 'scenarioIndex' | 'details' | 'probe' | 'simulationResponse' | 'transferNote' | 'journeyDraft' | 'journeyModel'>): void {
+  const payload: StoredPractice = { response: state.response, correction: state.correction, threads: state.threads, tension: state.tension, synthesis: state.synthesis, history: state.history, scenarioIndex: state.scenarioIndex, details: state.details, probe: state.probe, simulationResponse: state.simulationResponse, transferNote: state.transferNote, journeyDraft: state.journeyDraft, journeyModel: state.journeyModel }
   localStorage.setItem(storageKey, JSON.stringify(payload))
 }
 

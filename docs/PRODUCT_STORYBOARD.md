@@ -2,7 +2,7 @@
 
 ## What the product is
 
-Room to Respond is a mental gym for the faculties people use to live: noticing, feeling, remembering, interpreting, deciding, relating, adapting, and learning.
+Modern life changed the physical demands built into daily life, and gyms emerged as places for deliberate exercise of specific capacities. Room to Respond extends that idea to the faculties people use to live: noticing, feeling, remembering, interpreting, deciding, relating, adapting, and learning.
 
 Physical gyms have different workouts because people train different capacities. The mental gym follows the same organising idea. Each workout has a faculty, a human purpose, a research basis, an exercise, and a way to notice progress.
 

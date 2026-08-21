@@ -1,8 +1,8 @@
 # Room to Respond — product thesis
 
-Room to Respond is a mental gym for the faculties people use to live.
+Modern life changed the physical demands built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. Gyms emerged as deliberate places where specific capacities could be exercised through specific routines.
 
-The product starts from a simple observation: people constantly use attention, perception, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning to move through life. These faculties work together. They can be exercised, understood, and developed in different ways.
+Room to Respond extends this idea to the faculties people use to live. People constantly use attention, perception, emotion, memory, meaning-making, motivation, judgment, communication, imagination, and learning. These faculties work together, and they can be deliberately examined and practised without treating them as literal muscles.
 
 Room to Respond explores whether GenAI can make that practice personal, continuous, and interactive.
 
@@ -21,6 +21,8 @@ Real situation
 The product does not ask the model to announce what a person truly is. It helps the person examine their own experience and build a user-controlled record of practice.
 
 ## The workout model
+
+The physical-gym analogy is a design starting point, not a scientific claim that mental faculties are muscles. Each workout must be linked to a real-life demand, a faculty or combination of faculties, a specific exercise, a measurable outcome, and an appropriate safety boundary.
 
 The research map currently groups workouts into four areas:
 

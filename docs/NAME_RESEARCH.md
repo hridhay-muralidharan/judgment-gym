@@ -36,7 +36,7 @@ These names are useful category signals. They are poor starting points for a new
 
 ### 1. Space before response
 
-**Room to Respond** is the strongest current candidate in this territory. It describes the human benefit clearly: more space to notice, understand, and choose a response. It supports emotional regulation, judgment, communication, and flexibility without choosing one faculty as the whole product.
+**Room to Respond** is the approved product name. It describes the human benefit clearly: more space to notice, understand, and choose a response. It supports emotional regulation, judgment, communication, and flexibility without choosing one faculty as the whole product.
 
 Strength: clear, human, and connected to the lived-situation loop.
 
@@ -76,7 +76,7 @@ Risk: academic, institutional, and already used in education and fitness product
 
 ## Current recommendation
 
-The strongest semantic candidate from this first pass is **Room to Respond**.
+The strongest semantic candidate from this first pass was **Room to Respond**, and it has now been adopted.
 
 It captures the core experience without narrowing the product to self-awareness, judgment, therapy, or one mental faculty. It also gives the product a clear promise:
 
@@ -84,7 +84,7 @@ It captures the core experience without narrowing the product to self-awareness,
 
 That promise can contain different workouts for emotion, attention, memory, perspective, judgment, values, relationships, flexibility, and learning.
 
-This is an initial naming recommendation, not a final clearance. The next step is to test “Room to Respond” against the current product storyboard with the therapist, target companies, and potential users, then check domains, repository availability, and trademark risk before renaming anything.
+The name still needs external review with the therapist, target companies, and potential users, as well as domain and trademark checks before commercial use.
 
 ## Decision rule
 

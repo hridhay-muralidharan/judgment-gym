@@ -7,9 +7,10 @@ import { Threads } from './components/Threads'
 import { Welcome } from './components/Welcome'
 import { Explore } from './components/Explore'
 import { WorkoutFloor } from './components/WorkoutFloor'
+import { Journey } from './components/Journey'
 import { fixtureThreads, initialTension, scenarios } from './domain/scenarios'
 import { fixtureProbe } from './domain/scenarios'
-import { fallbackSynthesis, nextIncompleteScenarioIndex } from './domain/profile'
+import { fallbackJourneyModel, fallbackSynthesis, nextIncompleteScenarioIndex } from './domain/profile'
 import type { PracticeState, Reflection, Stage, StoredPractice, ThreadStatus } from './domain/types'
 import { requestReflection } from './lib/reflection'
 import { downloadPractice, emptyDetails, emptyPractice, normalizePractice, persistPractice, readPractice } from './lib/storage'
@@ -26,6 +27,8 @@ const initialState: PracticeState = {
   probe: undefined,
   simulationResponse: '',
   transferNote: '',
+  journeyDraft: '',
+  journeyModel: undefined,
 }
 
 function App() {
@@ -35,7 +38,7 @@ function App() {
   const scenario = scenarios[scenarioIndex]
   const profileSynthesis = state.synthesis ?? fallbackSynthesis(history)
   const isComplete = history.length >= scenarios.length
-  const progress = stage === 'welcome' || stage === 'floor' || stage === 'privacy' ? 0 : stage === 'respond' || stage === 'explore' ? 1 : 2
+  const progress = stage === 'welcome' || stage === 'floor' || stage === 'privacy' ? 0 : stage === 'respond' || stage === 'explore' || stage === 'journey' ? 1 : 2
 
   useEffect(() => {
     const saved = readPractice()
@@ -49,7 +52,7 @@ function App() {
     setState((current) => current.saved ? current : { ...current, saved: true })
     const timer = window.setTimeout(() => setState((current) => ({ ...current, saved: false })), 1200)
     return () => window.clearTimeout(timer)
-  }, [hydrated, state.response, state.details, state.correction, state.threads, state.tension, state.synthesis, state.history, state.scenarioIndex, state.probe, state.simulationResponse, state.transferNote])
+  }, [hydrated, state.response, state.details, state.correction, state.threads, state.tension, state.synthesis, state.history, state.scenarioIndex, state.probe, state.simulationResponse, state.transferNote, state.journeyDraft, state.journeyModel])
 
   const patch = (changes: Partial<PracticeState>) => setState((current) => ({ ...current, ...changes }))
 
@@ -115,7 +118,7 @@ function App() {
   }
 
   const exportData = () => {
-    const data: StoredPractice = { response: state.response, correction: state.correction, threads: state.threads, tension: state.tension, synthesis: state.synthesis, history: state.history, scenarioIndex: state.scenarioIndex, details: state.details, probe: state.probe, simulationResponse: state.simulationResponse, transferNote: state.transferNote }
+    const data: StoredPractice = { response: state.response, correction: state.correction, threads: state.threads, tension: state.tension, synthesis: state.synthesis, history: state.history, scenarioIndex: state.scenarioIndex, details: state.details, probe: state.probe, simulationResponse: state.simulationResponse, transferNote: state.transferNote, journeyDraft: state.journeyDraft, journeyModel: state.journeyModel }
     downloadPractice(data)
   }
 
@@ -138,19 +141,32 @@ function App() {
   const setStage = (nextStage: Stage) => patch({ stage: nextStage, selectedReflectionId: nextStage === 'threads' ? null : state.selectedReflectionId })
   const openFloor = () => patch({ stage: 'floor' })
   const openThreads = () => patch({ stage: 'threads', selectedReflectionId: null })
+  const openJourney = () => patch({ stage: 'journey' })
+  const generateJourney = async () => {
+    if (state.journeyDraft.trim().length < 120) return
+    patch({ journeyModel: fallbackJourneyModel(state.journeyDraft), isReflecting: true, apiError: '' })
+    try {
+      const response = await fetch('/api/journey', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ narrative: state.journeyDraft }) })
+      if (!response.ok) throw new Error('Journey model unavailable')
+      patch({ journeyModel: await response.json(), isReflecting: false })
+    } catch {
+      patch({ isReflecting: false, apiError: 'The live model is unavailable. This is a provisional local model to edit and discuss; no private narrative was sent.' })
+    }
+  }
   const openExplore = () => state.probe ? patch({ stage: 'explore', simulationResponse: '', transferNote: '' }) : openReflect()
   const backFromThreads = () => state.selectedReflectionId === null ? setStage('review') : patch({ selectedReflectionId: null })
 
   return <div className="app-shell">
-    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">RR</span><span>Room to Respond</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'floor' ? 'active' : ''} onClick={openFloor}>Workout floor</button><button className={stage === 'respond' || stage === 'review' || stage === 'explore' ? 'active' : ''} onClick={openReflect}>Practice</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>Training record</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
+    <header className="topbar"><button className="wordmark" onClick={() => setStage('welcome')} aria-label="Go to home"><span className="wordmark-mark">RR</span><span>Room to Respond</span></button><nav className="topnav" aria-label="Primary navigation"><button className={stage === 'floor' ? 'active' : ''} onClick={openFloor}>Workout floor</button><button className={stage === 'respond' || stage === 'review' || stage === 'explore' ? 'active' : ''} onClick={openReflect}>Practice</button><button className={stage === 'journey' ? 'active' : ''} onClick={openJourney}>Journey model</button><button className={stage === 'threads' ? 'active' : ''} onClick={openThreads}>Training record</button><button onClick={() => setStage('privacy')}>Privacy</button></nav><div className="storage-status"><span className="status-dot" /> {state.saved ? 'Saved privately' : 'Local practice'}</div></header>
     {progress > 0 && <div className="progress-wrap" aria-label={`Step ${progress} of 2`}><div className="progress-label"><span>{stage === 'explore' ? 'Model-guided exploration' : `Practice ${Math.min(scenarioIndex + 1, scenarios.length)} of ${scenarios.length}`}</span><span>{stage === 'explore' ? 'Simulation and transfer' : progress === 1 ? 'Lived account' : 'Model review'}</span></div><div className="progress-line"><span style={{ width: `${progress * 50}%` }} /></div></div>}
     <main>
-      {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onFloor={openFloor} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} allComplete={isComplete} />}
+      {stage === 'welcome' && <Welcome onBegin={isComplete ? openThreads : openReflect} onFloor={openFloor} onPrivacy={() => setStage('privacy')} hasHistory={history.length > 0} onThreads={openThreads} onJourney={openJourney} allComplete={isComplete} />}
       {stage === 'floor' && <WorkoutFloor onStart={openReflect} onBack={() => setStage('welcome')} hasHistory={history.length > 0} onModel={openThreads} />}
       {stage === 'respond' && <Respond response={state.response} setResponse={(response) => patch({ response })} details={state.details} setDetails={(details) => patch({ details })} scenario={scenario} showContext={state.showContext} setShowContext={(showContext) => patch({ showContext })} onSubmit={submitResponse} isReflecting={state.isReflecting} />}
       {stage === 'review' && <Review response={state.response} correction={state.correction} setCorrection={(correction) => patch({ correction })} threads={state.threads} probe={state.probe} apiError={state.apiError} updateThread={updateThread} onExplore={openExplore} onContinue={keepReflection} />}
       {stage === 'threads' && <Threads threads={state.threads} synthesis={profileSynthesis} history={history} selectedReflectionId={state.selectedReflectionId} isComplete={isComplete} onBack={backFromThreads} onNext={nextPractice} onOpenScenario={(id) => patch({ selectedReflectionId: id })} />}
       {stage === 'explore' && state.probe && <Explore probe={state.probe} response={state.response} simulationResponse={state.simulationResponse} setSimulationResponse={(simulationResponse) => patch({ simulationResponse })} transferNote={state.transferNote} setTransferNote={(transferNote) => patch({ transferNote })} onSave={keepReflection} />}
+      {stage === 'journey' && <Journey draft={state.journeyDraft} setDraft={(journeyDraft) => patch({ journeyDraft })} model={state.journeyModel} isReflecting={state.isReflecting} apiError={state.apiError} onGenerate={generateJourney} onBack={() => setStage('welcome')} />}
       {stage === 'privacy' && <Privacy onBack={() => setStage('welcome')} onReset={reset} onExport={exportData} onImport={importData} />}
     </main>
     {stage !== 'welcome' && stage !== 'privacy' && <footer className="practice-footer"><span>Your words stay yours.</span><button onClick={() => setStage('privacy')}>View data controls</button></footer>}

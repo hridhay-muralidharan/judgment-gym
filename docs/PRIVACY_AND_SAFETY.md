@@ -1,15 +1,30 @@
-# Privacy and Safety Boundaries
+# Privacy and safety boundaries
 
-## Privacy
+## Why privacy matters here
 
-The MVP is local-first and provides portable JSON export/import, reset, delete, visible storage status, no analytics by default, no account requirement, and no automatic publication of reflections. The “Show me about yourself” raw narrative is held in application memory for the current session and is not included in the practice export; when the hosted model route is used, it is sent to the configured model provider only after the user selects “Map my evolution.” Users should avoid entering material they do not want sent to that provider. Encrypted export is a follow-up hardening task before treating exported files as safe for sensitive long-term storage.
+Judgment Gym is designed around intimate longitudinal material: lived situations, emotional responses, personal patterns, and model revisions. A hosted system may expose requests to application infrastructure and a model provider according to their policies. That creates a trust constraint for products that want to remember a person's inner life.
 
-The interface must explain whether data is stored in the browser, on a self-hosted deployment, or on a hosted deployment. Hosted deployment operators may have infrastructure-level access unless stronger encryption is implemented.
+The long-term opportunity is capable language models running privately on personal devices. The current prototype prepares the interaction, model, and safety layer for that future; it does not claim that today's hosted demo provides equivalent privacy.
 
-No personal reflections, API keys, private autobiographical narratives, or user profiles belong in the public repository.
+## Current prototype
 
-## Safety
+- reflection history is stored locally in the browser without an account;
+- the current lived-situation draft is not published automatically;
+- hosted model requests are sent only after the user submits a reflection;
+- the API route uses `store: false` for model requests;
+- export, import, reset, and deletion are available;
+- personal narratives, private conversations, API keys, and profiles do not belong in the public repository;
+- hosted deployment operators may have infrastructure-level access to requests;
+- exported JSON is not encrypted and should not be treated as safe long-term storage.
 
-The agent is a reflection tool, not a therapist, counsellor, diagnostician, moral authority, or decision substitute. It must not diagnose, prescribe, shame, or declare a judgment right or wrong.
+## Safety boundary
 
-If a user introduces immediate danger, crisis, or serious distress, the product should provide a static, clearly bounded prompt to seek appropriate human or professional help. It must not pretend to provide crisis care. The current prototype is not a crisis detector; production deployment requires a separately evaluated safety pathway.
+The system is a reflection and exploration tool. It is not a therapist, counsellor, diagnostician, crisis service, risk assessor, treatment recommender, or decision substitute.
+
+Constructed situations are explicitly labelled as constructed. The system must not infer clinical states from a user's text, voice, pauses, accent, or emotional tone. It must not diagnose, prescribe, shame, moralize, or declare that a response reveals the user's true self.
+
+The current prototype is not a crisis detector. Production deployment requires a separately evaluated human-support and escalation pathway.
+
+## Future privacy work
+
+Before a privacy-first on-device product is claimed, validate encrypted local storage, model portability, selective sharing, deletion guarantees, auditability, voice retention, device compromise recovery, and clear user control over every layer of personal memory and inference.

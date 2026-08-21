@@ -1,10 +1,10 @@
 import OpenAI from 'openai'
 
-const constitution = `You are the secular self-awareness reflection agent for Judgment Gym, a between-session support tool for mental health products.
+const constitution = `You are the secular self-awareness reflection agent for Judgment Gym, a reflective system that connects lived situations with carefully bounded constructed explorations.
 Treat the user as the authority on their own experience. Extract only signals grounded in their words.
 Offer tentative, plain-language observations, never diagnoses, risk assessments, treatment advice, moral scores, personality labels, or prescriptions.
 Preserve ambiguity and contradiction. Do not impose a religious, spiritual, cultural, or moral worldview. Do not infer trauma, disorders, or clinical states.
-Keep each thread specific, easy to correct, and potentially useful as a question or example the user may choose to bring to a qualified clinician.`
+Keep each thread specific, easy to correct, and potentially useful as a question or constructed situation. Distinguish what happened, what the user felt, thought, said, did, wanted, and noticed afterward. A constructed situation is an exploration, not a test or evidence of a stable trait.`
 
 const schema = {
   type: 'object',
@@ -26,6 +26,11 @@ const schema = {
       },
     },
     tension: { type: 'string' },
+    probe: {
+      type: 'object', additionalProperties: false,
+      properties: { title: { type: 'string' }, rationale: { type: 'string' }, prompt: { type: 'string' }, dimension: { type: 'string' } },
+      required: ['title', 'rationale', 'prompt', 'dimension'],
+    },
     synthesis: {
       type: 'object',
       additionalProperties: false,
@@ -38,21 +43,7 @@ const schema = {
       required: ['summary', 'recurringThemes', 'changes', 'connections'],
     },
   },
-  required: ['threads', 'tension', 'synthesis'],
-}
-
-const storySchema = {
-  type: 'object', additionalProperties: false,
-  properties: {
-    framing: { type: 'string' },
-    evolution: { type: 'array', minItems: 2, maxItems: 5, items: { type: 'object', additionalProperties: false, properties: { period: { type: 'string' }, shift: { type: 'string' }, evidence: { type: 'string' } }, required: ['period', 'shift', 'evidence'] } },
-    patterns: { type: 'array', minItems: 2, maxItems: 5, items: { type: 'object', additionalProperties: false, properties: { title: { type: 'string' }, description: { type: 'string' }, status: { type: 'string', enum: ['tentative', 'user-stated', 'context-dependent'] }, evidence: { type: 'string' } }, required: ['title', 'description', 'status', 'evidence'] } },
-    currentDirection: { type: 'string' },
-    interviewNarrative: { type: 'string' },
-    followUps: { type: 'array', minItems: 2, maxItems: 4, items: { type: 'string' } },
-    sharingNote: { type: 'string' },
-  },
-  required: ['framing', 'evolution', 'patterns', 'currentDirection', 'interviewNarrative', 'followUps', 'sharingNote'],
+  required: ['threads', 'tension', 'probe', 'synthesis'],
 }
 
 export default async function handler(req: any, res: any) {
@@ -60,26 +51,15 @@ export default async function handler(req: any, res: any) {
   if (!process.env.OPENAI_API_KEY) return res.status(503).json({ error: 'Model route is not configured' })
 
   try {
-    const { mode = 'reflection', scenario, response, history = [], narrative } = req.body ?? {}
-    if (mode === 'story') {
-      if (typeof narrative !== 'string' || narrative.trim().length < 80) return res.status(400).json({ error: 'A longer narrative is required' })
-      const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
-      const result = await client.responses.create({
-        model: process.env.OPENAI_MODEL || 'gpt-5', store: false,
-        instructions: `${constitution}\n\nYou are also a narrative editor. Organize the user's autobiographical account into an evolution, not a diagnosis. Use narrative identity as the organizing frame; use values and motivation, episode-level situation/interpretation/emotion/action structure, and cautious coping-language observations only when grounded in the text. Separate observed or user-stated material from tentative hypotheses. Preserve competing explanations and do not infer trauma, attachment style, disorders, or childhood causes unless the user explicitly states them. Produce a 120–170 word professional interview narrative that is truthful, memorable, and excludes intimate details unless necessary. Do not mention therapy in the interview narrative unless the user explicitly asks for it.`,
-        input: `User's raw narrative:\n${narrative}\n\nReturn a reviewable longitudinal model. Every evolution item and pattern must include evidence wording that reminds the user why it is provisional.`,
-        text: { format: { type: 'json_schema', name: 'judgment_story_model', strict: true, schema: storySchema }, },
-      })
-      return res.status(200).json(JSON.parse(result.output_text))
-    }
-    if (typeof response !== 'string' || response.trim().length < 20) return res.status(400).json({ error: 'A response is required' })
+    const { scenario, response, details = {}, history = [] } = req.body ?? {}
+    if (typeof response !== 'string' || response.trim().length < 20) return res.status(400).json({ error: 'A lived situation is required' })
 
     const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
     const result = await client.responses.create({
       model: process.env.OPENAI_MODEL || 'gpt-5',
       store: false,
       instructions: constitution,
-      input: `Prior reflections (may be empty):\n${JSON.stringify(history)}\n\nCurrent scenario:\n${scenario}\n\nCurrent user response:\n${response}\n\nReturn 2–3 tentative threads for the current response, one unresolved tension, and a cautious cross-scenario synthesis. The synthesis must distinguish recurring themes, possible changes, and connections across situations. When history is limited, describe the model as provisional and grounded in the available evidence.`,
+      input: `Prior lived situations (may be empty):\n${JSON.stringify(history)}\n\nCurrent situation prompt:\n${scenario}\n\nUser's account:\n${response}\n\nAdditional details the user chose to provide:\n${JSON.stringify(details)}\n\nReturn 2–3 tentative threads, one unresolved tension, one model-guided constructed probe, and a cautious cross-scenario synthesis. The probe must explore an uncertainty or dimension that is grounded in the account, explain why it was selected, and clearly be a constructed situation rather than a test. The synthesis must distinguish recurring themes, possible changes, and connections across lived situations.`,
       text: { format: { type: 'json_schema', name: 'judgment_reflection', strict: true, schema } },
     })
 

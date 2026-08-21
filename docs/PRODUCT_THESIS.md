@@ -1,73 +1,74 @@
 # Judgment Gym 2.0 — Product thesis
 
-## One sentence
+## Core thesis
 
-Judgment Gym helps people examine recurring decision and self-awareness patterns across life transitions, distinguish inherited expectations from personally chosen values, and turn reflection into clearer conversations and actions.
+Judgment Gym helps people examine lived experiences, notice patterns in how they perceive and respond to situations, and use carefully bounded constructed scenarios to explore what remains unclear.
 
-## The present-day problem
+The product does not treat a person's account as a story to summarize. It treats each account as evidence for an evolving, user-correctable model of the self in context.
 
-People often arrive at therapy, coaching, or a major career decision with a long history but no usable structure for it. They remember events, but may struggle to separate:
+## The core loop
 
-- what happened from what they concluded;
-- a stable pattern from a context-specific response;
-- a value from a status signal or external expectation;
-- a protective response from the choice they actually endorse;
-- an insight from a next experiment.
+```text
+Lived situation
+→ detailed experience capture
+→ tentative self/psyche model
+→ model-guided probe
+→ constructed text or voice situation
+→ transfer back to lived experience
+→ user correction
+→ model revision
+→ optional human conversation
+```
 
-Judgment Gym is a structured reflection and sense-making layer. It does not decide what a person's experience means. It helps the person produce material that can be inspected, corrected, and brought into a human conversation.
+### Lived situation
 
-## The future opportunity
+The user describes what happened, what they felt, thought, said, did, wanted, protected, and noticed afterward. Free expression comes first; structured prompts deepen the account without forcing a clinical questionnaire.
 
-As capable language models become practical to run privately on personal devices, a new category of personal AI becomes possible: longitudinal, user-controlled systems that can remember context without requiring sensitive personal material to be sent to a third-party platform or foundation-model provider.
+### Self/psyche model
 
-Judgment Gym is preparing for that opportunity through:
+The system organizes evidence through multiple lenses: narrative identity, values and needs, episode-level interpretation and action, coping responses, relational patterns, conditions, contradictions, and unresolved questions.
 
-- a portable personal-model schema;
-- provenance for every model claim;
-- user correction and revision history;
-- local-first persistence;
-- explicit sharing boundaries;
-- model-provider independence;
-- text-first flows that can later support voice;
-- evaluation protocols for usefulness, calibration, agency, and harm.
+The model distinguishes observations from interpretations. It does not announce the user's true self, assign a diagnosis, or resolve contradictions on the user's behalf.
 
-The future technology informs the architecture. It does not postpone the current validation problem.
+### Model-guided probe
 
-## Product layers
+The system selects an unexplored dimension or uncertainty from the lived account. It explains why the direction was selected and lets the user accept, skip, or correct it.
 
-### Reflection practice
+### Constructed situation
 
-The user responds to a concrete situation or recalls a meaningful event. The system helps separate facts, interpretation, emotion, needs, actions, trade-offs, and uncertainty.
+The user responds to a bounded variation: a changed condition, altered stakes, role reversal, alternative interpretation, boundary conversation, or transfer to another domain. The situation is clearly labelled as constructed. It is not a test of personality and not a simulation of reality.
 
-### Personal model
+### Transfer and revision
 
-The system stores observations and user-reviewed hypotheses over time. A claim is never treated as a definitive personality description. Each claim has evidence, status, confidence, conditions, exceptions, and revision history.
+The user compares the constructed response with the lived situation. Similarity, difference, uncertainty, and rejection are all valid outcomes. The user decides what the model should carry forward.
 
-### Narrative outputs
+## Why this matters now
 
-The model can produce a user-approved story for a particular context, including a concise interview introduction. The output is a view of the model, not the model itself. Sensitive material is excluded by default and the user decides what can be shared.
+People often have many experiences but lack a safe, structured way to examine how perception, emotion, action, and context interact across them. A human professional may help with this work, but the material available in a conversation is limited by memory, time, and the user's ability to describe what happened.
 
-## Initial use cases
+Judgment Gym explores whether a careful AI-mediated practice can help people generate better material for their own reflection and for conversations with qualified professionals, while preserving the distinction between reflection support and care.
 
-1. **Between-session reflection:** make a recent experience more concrete and discussable.
-2. **Longitudinal pattern review:** see what repeats, changes, or depends on context.
-3. **Therapy preparation:** create examples, questions, and uncertainties for a clinician-led conversation.
-4. **Show me about yourself:** turn a long self-aware career narrative into a memorable spoken evolution with optional evidence and follow-up depth.
+## The privacy opportunity
 
-The first three are the product foundation. The fourth is the first clear demonstration of why a longitudinal personal model is useful.
+Intimate longitudinal AI has a trust ceiling today. Users may hesitate to place personal memories, emotional patterns, voice recordings, and evolving self-models inside a third-party product whose retention, access, business incentives, or foundation-model relationships they cannot fully control.
 
-## What Judgment Gym is not
+As capable language models become practical to run offline on personal devices, that constraint may weaken. Private local inference could make a new category of personal AI possible: systems that can reason over sensitive longitudinal context without routinely transmitting the underlying material to an application provider or foundation-model company.
 
-- a therapist, counsellor, or crisis service;
-- a diagnostic or risk-assessment system;
-- a personality test or fixed identity classifier;
-- an autonomous treatment or decision system;
-- a substitute for professional judgment;
-- a generic chatbot that gives advice without evidence or correction;
-- a repository for private autobiographical data.
+Judgment Gym's preparation work is therefore to validate the interaction and knowledge layer before that capability arrives:
 
-## Success hypothesis
+- research which self/psyche constructs are useful and safe to represent;
+- design lived-scenario capture and model-guided probing;
+- evaluate constructed text and future voice scenarios;
+- test transfer back to lived experience;
+- develop evidence, correction, contradiction, and consent systems;
+- validate safety with therapists and people with lived experience;
+- build distribution relationships with mental-health AI and digital therapy companies;
+- keep the model contract provider-independent so hosted inference can later move on-device.
 
-If people can repeatedly inspect and correct a structured representation of their experiences, they will be better able to identify context-dependent patterns, articulate values and needs, and communicate a more coherent and truthful account of their evolution to a human support professional or interviewer.
+## Derived outputs
 
-This is a hypothesis. The repository does not claim clinical efficacy.
+An audience-specific professional narrative may eventually be generated from the reviewed model. It is a secondary rendering of a person's chosen material, never the product's core identity. Private therapeutic material must not be surfaced in professional output by default.
+
+## Boundaries
+
+Judgment Gym is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. It does not infer clinical states from voice, text, pauses, or emotional tone. Production use requires dedicated safety, privacy, and efficacy validation.

@@ -1,4 +1,4 @@
-export type Stage = 'welcome' | 'respond' | 'review' | 'threads' | 'story' | 'privacy'
+export type Stage = 'welcome' | 'respond' | 'review' | 'threads' | 'explore' | 'privacy'
 export type ThreadStatus = 'tentative' | 'confirmed' | 'context-dependent'
 
 export type Scenario = {
@@ -8,6 +8,16 @@ export type Scenario = {
   context: string
   question: string
   reason: string
+}
+
+export type ExperienceDetails = {
+  felt: string
+  thought: string
+  said: string
+  did: string
+  wanted: string
+  consequence: string
+  now: string
 }
 
 export type Thread = {
@@ -24,25 +34,31 @@ export type Synthesis = {
   connections: string[]
 }
 
-export type StoryModel = {
-  framing: string
-  evolution: Array<{ period: string; shift: string; evidence: string }>
-  patterns: Array<{ title: string; description: string; status: 'tentative' | 'user-stated' | 'context-dependent'; evidence: string }>
-  currentDirection: string
-  interviewNarrative: string
-  followUps: string[]
-  sharingNote: string
+export type Probe = {
+  title: string
+  rationale: string
+  prompt: string
+  dimension: string
+}
+
+export type Exploration = {
+  probe: Probe
+  simulationResponse: string
+  transferNote: string
+  createdAt: string
 }
 
 export type Reflection = {
   id: number
   scenario: Scenario
   response: string
+  details?: ExperienceDetails
   correction: string
   threads: Thread[]
   tension: string
   synthesis?: Synthesis
   createdAt: string
+  exploration?: Exploration
 }
 
 export type StoredPractice = {
@@ -53,6 +69,10 @@ export type StoredPractice = {
   synthesis?: Synthesis
   history: Reflection[]
   scenarioIndex: number
+  details?: ExperienceDetails
+  probe?: Probe
+  simulationResponse?: string
+  transferNote?: string
 }
 
 export type PracticeState = {
@@ -69,7 +89,8 @@ export type PracticeState = {
   isReflecting: boolean
   apiError: string
   saved: boolean
-  storyInput: string
-  storyModel?: StoryModel
-  storyError: string
+  details: ExperienceDetails
+  probe?: Probe
+  simulationResponse: string
+  transferNote: string
 }

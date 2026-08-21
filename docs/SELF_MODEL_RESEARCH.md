@@ -78,3 +78,9 @@ Before making clinical or efficacy claims, Judgment Gym needs expert review and 
 - whether users retain agency rather than outsourcing self-interpretation;
 - whether therapists find the outputs useful and not burdensome;
 - how the model behaves across cultures, languages, identities, and different therapy approaches.
+
+## From lived account to constructed exploration
+
+The model is not only a summarizer. A lived account supplies evidence about a person-in-context. The system can use uncertainty in that account to select a constructed probe: change one condition, reverse a role, explore an underrepresented need, or transfer the pattern to another domain. The resulting response is new evidence about the person's response under that constructed condition, not evidence of a fixed trait.
+
+The important research question is whether comparison between the lived and constructed situations helps a person notice a useful distinction and return to the lived situation with a better question. A simulation that does not transfer back to real experience may be interesting but is not yet a Judgment Gym outcome.

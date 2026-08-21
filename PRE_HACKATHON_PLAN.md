@@ -36,16 +36,16 @@ Write user-facing scenarios originally. Keep them culturally inclusive, non-lead
 
 ## Demo journey
 
-Use one coherent five-scenario path:
+Use a coherent lived-to-constructed path:
 
-1. baseline;
-2. changed condition;
-3. role reversal or vulnerability;
-4. unresolved tension;
-5. transfer or user-authored scenario.
+1. lived situation;
+2. deeper experience detail;
+3. tentative model and correction;
+4. model-guided changed condition, role reversal, or transfer;
+5. comparison back to the lived situation and model revision.
 
-The path must demonstrate a clear first prompt, honest reflection, tentative interpretation, free-form correction, pattern refinement, adaptive scenario selection, open-question review, export, and reset.
+The path must demonstrate a clear lived-situation prompt, honest detail capture, tentative interpretation, free-form correction, probe selection rationale, a clearly labelled constructed situation, transfer back to the lived account, model revision, export, and reset.
 
 ## Completion criteria
 
-The public MVP is ready when a new user can complete the five-scenario journey without an account, correct the agent's interpretation, see evidence-linked threads and tensions, understand why the next scenario was selected, export or delete data, use the narrative workflow, and read the product's model, privacy, safety, and therapist-review documentation from a clean browser.
+The public MVP is ready when a new user can complete the lived-to-constructed loop without an account, correct the agent's interpretation, understand why a probe was selected, compare the constructed response with the lived account, export or delete data, and read the product's model, privacy, safety, and therapist-review documentation from a clean browser.

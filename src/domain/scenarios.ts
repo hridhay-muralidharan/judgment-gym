@@ -1,7 +1,7 @@
-import type { Scenario, Thread } from './types'
+import type { Probe, Scenario, Thread } from './types'
 
 export const scenarios: Scenario[] = [
-  { eyebrow: 'Reflection 01 · Naming the moment', title: 'A moment you keep replaying', body: 'Think of a recent interaction that stayed with you after it ended. It does not need to be dramatic. Focus on what happened, what you noticed in yourself, and what you did next.', context: 'You can write about the facts, your interpretation, your body sensations, emotions, or the story you told yourself. Share only what feels safe to record.', question: 'What do you notice when you slow this moment down?', reason: 'A low-pressure baseline for separating what happened from the meaning your mind made of it.' },
+  { eyebrow: 'Practice 01 · A lived moment', title: 'Bring one real situation into view', body: 'Describe a situation from your life that still feels meaningful, confusing, charged, or unfinished. Start with what happened in your own words. You do not need to explain yourself yet.', context: 'After you write freely, you can add what you felt, thought, said, did, wanted, and noticed afterward. Share only what feels safe to record.', question: 'What happened, and what stayed with you about it?', reason: 'A real situation gives the model evidence to work with before it proposes any interpretation or simulation.' },
   { eyebrow: 'Reflection 02 · The changed condition', title: 'When the same trigger meets a different day', body: 'Return to a situation that tends to activate a familiar response. Imagine it happening after enough sleep, with more support, or with less time pressure than usual.', context: 'There is no preferred response. Notice what changes, what stays, and which conditions seem to matter.', question: 'What changes in your response when the conditions change?', reason: 'Testing whether a pattern is fixed, situational, or connected to a specific need.' },
   { eyebrow: 'Reflection 03 · The other perspective', title: 'A conversation you want to have differently', body: 'Think of a person or situation where you felt misunderstood, unseen, or unable to say what you needed. Consider both what you wanted them to understand and what you were protecting.', context: 'You do not need to excuse anyone or take responsibility for their behaviour. This is an invitation to notice your own experience and options.', question: 'What would you want to be able to say, ask for, or understand?', reason: 'Making room for needs, boundaries, and interpretations without forcing a single story.' },
   { eyebrow: 'Reflection 04 · The unresolved tension', title: 'When two true things pull against each other', body: 'Consider a choice where looking after yourself and meeting someone else’s needs both feel important. Describe the pull without trying to solve it immediately.', context: 'You may feel care and resentment, relief and guilt, hope and fear at the same time. Contradiction is useful information here.', question: 'What are the two truths you are trying to hold at once?', reason: 'Practising language for ambivalence that can make a therapy conversation more precise.' },
@@ -14,3 +14,10 @@ export const fixtureThreads: Thread[] = [
 ]
 
 export const initialTension = 'Self-protection and connection may both matter here.'
+
+export const fixtureProbe: Probe = {
+  title: 'Change one condition and notice what moves',
+  rationale: 'The first account gives us one context. A constructed variation can help you notice what depends on pressure, support, relationship, or perceived consequence.',
+  prompt: 'Imagine the same situation, but one important condition changes. You have more time and one person you trust is available afterward. What do you say or do now, and what feels different inside?',
+  dimension: 'context sensitivity',
+}

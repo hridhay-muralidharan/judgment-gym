@@ -1,54 +1,48 @@
-# Frontend Journey
+# Frontend journey
 
-The frontend is the primary product surface. It should feel like a calm private practice, not a chatbot dashboard, survey, or gamified app.
+The interface should feel like a calm, private practice for examining experience. It should not feel like a chatbot, personality test, or game.
 
 ## Screens
 
 ### Landing
 
-Explain:
+Explain the loop:
 
-- You respond honestly to situations.
-- The agent reflects possible patterns.
-- You decide what is accurate, incomplete, or wrong.
+- start with a real situation;
+- add what happened inside and after it;
+- review tentative model signals;
+- try a constructed variation if useful;
+- return to the lived situation and correct the model.
 
-Actions: begin, continue, import, and how it works.
+Actions: begin with a lived moment, open the model, and review privacy.
 
-### Scenario
+### Lived moment
 
-Show one situation with its title, stakes, people involved, contextual change, response invitation, progress, and a progressively disclosed source drawer.
+Use one open writing space first. Progressively disclose prompts for feeling, thought, speech, action, want, consequence, and present interpretation. Do not lead the user toward a preferred explanation.
 
-Actions: respond, show source context, choose another scenario, write a scenario.
+### Model review
 
-### Response
+Show the user's original account above two or three tentative threads. Show evidence, status, and correction controls. Present the next constructed probe with its dimension and selection rationale.
 
-Use one open writing space with optional prompts: think, feel, matter most, do, and what could change the decision. Include autosave, draft status, submit, clear, and a privacy reminder. Do not interrupt the initial response with model suggestions.
+### Constructed exploration
 
-### Reflection review
+Label the situation as constructed and text-first. Capture the user's response, then compare it with the lived account. Ask what is similar, different, uncertain, or not useful. Let the user stop or return without saving.
 
-Show the user's original response and two or three tentative threads with evidence links. The user can accept, rewrite, reject, add conditions, explain exceptions, or leave a thread unresolved. Preserve both model wording and user correction.
+### Evolving model
 
-### Threads and tensions
+Show recurring threads, changes, conditions, contradictions, unresolved tensions, scenario evidence, and completed explorations. Do not show personality scores or definitive labels.
 
-Show plain-language threads with evidence counts, conditions, exceptions, linked scenarios, status, and revision history. Display unresolved tensions separately. Do not show personality scores or definitive labels.
+### Privacy
 
-### Next scenario
-
-Explain the selection using a short strategy label: testing a boundary, exploring an exception, changing the stakes, reversing the role, applying a thread elsewhere, or revisiting an unresolved tension.
-
-### History and privacy
-
-Show prior scenarios, responses, interpretations, corrections, profile changes, unresolved tensions, export, import, reset, and delete.
+Explain local storage, hosted request boundaries, export, reset, deletion, and the difference between today's hosted prototype and future on-device inference.
 
 ## UX rules
 
-- one primary action per screen;
-- one scenario at a time;
-- post-response profile review;
-- progressive disclosure;
-- user-authored text visually stronger than model interpretation;
+- lived experience comes before generated interpretation;
+- one meaningful action per screen;
+- user-authored material is visually stronger than model text;
+- constructed scenarios are always labelled;
 - unresolved ambiguity is normal;
-- mobile-first responsive layout;
-- no scores, streaks, badges, or competitive framing.
-
-Navigation: `Reflect | My threads | History | Privacy`.
+- no streaks, scores, badges, or competitive framing;
+- every exploration can be skipped or stopped;
+- mobile-first and keyboard accessible.

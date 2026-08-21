@@ -1,11 +1,16 @@
 import type { PracticeState, StoredPractice } from '../domain/types'
 import { fixtureThreads, initialTension, scenarios } from '../domain/scenarios'
+import type { ExperienceDetails } from '../domain/types'
 import { fallbackSynthesis } from '../domain/profile'
 
 export const storageKey = 'judgment-gym-demo'
 
 export function emptyPractice(): StoredPractice {
-  return { response: '', correction: '', threads: [...fixtureThreads], tension: initialTension, history: [], scenarioIndex: 0 }
+  return { response: '', correction: '', threads: [...fixtureThreads], tension: initialTension, history: [], scenarioIndex: 0, details: emptyDetails(), simulationResponse: '', transferNote: '' }
+}
+
+export function emptyDetails(): ExperienceDetails {
+  return { felt: '', thought: '', said: '', did: '', wanted: '', consequence: '', now: '' }
 }
 
 export function normalizePractice(value: unknown): StoredPractice {
@@ -20,6 +25,9 @@ export function normalizePractice(value: unknown): StoredPractice {
     ...parsed,
     threads: Array.isArray(parsed.threads) && parsed.threads.length ? parsed.threads : [...fixtureThreads],
     history,
+    details: parsed.details ?? emptyDetails(),
+    simulationResponse: parsed.simulationResponse ?? '',
+    transferNote: parsed.transferNote ?? '',
     synthesis: parsed.synthesis ?? fallbackSynthesis(history),
     scenarioIndex,
   }
@@ -36,8 +44,8 @@ export function readPractice(): StoredPractice | null {
   }
 }
 
-export function persistPractice(state: Pick<PracticeState, 'response' | 'correction' | 'threads' | 'tension' | 'synthesis' | 'history' | 'scenarioIndex'>): void {
-  const payload: StoredPractice = { response: state.response, correction: state.correction, threads: state.threads, tension: state.tension, synthesis: state.synthesis, history: state.history, scenarioIndex: state.scenarioIndex }
+export function persistPractice(state: Pick<PracticeState, 'response' | 'correction' | 'threads' | 'tension' | 'synthesis' | 'history' | 'scenarioIndex' | 'details' | 'probe' | 'simulationResponse' | 'transferNote'>): void {
+  const payload: StoredPractice = { response: state.response, correction: state.correction, threads: state.threads, tension: state.tension, synthesis: state.synthesis, history: state.history, scenarioIndex: state.scenarioIndex, details: state.details, probe: state.probe, simulationResponse: state.simulationResponse, transferNote: state.transferNote }
   localStorage.setItem(storageKey, JSON.stringify(payload))
 }
 

@@ -1,143 +1,66 @@
 # Judgment Gym
 
-Judgment Gym is a reflective practice for training self-awareness and judgment in an age when increasingly capable AI systems can perform more of our cognitive work.
+Judgment Gym is a research prototype for examining lived experience through structured reflection and carefully bounded constructed situations.
 
-This project explores a simple question:
+The product explores a practical question:
 
-> If we deliberately train our bodies because machines have reduced the amount of physical effort required in daily life, should we also deliberately train our judgment as AI systems reduce the amount of mental effort required in knowledge work?
+> Can an AI system help a person notice how they experience and respond to situations without claiming authority over what those experiences mean?
 
-Judgment Gym is an emerging research direction into how people can deliberately train judgment and self-awareness as AI systems take on more cognitive work. The current product is a bounded research prototype for exploring that question responsibly.
+## The core loop
 
-## The problem
+```text
+Lived situation → experience capture → tentative self/psyche model
+→ model-guided constructed situation → transfer back to lived experience
+→ user correction → model revision
+```
 
-Industrialisation, urbanisation, motorised transport, household automation, and desk-based work have reduced the amount of incidental physical activity in many people's daily lives. Physical inactivity and sedentary behaviour are now established public-health concerns, associated with higher risks across cardiovascular disease, type 2 diabetes, some cancers, and mortality. That is why people intentionally make time for walking, strength training, yoga, sport, and other forms of exercise.
+The user starts with a real event and can describe what happened, what they felt, thought, said, did, wanted, and noticed afterward. The system offers evidence-linked hypotheses through several lenses, then may propose a constructed text situation that changes one condition or explores an underrepresented dimension. The user decides whether the constructed response connects back to life.
 
-AI introduces a parallel research question for mental work. Writing, research, planning, analysis, summarisation, and parts of decision-making can increasingly be delegated to AI systems. This creates opportunities for **cognitive offloading**: a person may spend less time forming an independent view, noticing uncertainty, weighing competing values, or explaining why a decision is sound.
+The product is designed to preserve ambiguity. A similarity, difference, exception, rejection, or unresolved question is more useful than a confident label.
 
-Existing research gives us useful starting points for investigating this question:
+## Why this problem matters
 
-- The literature on [cognitive offloading](https://doi.org/10.1016/j.tics.2016.07.002) describes how people use external tools and environments to reduce cognitive demand.
-- A classic study on the [Google effect](https://pubmed.ncbi.nlm.nih.gov/21764755/) found that when people expected information to remain available externally, they were more likely to remember where to find it than the information itself.
-- A 2025 [Microsoft Research / Carnegie Mellon study](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/?lang=en) reports self-reported reductions in cognitive effort among knowledge workers using GenAI. The study offers evidence about perceived effort and critical-thinking behaviour in a survey context.
-- A 2025 [preprint on LLM-assisted essay writing](https://arxiv.org/abs/2506.08872) reports neural and behavioural differences between study conditions. The work examines a specific task and sample, making it an early contribution to a broader research programme.
+People often carry many meaningful experiences but lack a structured way to examine the sequence of context, perception, emotion, speech, action, and consequence across situations. Judgment Gym tests whether a careful reflective practice can produce clearer questions and observations for the user and, when they choose, for a conversation with a qualified professional.
 
-The research opportunity is: **people may need deliberate practice to remain active participants in their own judgment when AI makes cognitive delegation frictionless.**
+This is a research hypothesis. Judgment Gym does not claim clinical efficacy.
 
-## The mental-health and personal-development direction
+## The self/psyche model
 
-The same pattern matters for mental health and personal development. A person who wants to strengthen self-awareness and judgment can use a reflective practice to slow down an experience, distinguish what happened from the meaning they made of it, and notice what changes with context. They may bring those observations into a conversation with a therapist, coach, or other support professional when that fits their goals.
+V1 uses a layered model rather than one grand theory:
 
-The product hypothesis is that better self-observation can give a person clearer material for collaborative conversations with a therapist, coach, or other support professional. This remains a research hypothesis; clinical efficacy requires dedicated study.
+- narrative identity and change across life chapters;
+- values, motivations, and psychological needs;
+- episode-level situation, interpretation, feeling, action, and consequence;
+- tentative coping and protective responses;
+- relational context and perspective;
+- conditions, contradictions, exceptions, and unresolved tensions.
 
-Judgment Gym is therefore being re-oriented as a self-awareness and judgment-reflection layer for mental-health AI and digital therapy products. It can help users create clearer examples, questions, and observations that they may choose to bring into a conversation with a qualified professional.
+The system distinguishes observed, user-stated, tentative, context-dependent, rejected, and unresolved material. See [Self-model research basis](docs/SELF_MODEL_RESEARCH.md).
 
-The current product has two connected workflows:
+## The privacy opportunity
 
-- **Reflect:** work through a concrete situation, review tentative patterns, correct the mirror, and see what changes across contexts.
-- **Show me about yourself:** paste a long-form personal or professional account and receive a reviewable evolution model plus a concise interview narrative. The raw account is not included in this public repository and the generated version must be edited by the user before sharing.
+Judgment Gym works with intimate longitudinal material. Today, users may hesitate to place memories, emotional patterns, voice recordings, or personal models inside a third-party product whose infrastructure, retention, business incentives, or foundation-model relationships they cannot fully control.
 
-The second workflow is an output of the first product foundation, not a replacement for it. The goal is to preserve depth while making a person's evolution easier for a therapist, coach, or interviewer to understand.
+As capable language models become practical to run offline on personal devices, private local inference may unlock personal AI products that are difficult to offer credibly today. Judgment Gym's preparation work is to validate the interaction and safety layer before that capability arrives: lived-scenario capture, self/psyche model design, constructed text and voice exploration, transfer methods, correction, provenance, consent, and distribution through mental-health AI and digital therapy companies.
 
-## The proposed solution
+The current prototype uses a hosted model route when configured. It does not claim to provide on-device privacy. Its architecture keeps the model contract provider-independent so the inference layer can move later.
 
-I propose a training environment in which a user encounters meaningful, ambiguous situations and practises responding before asking an AI system for help.
+## Boundaries
 
-The practice loop is:
+Judgment Gym is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are not tests of personality or reality. The system must not infer clinical states from text, voice, pauses, accent, or emotional tone.
 
-1. Encounter a scenario or recall a recent experience.
-2. Record an honest response: what happened, what the user noticed, felt, interpreted, and did.
-3. Explain the reasoning, uncertainty, needs, and trade-offs behind that response.
-4. Review the AI's tentative interpretation of recurring patterns, conditions, tensions, and changes.
-5. Correct the interpretation when it is incomplete or wrong.
-6. Revisit similar situations over time and identify a question or example the user may choose to bring into a support conversation.
+## Current prototype
 
-The AI serves as a **mirror and practice partner**. It builds a tentative model from what the user has expressed, while the user remains the authority on their own experience, values, and decisions.
+- lived-situation capture with progressive detail prompts;
+- tentative, evidence-linked model review;
+- user correction and context-dependent pattern status;
+- model-guided constructed text exploration;
+- transfer review back to the lived situation;
+- evolving threads, tensions, and scenario evidence;
+- local persistence, JSON export/import, reset, and deletion;
+- server-side structured model route with a deterministic fallback.
 
-This mirrors a familiar learning pattern:
-
-- a training environment where a person can practise, make mistakes, clarify doubts, and receive feedback;
-- a live environment where the person applies the skill to real circumstances or brings the material into a human-led support conversation.
-
-Judgment Gym supports the practice environment. Real life and professional support are where the user applies the skill and gathers further feedback.
-
-## Target audience
-
-The strongest initial audience is a focused B2B2C segment with a clear self-awareness development use case:
-
-**Primary buyer:** digital therapy platforms, telehealth providers, and AI-enabled mental-health companies that already have an ongoing relationship with a user and want to support reflective practice between care conversations.
-
-**Initial end-user segment:** adults actively seeking to improve self-awareness and judgment, with an initial focus on people aged 26–49 who use therapy, coaching, or another structured support service through a digital or hybrid channel.
-
-This is a good beachhead because the product can be introduced inside an existing support relationship. The company already owns the activation, the user already has a reason to return, and the outcome can be evaluated through self-awareness practice, reflection quality, goal progress, and continuity of engagement.
-
-### Stakeholder fit
-
-- **For users:** a private place to slow down experience, name patterns, test interpretations, and choose what feels worth discussing.
-- **For therapists and coaches:** user-authored observations and corrections that can give a support conversation more context while leaving interpretation and direction with the professional and the user.
-- **For mental-health AI companies:** a structured engagement layer with explicit uncertainty, user correction, privacy controls, and measurable activation points.
-- **For care and safety teams:** a bounded system that preserves the distinction between reflection support, professional care, and crisis response.
-
-### Directional market context
-
-- In the United States in 2023, **58.7 million adults (22.8%)** experienced any mental illness in the past year. Adults aged 26–49 represented the largest age-group count: **30.3 million**.
-- **31.3 million U.S. adults** received mental-health treatment via telehealth in 2023. Among adults aged 26–49, the figure was **16.7 million**.
-- Among U.S. adults with any mental illness, **37.6% received outpatient treatment** in 2023; among 26–49-year-olds with any mental illness, the figure was **39.2%**.
-- In 2023, **6.2 million adults with any mental illness** reported an unmet need for treatment. This signals broad unmet need for mental-health support; the immediate serviceable market for a between-session product remains the narrower, therapy-engaged segment above.
-- Globally, the WHO estimates that **970 million people** were living with a mental disorder in 2019. This supports the scale of the category; the first commercial wedge remains the narrower, therapy-engaged segment above.
-
-These figures provide directional market context. Judgment Gym market sizing requires dedicated research, and the treatment and telehealth categories overlap, so each figure should be read separately. The figures come from the [2023 SAMHSA National Survey on Drug Use and Health](https://www.samhsa.gov/data/sites/default/files/reports/rpt47095/National%20Report/National%20Report/2023-nsduh-annual-national.htm) and the [WHO mental-health overview](https://www.who.int/en/health-topics/mental-health).
-
-Potential evaluation questions include whether users produce more concrete examples for support conversations, whether professionals report better conversational context, whether users can correct model interpretations, and whether the tool improves engagement alongside monitoring for distress or over-reliance on AI.
-
-## A research direction, with a working prototype
-
-I see Judgment Gym as an emerging research direction, with the current prototype serving as a practical experiment. The underlying research question is how people can deliberately practise judgment and self-awareness as AI systems make cognitive delegation increasingly easy.
-
-The prototype is an initial probe into that question. It focuses on building a provisional model of the user's expressed judgment and self-awareness. It is intended to demonstrate:
-
-- scenario-based reflection;
-- structured capture of feelings, observations, actions, reasoning, uncertainty, and trade-offs;
-- user correction of the AI's interpretation;
-- evidence-linked patterns and unresolved tensions;
-- adaptive selection of a next scenario;
-- export, reset, and deletion of the user's reflections.
-
-### What the v1 user model is based on
-
-The v1 model is an **operational reflection profile**. It is an early prototype for organising four deliberately modest inputs:
-
-1. the user's own words about a concrete situation;
-2. tentative, plain-language threads extracted from that response;
-3. the user's acceptance, correction, rejection, or qualification of those threads; and
-4. unresolved tensions and the scenarios that provide evidence for them.
-
-The current prototype stores responses, corrections, thread status, scenario context, and revision history. Its two demo threads make the interaction legible and serve as interaction fixtures. Validation of the psychological framework remains future research. The live model route grounds interpretations in the user's response and returns two or three tentative threads plus one unresolved tension. The profile stays close to observable responses and user corrections.
-
-This is an intentional training-wheel model: it helps a person externalise and inspect their own experience. Repeated evidence and user correction can make the profile more useful. Scientific validation would require study of the constructs, prompts, review process, clinical workflow, and outcomes.
-
-Taking this direction further would require collaboration with psychologists, behavioural scientists, metacognition researchers, clinicians, safety experts, and people with lived experience to determine which aspects of self-awareness can be represented, what evidence is appropriate, how bias and overinterpretation should be controlled, how scenarios should be designed and sequenced, which scenarios are psychologically meaningful, respectful, and non-leading, and how the product should be evaluated.
-
-This expert input supports both the user model and the situations presented to users. Scenario quality is part of the product's validity: poorly designed scenarios could prime users toward preferred answers, confuse temporary emotional states with stable patterns, or create unnecessary distress.
-
-### GenAI and privacy-first personal AI
-
-The technology focus is deliberately limited to generative AI delivered through text and voice. A long-term opportunity is the arrival of capable language models that can run offline on personal devices. That could enable privacy-first personal AI products whose longitudinal memory and reflection data do not need to be shared with a third-party application provider, a foundation-model company, or both.
-
-Judgment Gym is preparing for that future through a portable user-model schema, claim provenance, user correction, revision history, local-first storage, explicit sharing controls, and provider-independent interfaces. The architecture should be able to move from hosted inference to on-device inference without changing the user's mental model or surrendering their data.
-
-Voice is a future interaction mode for the same structured reflection loop. It should be treated as an input and accessibility layer, not as evidence that a system can infer a user's psyche from tone, accent, pauses, or emotion. Any voice version would require separate consent, data-retention, bias, and evaluation work.
-
-## Boundaries and safety
-
-Judgment Gym supports reflection, self-awareness practice, and preparation for conversations with qualified professionals. The product scope excludes crisis care, diagnosis, risk assessment, personality testing, and treatment prescription. The agent preserves ambiguity and contradiction, treats interpretations as provisional, and uses respectful, non-shaming language.
-
-If a user describes immediate danger or serious distress, a production version provides an appropriate, static route to qualified human or emergency support.
-
-The MVP is designed around local-first storage, visible data handling, portable JSON export/import, reset, and deletion. The public repository excludes personal reflections, API keys, and private user profiles. Encrypted export is a follow-up hardening task before treating exports as safe for sensitive long-term storage.
-
-## Status
-
-The current build includes the reflective scenario flow, local draft persistence, tentative mirror review, synthesized cross-scenario threads and tensions, scenario evidence history, privacy controls, JSON export/import/reset, a “Show me about yourself” narrative workflow, and a server-side model route with a fixture fallback. The demo is deployed on Vercel and the repository is published on GitHub.
+The public repository contains no private autobiographical material, private conversations, or API credentials.
 
 ## Run locally
 
@@ -146,7 +69,7 @@ npm install
 npm run dev
 ```
 
-The app shows a bounded fixture reflection by default. To enable live reflections locally, copy `.env.example` to `.env`, add `OPENAI_API_KEY`, and restart the dev server. The key is read exclusively by the server-side route under `api/reflect.ts`.
+The app works with a fixture fallback by default. To enable the hosted model route, copy `.env.example` to `.env`, add `OPENAI_API_KEY`, and restart the dev server. The key is read only by `api/reflect.ts`.
 
 Build verification:
 
@@ -154,31 +77,24 @@ Build verification:
 npm run build
 ```
 
-## Deploy
+## Documentation
 
-This project is configured for Vercel. Deploy the repository, then add `OPENAI_API_KEY` as a sensitive production environment variable in the Vercel project and redeploy. Keep the key in the server-side environment and out of the frontend.
-
-Planning documents:
-
-- [Product plan](PRE_HACKATHON_PLAN.md)
 - [Product thesis](docs/PRODUCT_THESIS.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
-- [Evaluation plan](docs/EVALUATION_PLAN.md)
-- [Therapist review packet](docs/THERAPIST_REVIEW_PACKET.md)
 - [Agent model](docs/AGENT_MODEL.md)
 - [Frontend journey](docs/FRONTEND_JOURNEY.md)
-- [Scenario journey](docs/SCENARIO_JOURNEY.md)
+- [Lived-to-constructed journey](docs/SCENARIO_JOURNEY.md)
 - [Privacy and safety](docs/PRIVACY_AND_SAFETY.md)
-- [Build and share runbook](docs/HACKATHON_RUNBOOK.md)
+- [Evaluation plan](docs/EVALUATION_PLAN.md)
+- [Therapist review packet](docs/THERAPIST_REVIEW_PACKET.md)
 - [Architecture](docs/ARCHITECTURE.md)
 
-## Evidence and further reading
+## Research references
 
-- [WHO: Guidelines on Physical Activity and Sedentary Behaviour (2020)](https://www.who.int/publications/i/item/9789240015128)
-- [Lee et al.: Impact of Physical Inactivity on the World's Major Non-Communicable Diseases, *The Lancet* (2012)](https://doi.org/10.1016/S0140-6736(12)61031-9)
-- [Risko & Gilbert: Cognitive Offloading, *Trends in Cognitive Sciences* (2016)](https://doi.org/10.1016/j.tics.2016.07.002)
-- [Sparrow, Liu & Wegner: Google Effects on Memory, *Science* (2011)](https://doi.org/10.1126/science.1207745)
-- [Lee et al.: The Impact of Generative AI on Critical Thinking, CHI (2025)](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/?lang=en)
-- [Kosmyna et al.: Your Brain on ChatGPT, arXiv preprint (2025)](https://arxiv.org/abs/2506.08872)
+- [McAdams: The Psychology of Life Stories](https://doi.org/10.1037/1089-2680.5.2.100)
+- [Ryan and Deci: Self-Determination Theory](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf)
+- [Bär et al.: Early Maladaptive Schemas and Schema Modes](https://doi.org/10.1111/papt.12465)
+- [Muste et al.: Systematic Review of Schema Therapy](https://pubmed.ncbi.nlm.nih.gov/37002933/)
+- [Risko and Gilbert: Cognitive Offloading](https://doi.org/10.1016/j.tics.2016.07.002)
 
-Additional model references and boundaries are documented in [Self-model research basis](docs/SELF_MODEL_RESEARCH.md). The product does not claim that any of these frameworks, individually or together, constitute a validated model of a user's psyche.
+These references inform the research direction. They do not validate Judgment Gym's model or establish clinical efficacy.

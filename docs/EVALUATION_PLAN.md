@@ -2,57 +2,41 @@
 
 ## Product questions
 
-1. Can users distinguish their own words from the system's interpretation?
-2. Can they correct a model claim without friction?
-3. Does repeated reflection help them name what repeats, changes, or depends on context?
-4. Does the longitudinal model produce a clearer professional narrative than a raw chronology?
-5. Does the product preserve agency and avoid creating false psychological certainty?
+1. Can users describe a lived situation with enough sequence and detail to examine it?
+2. Can they distinguish what happened from what they felt, thought, said, did, wanted, and concluded?
+3. Are model claims grounded, correctable, and useful without becoming fixed labels?
+4. Does a model-guided constructed situation help users notice a meaningful similarity, difference, or uncertainty?
+5. Does transfer back to lived experience produce useful questions rather than rumination or false certainty?
+6. Can a therapist or other qualified professional use the material without inheriting unnecessary interpretive work?
 
-## V1 measures
+## Reflection quality
 
-### Reflection quality
+- presence of observable context and event sequence;
+- coverage of felt, thought, speech, action, wants, consequences, and later meaning;
+- user-rated clarity before and after the flow;
+- model-claim acceptance, qualification, rejection, and unresolved rates;
+- evidence-link coverage for every generated claim;
+- correction completion and model revision quality.
 
-- percentage of reflections containing an observable event, interpretation, emotion or body signal, action, and uncertainty;
-- user-rated clarity before and after the reflection;
-- proportion of model claims accepted, qualified, rejected, or left unresolved;
-- correction completion rate;
-- evidence-link coverage for generated claims.
+## Constructed-scenario quality
 
-### Narrative quality
+- percentage of users who understand that the situation is constructed;
+- usefulness of the selected dimension or probe;
+- user ability to stop, skip, or choose another direction;
+- meaningful similarity/difference/uncertainty found during transfer;
+- reports of increased rumination, distress, shame, or dependence;
+- unsupported trait or clinical inference rate.
 
-- time to produce a two-minute “Show me about yourself” narrative;
-- user-rated accuracy and ownership;
-- independent listener recall of the intended evolution;
-- ability to answer a follow-up question using the same underlying model;
-- number of sensitive details removed before sharing.
+## Research sequence
 
-### Safety and agency
+1. Therapist and lived-experience review of the model contract and prompts.
+2. 5–8 adults completing one lived situation, one probe, and one transfer review.
+3. Structured interviews focused on accuracy, agency, emotional impact, and usefulness.
+4. Red-team testing for overreach, sensitive disclosures, and misleading simulation.
+5. A larger pilot only after an appropriate ethics, privacy, and safety process is defined.
 
-- false-certainty reports;
-- distress or rumination reports after use;
-- rate of users choosing to consult a professional when the flow suggests a question rather than an answer;
-- instances of diagnosis, treatment advice, moral judgment, or unsupported childhood/trauma inference;
-- user ability to inspect, edit, export, and delete data.
-
-## Evaluation method
-
-Start with qualitative, non-clinical research:
-
-1. therapist review of the model contract and one anonymized sample;
-2. 5–8 adult users completing one reflection and one narrative flow;
-3. structured interviews focused on accuracy, agency, emotional impact, and usefulness;
-4. red-team review for overreach, sensitive disclosure, and crisis language;
-5. only then consider a larger pilot with an appropriate ethics and safety process.
-
-Do not infer clinical efficacy from product engagement, self-reported satisfaction, or one founder case study.
+Do not infer clinical efficacy from engagement, satisfaction, or one founder case study.
 
 ## Stop conditions
 
-Pause expansion if testing shows that the product:
-
-- routinely turns ambiguous material into fixed labels;
-- increases distress or compulsive rumination;
-- encourages users to treat the system as a therapist;
-- makes sensitive disclosures difficult to remove;
-- cannot explain why a model claim was generated;
-- performs materially worse for a subgroup or communication style.
+Pause expansion if the system routinely turns ambiguity into fixed labels, increases distress or compulsive rumination, encourages therapist substitution, obscures why a probe was selected, makes sensitive data difficult to remove, or performs materially worse for a subgroup or communication style.

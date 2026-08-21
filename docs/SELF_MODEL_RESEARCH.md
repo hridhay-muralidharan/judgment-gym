@@ -1,6 +1,6 @@
 # Self-model research basis for v1
 
-Room to Respond should not claim to encode one universally accepted model of the psyche. Psychotherapy, personality research, motivation research, and narrative psychology use different constructs for different purposes. V1 therefore uses a transparent episode-and-development model.
+Room to Respond uses a transparent episode-and-development model. Psychotherapy, personality research, motivation research, and narrative psychology offer complementary constructs for different purposes.
 
 ## The model used in the product
 
@@ -12,13 +12,13 @@ The model has five layers:
 4. **Development:** repeated patterns, context shifts, new strategies, unresolved tensions, and evidence of change.
 5. **Epistemic status:** observation, user interpretation, model hypothesis, uncertainty, contradiction, and user correction.
 
-This is a working product model. It is not a clinical formulation, personality test, or theory of the whole psyche.
+This is a working product model for reflection. Clinical formulation, personality testing, and a theory of the whole psyche remain outside the product's scope.
 
 ## What is actually implemented in v1
 
 The current prototype implements a simpler version of this model. It records the situation, the person's account of what they felt, thought, said, did, wanted, and noticed afterward; tentative observations; the person's corrections; an unresolved tension; a constructed variation; and what changed when the person compared the two responses. The long-form map accepts one text input and can be configured for one event, several events within one situation, or several situations across time.
 
-The research lenses below are references for future design and therapist review. They are not currently encoded as diagnostic or clinical assessments in the product. The current model should not be described as a CBT formulation, schema-therapy formulation, or narrative-identity assessment.
+The research lenses below guide future design and therapist review. Current implementation uses them as conceptual references, with no diagnostic or clinical assessment layer. The current model is an episode-and-development map informed by CBT, schema, and narrative-identity concepts.
 
 ## Layer 1 — Narrative identity
 
@@ -28,7 +28,7 @@ Narrative identity is the organizing layer for longitudinal work. McAdams descri
 
 **What the product may say:** “Your account describes a shift from externally expected roles toward work you experience as more self-endorsed.”
 
-**What it must not say:** “This is your true identity” or “your life has one underlying meaning.”
+**Language the product excludes:** “This is your true identity” and “your life has one underlying meaning.”
 
 Source: [McAdams, The Psychology of Life Stories](https://doi.org/10.1037/1089-2680.5.2.100).
 
@@ -38,7 +38,7 @@ Self-Determination Theory provides a useful lens for examining autonomy, compete
 
 **What it contributes:** possible motives, need tensions, external versus self-endorsed reasons, and conditions that support agency.
 
-**Guardrail:** a value or need is a hypothesis about the episode, not a permanent trait. The system must ask whether the interpretation fits and preserve alternatives.
+**Use:** a value or need is presented as a hypothesis about the episode. The system asks whether the interpretation fits and preserves alternatives.
 
 Source: [Ryan and Deci, Self-Determination Theory and the Facilitation of Intrinsic Motivation](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf).
 
@@ -48,7 +48,7 @@ For a specific event, a CBT-style formulation can organize the relationship betw
 
 **What it contributes:** event-level structure, alternative interpretations, response options, and evidence for or against a conclusion.
 
-**Guardrail:** the product uses a lightweight reflection map, not a clinical case formulation. It does not infer disorders, trauma, or treatment needs.
+**Use:** the product uses a lightweight reflection map. Clinical case formulation, disorder, trauma, and treatment inferences belong with qualified clinicians.
 
 ## Layer 4 — Schema and coping-language lens
 
@@ -56,7 +56,7 @@ Schema therapy offers language for recurring beliefs, unmet needs, and coping mo
 
 **What it contributes:** careful hypotheses about recurring protective strategies, inner criticism, avoidance, overcompensation, or a more supportive adult stance.
 
-**Guardrail:** no schema inventory, no diagnostic label, no “child mode” assignment, and no claim that a childhood explanation has been established. Use plain language first and make clinical terminology optional.
+**Use:** schema language remains optional and plain language comes first. The product does not assign diagnostic labels, modes, or established childhood explanations.
 
 Source: [Bär et al., Early Maladaptive Schemas and Schema Modes in Clinical Disorders](https://doi.org/10.1111/papt.12465), and [Muste et al., A Systematic Review of the Heterogeneity of Schema Therapy](https://pubmed.ncbi.nlm.nih.gov/37002933/).
 
@@ -83,7 +83,7 @@ Every generated claim should be one of:
 - **Context-dependent:** a pattern the user says changes with circumstances.
 - **Unresolved:** a useful question or tension without a conclusion.
 
-No claim should be promoted to “confirmed” merely because a language model produced it. Confirmation means the user has endorsed the wording for this context, and even then it remains revisable.
+Model-generated claims stay in the tentative category until the user endorses the wording for this context. Endorsed wording remains revisable.
 
 ## Research gaps
 
@@ -99,6 +99,6 @@ Before making clinical or efficacy claims, Room to Respond needs expert review a
 
 ## From lived account to constructed exploration
 
-The model is not only a summarizer. A lived account supplies evidence about a person-in-context. The system can use uncertainty in that account to select a constructed probe: change one condition, reverse a role, explore an underrepresented need, or transfer the pattern to another domain. The resulting response is new evidence about the person's response under that constructed condition, not evidence of a fixed trait.
+The model is also a constructed-exploration tool. A lived account supplies evidence about a person-in-context. The system can use open questions in that account to select a constructed probe: change one condition, reverse a role, explore an underrepresented need, or transfer the pattern to another domain. The resulting response is new evidence about the person's response under that constructed condition and remains context-specific.
 
 The important research question is whether comparison between the lived and constructed situations helps a person notice a useful distinction and return to the lived situation with a better question. A simulation that does not transfer back to real experience may be interesting but is not yet a Room to Respond outcome.

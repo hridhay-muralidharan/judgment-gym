@@ -1,6 +1,6 @@
 # Room to Respond — product thesis
 
-Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. It supports reflection; it does not provide therapy or clinical judgment.
+Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. Its role is reflection support; therapy and clinical judgment remain with qualified professionals.
 
 Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
 
@@ -25,13 +25,13 @@ The first working map groups faculties by the part they play in meeting a situat
 - **Choose:** values, motivation, judgment, decisions, and self-regulation. Self-determination theory connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)).
 - **Adapt:** cognitive flexibility, imagination, foresight, feedback, and learning. Research links executive flexibility and prospection with changing strategy, planning, and action ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750); [Szpunar](https://pmc.ncbi.nlm.nih.gov/articles/PMC4074678/)).
 
-These are Room to Respond's working groups, not an established taxonomy of the psyche. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
+These are Room to Respond's working groups. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
 
 ## Prototype: one mental workout
 
 A person brings in a real event, describes what happened and how they responded, reviews a few tentative observations, tries a changed version of the situation, and compares the two responses.
 
-The current workout invites practice in emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may appear in the account, but this prototype does not claim to develop them directly.
+The current workout invites practice in emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may appear in the account. Direct development effects for these faculties remain untested.
 
 More research is needed to determine whether these prompts develop any faculty, which outcomes they affect, and how exercises for a wider range of faculties can be combined into complete, efficient mental workout routines.
 
@@ -67,11 +67,11 @@ Each faculty needs its own research review. The review should cover:
 
 Privacy is central because the product works with intimate situations, emotional responses, personal patterns, and changes across time. A hosted product sends that material through an application operator and a model provider. Users may reasonably question who can retain it, access it, use it to improve systems, or connect it with their identity.
 
-That creates a trust roadblock for privacy-first personal AI products. The product becomes more credible when a capable model can run offline on the user's device, with personal memory and reasoning staying on the device. This is a catalyst for the category, not a complete privacy guarantee: local encryption, deletion, recovery, sharing, and device security still need to be solved.
+On-device inference opens the path to privacy-first personal AI products. Personal memory and reasoning can stay on the user's device. The launch standard includes local encryption, deletion, recovery, sharing, and device security alongside capable reasoning.
 
 The go-to-market trigger is therefore a hypothesis: launch the privacy-first version when on-device models can provide the reasoning quality needed for the workouts and the full privacy system has been validated.
 
-Until then, Room to Respond needs validated workouts and outcome measures, therapist and user review, a user-controlled model of experiences and uncertainty, text and voice interaction designs, local storage and deletion safeguards, selective sharing, a portable model layer, and distribution relationships with therapists and mental-health organisations. The current prototype uses hosted inference when configured and does not claim on-device privacy today.
+The preparation period requires validated workouts and outcome measures, therapist and user review, a user-controlled model of experiences and uncertainty, text and voice interaction designs, local storage and deletion safeguards, selective sharing, a portable model layer, and distribution relationships with therapists and mental-health organisations. Today's prototype uses hosted inference when configured and prepares these foundations for a future on-device product.
 
 ## Product name
 
@@ -79,4 +79,4 @@ Until then, Room to Respond needs validated workouts and outcome measures, thera
 
 ## Boundaries
 
-Room to Respond is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. The system does not infer clinical states from text, voice, pauses, accent, or emotional tone.
+Room to Respond is a reflection and exploration product. Therapy, diagnosis, crisis support, risk assessment, treatment recommendations, and care decisions belong with qualified professionals and services. Constructed situations are exercises for observation and reflection. The system operates on the user's words and context and does not infer clinical states from text, voice, pauses, accent, or emotional tone.

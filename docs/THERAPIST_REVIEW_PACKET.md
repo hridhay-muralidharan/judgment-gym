@@ -2,13 +2,13 @@
 
 ## Purpose
 
-This packet requests expert feedback on a product concept and one user-generated exploration. It is not a request for diagnosis, treatment, or clinical endorsement.
+This packet requests expert feedback on a product concept and one user-generated exploration. The requested feedback concerns product usefulness, psychological grounding, safety, and fit with therapy contexts.
 
 ## What to review
 
 Room to Respond currently works like this: a person brings in a real situation, describes what happened and how they responded, reviews a few tentative observations from the AI, and corrects them. The AI then creates a carefully limited variation of the situation. The person responds to the variation, compares it with the original, and decides what is worth carrying into life or into therapy.
 
-The current workout invites practice in emotion awareness, metacognition, cognitive flexibility, prospection, and learning. This is a design description, not an efficacy claim. The long-form map can be configured for one event, several events within one situation, or several situations across time. It does not currently perform a clinical formulation.
+The current workout invites practice in emotion awareness, metacognition, cognitive flexibility, prospection, and learning. This is a design description; efficacy remains to be evaluated. The long-form map can be configured for one event, several events within one situation, or several situations across time. Clinical formulation belongs with qualified professionals.
 
 Please review:
 
@@ -43,7 +43,7 @@ Please add: “What would need to be true for this assessment to move one level 
 - Does the changed situation feel like a safe prompt for reflection, or could it be experienced as an intervention that needs more support?
 - What privacy or sharing boundary is too weak?
 
-Room to Respond is not a therapist, diagnostic tool, risk assessor, crisis service, treatment recommender, or substitute for care. The user remains the authority on their experience. Model interpretations and constructed probes remain provisional.
+Room to Respond is a reflection and exploration product. Therapy, diagnosis, risk assessment, crisis support, treatment recommendations, and care decisions belong with qualified professionals and services. The user remains the authority on their experience. Model interpretations and constructed probes remain reviewable.
 
 Related documents:
 

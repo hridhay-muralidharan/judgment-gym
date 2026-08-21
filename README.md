@@ -1,6 +1,6 @@
 # Room to Respond
 
-Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. It is designed to support reflection, not to replace therapy or make clinical judgments.
+Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. Its role is reflection support; therapy and clinical judgment remain with qualified professionals.
 
 Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
 
@@ -10,7 +10,7 @@ Physical gyms provide physical workouts for physical muscles. They bring differe
 
 Modern life also changes how people use their minds:
 
-- social media, notifications, and smartphones compete for attention. Experimental research has found measurable attention costs from smartphone presence, while the wider claim of universally shorter attention spans remains unsettled ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/));
+- social media, notifications, and smartphones compete for attention. Experimental research has found measurable attention costs from smartphone presence, while research on universal shorter attention spans is mixed ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/));
 - digital environments shape how people experience, express, and regulate emotion. Research finds a relationship between emotion dysregulation and problematic smartphone use, with meaningful variation across studies ([systematic review and meta-analysis](https://pubmed.ncbi.nlm.nih.gov/36497921/));
 - search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding. Research on cognitive offloading shows that external tools change the demands placed on memory and metacognition ([review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/));
 - faster communication and more complex work create more frequent social and practical judgments.
@@ -28,7 +28,7 @@ The first working map groups faculties by the part they play in meeting a situat
 - **Choose** — values, motivation, judgment, decisions, and self-regulation. Self-determination research connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)). Decision research shows that structured reflection can improve the discovery of far-sighted strategies ([Becker et al.](https://doi.org/10.1017/jdm.2023.16)).
 - **Adapt** — cognitive flexibility, imagination, foresight, feedback, and learning. Executive-function research identifies flexibility as a core capacity, while prospection research connects imagining possible futures with planning and action ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750); [Szpunar](https://pmc.ncbi.nlm.nih.gov/articles/PMC4074678/)).
 
-These are Room to Respond's working groups, not an established taxonomy of the psyche. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
+These are Room to Respond's working groups. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
 
 ## Prototype: one mental workout
 
@@ -50,11 +50,11 @@ This workout currently invites practice in:
 - prospection — considering what may happen next;
 - learning — comparing responses and carrying forward a question or strategy.
 
-Memory, values, social cognition, and meaning-making may appear in the account, but the current prototype does not claim to develop each of them directly. More research is needed to determine whether these prompts develop any faculty, which outcomes they affect, and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
+Memory, values, social cognition, and meaning-making may appear in the account. Direct development effects for these faculties remain untested. More research is needed to determine which outcomes the prompts affect and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
 
 ## Why GenAI marks the inflection point for Room to Respond
 
-GenAI marks an inflection point because it can build a workout around the person's own situation rather than giving everyone the same exercise. It can:
+GenAI marks an inflection point because it can build a workout around the person's own situation and adapt the next exercise to the person's words, context, and previous practice. It can:
 
 - ask questions about a specific situation;
 - follow the person's own words and context;
@@ -72,7 +72,7 @@ The person supplies the experience, reviews the interpretation, and decides what
 
 Privacy is central because the product works with intimate situations, emotional responses, personal patterns, and changes across time. A hosted product sends that material through an application operator and a model provider. Users may reasonably question who can retain it, access it, use it to improve systems, or connect it with their identity.
 
-That creates a trust roadblock for privacy-first personal AI products. The product becomes more credible when a capable model can run offline on the user's device, with personal memory and reasoning staying on the device. This is a catalyst for the category, not a complete privacy guarantee: local encryption, deletion, recovery, sharing, and device security still need to be solved.
+On-device inference opens the path to privacy-first personal AI products. Personal memory and reasoning can stay on the user's device. The launch standard includes local encryption, deletion, recovery, sharing, and device security alongside capable reasoning.
 
 The go-to-market trigger is therefore a hypothesis: launch the privacy-first version when on-device models can provide the reasoning quality needed for the workouts and the full privacy system has been validated.
 
@@ -86,7 +86,7 @@ Until that point, Room to Respond needs to have the following in place:
 - a portable model layer that can move from hosted to on-device inference;
 - distribution relationships with therapists, digital-therapy companies, and mental-health organisations.
 
-The current prototype uses hosted inference when configured. It prepares the interaction and research foundation; it does not claim to provide on-device privacy today.
+Today's prototype uses hosted inference when configured. It prepares the interaction, research foundation, and portable model layer for a future on-device product.
 
 ## What the current prototype does
 
@@ -96,11 +96,11 @@ The AI offers a few tentative observations. The person can accept them, qualify 
 
 The result is a small record of what may repeat, what changes with context, and what the person wants to keep exploring. For longer accounts, one text box can be configured to analyse one event, several events within one situation, or several situations across time.
 
-This is a research prototype. It shows how a mental workout might feel; it does not yet prove that the workout develops a faculty or improves mental health.
+This is a research prototype. Whether the workout develops a faculty or improves mental health remains an empirical question for future evaluation.
 
 ## Boundaries
 
-Room to Respond is not a therapist, diagnostic system, crisis service, risk assessor, treatment recommender, personality test, or substitute for professional care. Constructed situations are exercises for observation and reflection. They are not tests of personality or reality. The system must not infer clinical states from text, voice, pauses, accent, or emotional tone.
+Room to Respond is a reflection and exploration product. Therapy, diagnosis, crisis support, risk assessment, treatment recommendations, and care decisions belong with qualified professionals and services. Constructed situations are exercises for observation and reflection. The system operates on the user's words and context and does not infer clinical states from text, voice, pauses, accent, or emotional tone.
 
 ## Documentation
 

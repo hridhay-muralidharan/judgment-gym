@@ -1,4 +1,4 @@
-# Working title: Room to Respond — product storyboard
+# Room to Respond — product storyboard
 
 ## What the product is
 
@@ -6,7 +6,7 @@ Modern life changed the physical demands built into daily life, and gyms emerged
 
 Physical gyms have different workouts because people train different capacities. The mental gym follows the same organising idea. Each workout has a faculty, a human purpose, a research basis, an exercise, and a way to notice progress.
 
-The product name remains open while the research determines which faculty or group of faculties sits at the centre.
+Room to Respond gives people a clear place to bring a situation, choose a faculty to exercise, and build an evolving record of what they learn.
 
 ## Screen 1 — The invitation
 
@@ -22,7 +22,7 @@ The opening should make the concept immediately understandable. A person comes i
 - Choose a workout area.
 - Continue a previous practice.
 
-The product does not begin with a test score. It begins with a situation, a question, or a capacity the person wants to work on.
+The product begins with a situation, a question, or a capacity the person wants to work on. It keeps the focus on lived experience and useful practice.
 
 ## Screen 2 — The workout floor
 
@@ -54,7 +54,7 @@ The workout areas are organised around the human faculties map.
 - learning from feedback;
 - changing a response when conditions change.
 
-These groupings are an interaction hypothesis. The final structure should follow the research and the exercises, not the labels alone.
+These groupings are the current interaction map. Research and workout results will refine the exercises and the way they are organised.
 
 ## Screen 3 — Select a starting point
 
@@ -91,7 +91,7 @@ The person can bring a real situation into the workout at any point.
 
 ## Screen 4 — The personal training space
 
-The system helps the person work through the situation without rushing to a conclusion.
+The system gives the person space to examine the situation and reach their own conclusion.
 
 The person can record:
 
@@ -103,12 +103,12 @@ The person can record:
 - what they believe now;
 - how confident they are in that belief.
 
-The system returns a provisional training reflection:
+The system returns a reviewable training reflection:
 
 - what appears to have happened;
 - which faculty may have been involved;
 - what evidence supports that reading;
-- what remains uncertain;
+- open questions;
 - what alternative explanation is possible;
 - what could be explored next.
 
@@ -142,7 +142,7 @@ The person compares the real situation and the exercise:
 - What remains unclear?
 - Is there anything useful to carry into life?
 
-The result is a training insight, not a personality verdict.
+The result is a training insight grounded in the exercise.
 
 The person may choose:
 
@@ -151,7 +151,7 @@ The person may choose:
 - a conversation to have;
 - a new situation to examine;
 - a pattern to keep observing;
-- no conclusion yet.
+- an open question to revisit.
 
 ## Screen 7 — The evolving training record
 
@@ -166,7 +166,7 @@ Over time, the product builds a user-controlled record of practice:
 - unresolved questions;
 - changes across time.
 
-This record is a map of practice. It remains provisional and editable.
+This record is a map of practice. It stays editable and belongs to the person using it.
 
 ## Screen 8 — What GenAI contributes
 
@@ -194,7 +194,7 @@ Each workout must have a research card that explains:
 - the intervention or exercise being used;
 - the evidence strength;
 - what progress means;
-- what the product still does not know.
+- open questions for future research.
 
 Progress may include:
 
@@ -206,19 +206,19 @@ Progress may include:
 - greater alignment between goals and action;
 - improved transfer to a real situation.
 
-Engagement and time spent are not sufficient measures of progress.
+Engagement and time spent describe use. Progress requires measures tied to the faculty being exercised and transfer into real situations.
 
 ## Screen 10 — Privacy: the guardrail and the roadblock
 
 Some workouts become more valuable when the system can remember a person's situations and patterns over time. These are also the workouts most likely to involve sensitive material.
 
-The current prototype can validate the exercises, model, safety boundaries, and distribution path using hosted inference. Future capable on-device models may enable deeper privacy-first personal training without requiring intimate longitudinal material to leave the person's device.
+The current prototype can validate the exercises, model, safety boundaries, and distribution path using hosted inference. Capable on-device models will open a privacy-first path for personal training in which intimate longitudinal material can remain on the person's device.
 
-The research and product work can happen before that future arrives.
+The research, validated prototypes, safety design, and distribution channels need to be ready when that capability becomes available.
 
 ## First version
 
-The first version should demonstrate one complete workout rather than pretend to offer a finished mental gym.
+The first version should demonstrate one complete workout and show the research roadmap for the wider mental gym.
 
 The strongest current candidate is a situation-based workout combining:
 
@@ -232,7 +232,7 @@ emotion awareness
 
 It starts with a real situation, examines the person's response, introduces a bounded variation, and returns the learning to the original situation.
 
-The broader workout floor remains visible so the product has a coherent future without making unsupported claims today.
+The broader workout floor remains visible as a research roadmap. Each additional workout earns its place through evidence, design, and evaluation.
 
 ## The final story
 

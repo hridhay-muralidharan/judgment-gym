@@ -16,7 +16,7 @@ This is a working product model for reflection. Clinical formulation, personalit
 
 ## What is actually implemented in v1
 
-The current prototype implements a simpler version of this model. It records the situation, the person's account of what they felt, thought, said, did, wanted, and noticed afterward; tentative observations; the person's corrections; an unresolved tension; a constructed variation; and what changed when the person compared the two responses. The long-form map accepts one text input and can be configured for one event, several events within one situation, or several situations across time.
+The current prototype implements a simpler version of this model. It records the situation, the person's account of what they felt, thought, said, did, wanted, and noticed afterward; tentative observations; the person's corrections; an unresolved tension; a constructed variation; and what changed when the person compared the two responses. The long-form map uses an input text box that can be configured for one event, several events within one situation, or several situations across time.
 
 The research lenses below guide future design and therapist review. Current implementation uses them as conceptual references, with no diagnostic or clinical assessment layer. The current model is an episode-and-development map informed by CBT, schema, and narrative-identity concepts.
 

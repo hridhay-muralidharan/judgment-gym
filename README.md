@@ -94,7 +94,7 @@ A person brings in a real event that still feels important, confusing, charged, 
 
 The AI offers a few tentative observations. The person can accept them, qualify them, reject them, or add something the AI missed. The prototype then creates a changed version of the situation. The person responds to that version and compares it with the original.
 
-The result is a small record of what may repeat, what changes with context, and what the person wants to keep exploring. For longer accounts, one text box can be configured to analyse one event, several events within one situation, or several situations across time.
+The result is a small record of what may repeat, what changes with context, and what the person wants to keep exploring. For longer accounts, the input text box can be configured to analyse one event, several events within one situation, or several situations across time.
 
 This is a research prototype. Whether the workout develops a faculty or improves mental health remains an empirical question for future evaluation.
 

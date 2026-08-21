@@ -8,7 +8,7 @@ The effects depend on urban form, transport, and local context. Research shows t
 
 Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
 
-## Why a gym for mental faculties?
+## A Gym for the mind!
 
 Modern life also changes how people use their minds:
 

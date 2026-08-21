@@ -6,7 +6,7 @@ Modern life reduced some of the physical activity built into daily life. Cars re
 
 Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
 
-## Why a gym for mental faculties?
+## A Gym for the mind!
 
 Modern life also changes how people use their minds. Social media, notifications, and smartphones compete for attention; digital environments shape how people experience and regulate emotion; search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding; and faster communication and more complex work create more frequent social and practical judgments.
 

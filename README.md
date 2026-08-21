@@ -84,6 +84,7 @@ npm run build
 - [Product thesis](docs/PRODUCT_THESIS.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
 - [Human faculties map](docs/HUMAN_FACULTIES_MAP.md)
+- [Product storyboard](docs/PRODUCT_STORYBOARD.md)
 - [Judgment and self-awareness research](docs/JUDGMENT_SELF_AWARENESS_RESEARCH.md)
 - [Product name review](docs/PRODUCT_NAME_REVIEW.md)
 - [Agent model](docs/AGENT_MODEL.md)

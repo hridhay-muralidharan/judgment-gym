@@ -17,8 +17,6 @@ Modern life also changes how people use their minds:
 - Search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding.
 - Faster communication and more complex work create more frequent social and practical judgments.
 
-These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
-
 Research on cognitive offloading shows that external tools can improve task performance while changing the demands placed on internal memory and metacognition. [Gilbert and colleagues' review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/) covers reminders, GPS, written notes, search engines, and other external tools. Research on generative AI as a cognitive tool is still developing. Room to Respond treats AI-assisted offloading as an open research question.
 
 Room to Respond brings relevant exercises together into a practical routine for a client to exercise their mental faculties.

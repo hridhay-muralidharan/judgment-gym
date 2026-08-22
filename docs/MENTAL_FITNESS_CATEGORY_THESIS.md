@@ -12,7 +12,7 @@ This is the category Room to Respond is exploring.
 
 ## What research supports
 
-The research base is distributed across several fields rather than one established field called mental fitness.
+The research basis comes from mental-health promotion, coaching, guided digital support, metacognition, and related faculty research.
 
 ### Promotion and prevention
 
@@ -22,7 +22,7 @@ The [World Health Organization's World mental health report](https://iris.who.in
 
 A systematic review of coaching as a developmental intervention found positive evidence for goal attainment across much of the coaching literature, alongside research on wellbeing, resilience, stress, and self-insight ([Theeboom, Beersma, and van Vianen, 2014](https://doi.org/10.1080/17521882.2013.846946)). A systematic review of positive psychological coaching describes goal-setting, strengths, wellbeing, and ongoing evaluation as central parts of the coaching process ([van Zyl et al., 2020](https://doi.org/10.3389/fpsyg.2020.00793)).
 
-These findings support structured, goal-linked development with a human guide. They do not establish one standard mental-workout routine or prove that every proposed exercise develops a faculty.
+These findings support structured, goal-linked development with a human guide. Room to Respond uses them to define routines for testing.
 
 ### Guided digital mental health
 
@@ -40,7 +40,7 @@ Transfer into everyday life remains the important outcome for Room to Respond. A
 
 Generative AI is increasingly able to draft, compare, retrieve, plan, and execute parts of knowledge work. Research on cognitive offloading shows that external tools can improve immediate task performance while changing the demands placed on memory and metacognition ([Gilbert et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/)). OECD work on AI and the future of skills identifies creativity and social-emotional reasoning among capabilities that continue to require substantial human contribution ([OECD, AI and the Future of Skills](https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/11/ai-and-the-future-of-skills-volume-2_a3986583/a9fe53cb-en.pdf)).
 
-Room to Respond's strategic hypothesis is that AI will increase the value people place on developing judgment, taste, self-direction, communication, emotional regulation, and sense-making. The stronger claim — that people will actively seek structured mental workouts for these faculties as AI adoption grows — is a trend worth tracking and a product hypothesis worth testing.
+Room to Respond's strategic hypothesis is that AI will increase the value people place on developing judgment, taste, self-direction, communication, emotional regulation, and sense-making. Whether people will actively seek structured mental workouts for these faculties as AI adoption grows is a trend worth tracking and a product hypothesis worth testing.
 
 The research programme should track:
 

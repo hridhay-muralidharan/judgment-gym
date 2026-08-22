@@ -12,7 +12,7 @@ The challenges arising out of physical inactivity have led us to dedicated worko
 
 Modern life also changes how people use their minds:
 
-- Social media, notifications, and smartphones compete for attention, alongside widespread concern about shorter attention spans.
+- Social media, notifications, and smartphones compete for attention. Experimental research has found measurable attention costs from smartphone presence ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/)).
 - Digital environments shape how people experience, express, and regulate emotion.
 - Search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding.
 - Faster communication and more complex work create more frequent social and practical judgments.
@@ -23,7 +23,7 @@ Research on cognitive offloading shows that external tools can improve task perf
 
 Room to Respond explores mental workouts for mental faculties. The aim is to bring the relevant exercises together into a practical routine for the way a person is meeting a situation.
 
-For attention, experimental work has found cognitive costs associated with the presence of a smartphone, while later studies show that the effect varies by task and context. The [smartphone-presence experiment](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/) supports a specific attentional-cost hypothesis; research on universal attention decline remains mixed.
+For attention, experimental work has found cognitive costs associated with the presence of a smartphone. The [smartphone-presence experiment](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/) provides a starting point for an attention workout.
 
 For emotion regulation, research connects digital environments, coping, and regulation. A [systematic review and meta-analysis](https://pubmed.ncbi.nlm.nih.gov/36497921/) found a moderate association between emotion dysregulation and problematic smartphone use, with substantial heterogeneity across studies. A [review of digital emotion-regulation interventions](https://pubmed.ncbi.nlm.nih.gov/36159937/) found encouraging but still limited evidence that online, messaging, and smartphone interventions can support regulation skills. These findings support developing and testing regulation workouts. Digital behaviour remains outside the basis for diagnosis in this product.
 

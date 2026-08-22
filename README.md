@@ -10,16 +10,16 @@ The challenges arising out of physical inactivity have led us to dedicated worko
 
 Modern life also changes how people use their minds:
 
-- social media, notifications, and smartphones compete for attention. Experimental research has found measurable attention costs from smartphone presence, while research on universal shorter attention spans is mixed ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/));
+- social media, notifications, and smartphones compete for attention. Experimental research has found measurable attention costs from smartphone presence ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/));
 - digital environments shape how people experience, express, and regulate emotion. Research finds a relationship between emotion dysregulation and problematic smartphone use, with meaningful variation across studies ([systematic review and meta-analysis](https://pubmed.ncbi.nlm.nih.gov/36497921/));
 - search, recommendation systems, and generative AI make it easier to offload remembering, comparing, drafting, and deciding. Research on cognitive offloading shows that external tools change the demands placed on memory and metacognition ([review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/));
 - faster communication and more complex work create more frequent social and practical judgments.
 
 These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
 
-Room to Respond explores mental workouts for mental faculties. Therapists and life coaches can bring the relevant exercises together into a practical routine for the way a client is meeting a situation.
+Mental health has a development side. People can work with therapists and life coaches to strengthen the faculties they use to meet life: attention, emotion awareness, self-regulation, perspective, motivation, judgment, communication, flexibility, foresight, and learning. The research on mental-health promotion, coaching, guided digital support, and structured reflection gives Room to Respond a foundation for exploring this development layer. The detailed evidence map is in [From mental healthcare to mental fitness](docs/MENTAL_FITNESS_CATEGORY_THESIS.md).
 
-See [From mental healthcare to mental fitness](docs/MENTAL_FITNESS_CATEGORY_THESIS.md) for the research-backed foundations, trends worth tracking, and product hypotheses behind this direction.
+Room to Respond brings the relevant exercises together into a practical routine for the way a client is meeting a situation.
 
 ## What are the mental faculties and how do we organise them?
 
@@ -56,7 +56,9 @@ Memory, values, social cognition, and meaning-making may appear in the account. 
 
 ## Why GenAI marks the inflection point for Room to Respond
 
-GenAI marks an inflection point because it can build a workout around the person's own situation and adapt the next exercise to the person's words, context, and previous practice. It can:
+GenAI marks an inflection point for Room to Respond in two connected ways. It gives practitioners a way to build a workout around a client's own situation and adapt the next exercise to the client's words, context, and previous practice. It also creates a new reason to think about mental development. As AI takes on more execution, people may place greater value on judgment, taste, self-direction, communication, emotional regulation, and sense-making. That connection is a trend to track and a product hypothesis to test.
+
+GenAI can:
 
 - ask questions about a specific situation;
 - follow the person's own words and context;
@@ -68,7 +70,7 @@ GenAI marks an inflection point because it can build a workout around the person
 - support text and future voice interactions;
 - help compare what changed over time.
 
-The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
+The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice.
 
 ## Privacy: the guardrail and the roadblock
 

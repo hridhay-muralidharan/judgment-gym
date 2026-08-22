@@ -76,6 +76,12 @@ Headline: `Built around the practitioner-client relationship.`
 
 Body: `The practitioner gives the routine its purpose. The client supplies the experience. Room to Respond helps them keep the work moving between sessions.`
 
+### GenAI section
+
+Headline: `Now the workout can adapt to the person.`
+
+Body: `GenAI can follow the client’s words, connect a real situation to a bounded practice variation, and prepare a report that the practitioner can review. It helps with the work of adapting the exercise. The practitioner still sets the direction.`
+
 ### Demo section
 
 Headline: `See one routine from start to next step.`

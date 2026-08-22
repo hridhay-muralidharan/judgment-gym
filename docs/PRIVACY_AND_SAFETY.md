@@ -9,12 +9,13 @@ The long-term opportunity is capable language models running privately on person
 ## Current prototype
 
 - reflection history is stored locally in the browser and the current prototype requires no account;
-- the current lived-situation draft is published only when the user chooses to send it for reflection;
+- the current lived-situation draft is published only when the client chooses to send it for reflection or include it in a practitioner report;
 - hosted model requests are sent after the user submits a reflection or asks for a long-form account map;
 - the API route uses `store: false` for model requests;
 - export, import, reset, and deletion are available;
 - personal narratives, private conversations, API keys, and profiles remain outside the public repository;
 - hosted deployment operators may have infrastructure-level access to requests;
+- the seeded prototype demonstrates the sharing workflow without implementing production accounts, permissions, or secure practitioner-client messaging;
 - exported JSON is unencrypted and intended for user-controlled transfer. Secure long-term storage is part of the privacy-first product work.
 
 ## Safety boundary

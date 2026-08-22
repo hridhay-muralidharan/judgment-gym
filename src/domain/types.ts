@@ -1,4 +1,4 @@
-export type Stage = 'welcome' | 'floor' | 'respond' | 'review' | 'threads' | 'explore' | 'journey' | 'privacy'
+export type Stage = 'welcome' | 'floor' | 'practitioner' | 'respond' | 'review' | 'threads' | 'explore' | 'journey' | 'privacy'
 export type ThreadStatus = 'tentative' | 'confirmed' | 'context-dependent'
 
 export type Scenario = {

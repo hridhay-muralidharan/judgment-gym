@@ -48,4 +48,4 @@ The path must demonstrate a clear lived-situation prompt, honest detail capture,
 
 ## Completion criteria
 
-The public MVP is ready when a new user can complete the lived-to-constructed loop without an account, correct the agent's interpretation, understand why a probe was selected, compare the constructed response with the lived account, export or delete data, and read the product's model, privacy, safety, and therapist-review documentation from a clean browser.
+The public MVP is ready when a practitioner can create a seeded client routine, the client can complete the lived-to-constructed loop, correct the agent's interpretation, understand why a probe was selected, submit a reviewable report, export or delete data, and read the product's model, privacy, safety, and therapist-review documentation from a clean browser.

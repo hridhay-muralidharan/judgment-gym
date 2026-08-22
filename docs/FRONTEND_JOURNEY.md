@@ -1,20 +1,21 @@
 # Frontend journey
 
-The interface should feel like a calm, private practice for examining experience. It should not feel like a chatbot, personality test, or game.
+The interface should feel like a calm practitioner-led practice for examining experience. It should communicate a routine, a client report, and a return to the next session.
 
 ## Screens
 
 ### Landing
 
-Explain the loop:
+Explain the practitioner-client loop:
 
-- start with a real situation;
-- add what happened inside and after it;
-- review tentative model signals;
-- try a constructed variation if useful;
-- return to the lived situation and correct the model.
+- practitioner creates a routine;
+- client brings in a real situation;
+- client reviews and corrects tentative model signals;
+- client tries a constructed variation;
+- client shares a report;
+- practitioner reviews and prepares the next routine.
 
-Actions: begin with a lived moment, open the model, and review privacy.
+Actions: open the practitioner workspace, preview the client routine, and begin the assigned workout.
 
 ### Lived moment
 
@@ -28,9 +29,9 @@ Show the user's original account above two or three tentative threads. Show evid
 
 Label the situation as constructed and text-first. Capture the user's response, then compare it with the lived account. Ask what is similar, different, uncertain, or not useful. Let the user stop or return without saving.
 
-### Evolving model
+### Practitioner review
 
-Show recurring threads, changes, conditions, contradictions, unresolved tensions, scenario evidence, and completed explorations. Do not show personality scores or definitive labels.
+Show the assigned routine, client account, corrections, changed-condition response, transfer note, recurring threads, and open questions for the next session. Keep client-authored material visually distinct from model suggestions. Do not show personality scores or definitive labels.
 
 ### Privacy
 
@@ -44,5 +45,7 @@ Explain local storage, hosted request boundaries, export, reset, deletion, and t
 - constructed scenarios are always labelled;
 - unresolved ambiguity is normal;
 - no streaks, scores, badges, or competitive framing;
-- every exploration can be skipped or stopped;
+- every exercise can be skipped or stopped;
+- client sharing is explicit and reviewable;
+- practitioner assignment and review stay visible in the flow;
 - mobile-first and keyboard accessible.

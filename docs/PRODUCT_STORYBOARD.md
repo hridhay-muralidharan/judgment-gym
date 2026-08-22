@@ -2,225 +2,41 @@
 
 ## What the product is
 
-Modern life changed the physical demands built into daily life, and gyms emerged as places for deliberate exercise of specific capacities. Room to Respond extends that idea to the faculties people use to live: noticing, feeling, remembering, interpreting, deciding, relating, adapting, and learning.
+Room to Respond is a practitioner-led mental fitness platform. Therapists and life coaches create personalised mental workout routines for clients. Clients practise between sessions using real situations, guided scenarios, text, and voice, then share reviewable reports with their practitioner.
 
-Physical gyms have different workouts because people train different capacities. The mental gym follows the same organising idea. Each workout has a faculty, a human purpose, a research basis, an exercise, and a way to notice progress.
+Physical gyms provide physical workouts for physical muscles. Room to Respond explores mental workouts for the faculties people use to live: noticing, feeling, remembering, interpreting, deciding, relating, adapting, and learning.
 
-Room to Respond gives people a clear place to bring a situation, choose a faculty to exercise, and build an evolving record of what they learn.
+The practitioner gives the routine its purpose and boundaries. The client supplies the lived experience. GenAI helps personalise the exercise, organise the reflection, and prepare a report. The practitioner reviews what happened and guides the next routine.
 
-## Screen 1 — The invitation
+## Screen 1 — Practitioner workspace
 
-### Main idea
+The practitioner sees a client list, active routines, recent reports, and open questions for the next session.
 
-> A place to exercise the faculties you use to live.
+For each client, the practitioner can:
 
-The opening should make the concept immediately understandable. A person comes in with something they want to understand, practise, or handle differently.
+- record the agreed goal or area of development;
+- select the faculties involved;
+- choose exercises from the workout library;
+- assemble a routine for the period between sessions;
+- add context, instructions, and a sharing boundary;
+- review submitted reports;
+- give feedback and prepare the next routine.
 
-### The choices
+The first prototype uses a seeded practitioner and client so the workflow can be reviewed without account creation.
 
-- Bring in a real situation.
-- Choose a workout area.
-- Continue a previous practice.
+## Screen 2 — Create a routine
 
-The product begins with a situation, a question, or a capacity the person wants to work on. It keeps the focus on lived experience and useful practice.
+The practitioner starts with a client goal, such as:
 
-## Screen 2 — The workout floor
+- create more space before responding to criticism;
+- recognise activation earlier in a difficult conversation;
+- compare interpretations before making a decision;
+- practise a more direct request;
+- learn from feedback without shutting down.
 
-The workout areas are organised around the human faculties map.
+The practitioner selects a faculty or combination of faculties, chooses exercises, and decides how the client will report back.
 
-### Notice
-
-- attention and perception;
-- emotion awareness;
-- bodily signals and activation.
-
-### Understand
-
-- memory and meaning-making;
-- metacognition;
-- assumptions and perspective;
-- social cognition.
-
-### Choose
-
-- values and motivation;
-- judgment and decision-making;
-- self-regulation and goal pursuit.
-
-### Adapt
-
-- cognitive flexibility;
-- imagination and prospection;
-- learning from feedback;
-- changing a response when conditions change.
-
-These groupings are the current interaction map. Research and workout results will refine the exercises and the way they are organised.
-
-## Screen 3 — Select a starting point
-
-The person can start in two ways:
-
-### A real situation
-
-“Bring in something that happened.”
-
-The person describes the event in their own words. The system then helps separate:
-
-- what happened;
-- what they noticed;
-- what they felt;
-- what they thought or assumed;
-- what they wanted or protected;
-- what they said or held back;
-- what they did;
-- what happened afterward.
-
-### A faculty workout
-
-“Choose something you want to practise.”
-
-The system offers a bounded exercise connected to one faculty, such as:
-
-- notice what changes in your body and interpretation as a situation develops;
-- compare your confidence with the evidence available at the time;
-- generate three possible explanations for another person's behaviour;
-- imagine the likely consequences of two different responses;
-- identify the value or goal that is competing for priority.
-
-The person can bring a real situation into the workout at any point.
-
-## Screen 4 — The personal training space
-
-The system gives the person space to examine the situation and reach their own conclusion.
-
-The person can record:
-
-- the situation;
-- their internal experience;
-- their interpretation;
-- their response;
-- the result;
-- what they believe now;
-- how confident they are in that belief.
-
-The system returns a reviewable training reflection:
-
-- what appears to have happened;
-- which faculty may have been involved;
-- what evidence supports that reading;
-- open questions;
-- what alternative explanation is possible;
-- what could be explored next.
-
-The person can accept, edit, qualify, reject, or leave the reflection unresolved.
-
-## Screen 5 — The exercise
-
-The exercise changes one part of the situation or asks the person to approach it from another angle.
-
-Examples:
-
-- change the level of social pressure;
-- introduce new information;
-- reverse the roles;
-- change the desired outcome;
-- slow down the moment before action;
-- imagine the consequence one month later;
-- try an alternative interpretation;
-- practise saying what was left unsaid.
-
-The exercise is clearly labelled as constructed. It gives the person a place to observe what changes when the conditions change.
-
-## Screen 6 — Compare and carry forward
-
-The person compares the real situation and the exercise:
-
-- What stayed the same?
-- What changed?
-- What became easier or harder?
-- What did the exercise reveal about the original situation?
-- What remains unclear?
-- Is there anything useful to carry into life?
-
-The result is a training insight grounded in the exercise.
-
-The person may choose:
-
-- a question to revisit;
-- a small action;
-- a conversation to have;
-- a new situation to examine;
-- a pattern to keep observing;
-- an open question to revisit.
-
-## Screen 7 — The evolving training record
-
-Over time, the product builds a user-controlled record of practice:
-
-- situations explored;
-- faculties involved;
-- patterns that recur;
-- conditions that change the pattern;
-- strategies that helped;
-- strategies that created difficulty;
-- unresolved questions;
-- changes across time.
-
-This record is a map of practice. It stays editable and belongs to the person using it.
-
-## Screen 8 — What GenAI contributes
-
-GenAI can provide:
-
-- personalised follow-up questions;
-- continuity across situations;
-- multiple interpretations;
-- changed-condition scenarios;
-- role-play and dialogue practice;
-- future-consequence exploration;
-- pattern retrieval;
-- text and voice interaction;
-- feedback that helps the person revise.
-
-The model supports the workout. The person supplies the experience, makes the final interpretation, and decides what to carry forward.
-
-## Screen 9 — Research and progress
-
-Each workout must have a research card that explains:
-
-- the faculty being exercised;
-- what stronger functioning supports;
-- what poorer functioning may make more difficult;
-- the intervention or exercise being used;
-- the evidence strength;
-- what progress means;
-- open questions for future research.
-
-Progress may include:
-
-- clearer description of internal experience;
-- better recognition of assumptions;
-- improved confidence calibration;
-- wider range of response options;
-- better use of feedback;
-- greater alignment between goals and action;
-- improved transfer to a real situation.
-
-Engagement and time spent describe use. Progress requires measures tied to the faculty being exercised and transfer into real situations.
-
-## Screen 10 — Privacy: the guardrail and the roadblock
-
-Some workouts become more valuable when the system can remember a person's situations and patterns over time. These are also the workouts most likely to involve sensitive material.
-
-The current prototype can validate the exercises, model, safety boundaries, and distribution path using hosted inference. Capable on-device models will open a privacy-first path for personal training in which intimate longitudinal material can remain on the person's device.
-
-The research, validated prototypes, safety design, and distribution channels need to be ready when that capability becomes available.
-
-## First version
-
-The first version should demonstrate one complete workout and show the research roadmap for the wider mental gym.
-
-The strongest current candidate is a situation-based workout combining:
+The first routine combines:
 
 ```text
 emotion awareness
@@ -230,10 +46,152 @@ emotion awareness
 → learning from comparison
 ```
 
-It starts with a real situation, examines the person's response, introduces a bounded variation, and returns the learning to the original situation.
+Each routine shows its research basis, exercise purpose, evidence status, instructions, and open questions for review.
 
-The broader workout floor remains visible as a research roadmap. Each additional workout earns its place through evidence, design, and evaluation.
+## Screen 3 — Client routine
+
+The client sees the assigned routine in a simple sequence:
+
+1. Name the moment.
+2. Check the first story.
+3. Change one condition.
+4. Carry one useful question forward.
+
+The client can bring in a real situation and describe:
+
+- what happened;
+- what they noticed;
+- what they felt and what their body noticed;
+- what they thought or assumed;
+- what they wanted or protected;
+- what they said and did;
+- what happened afterward;
+- what they believe now.
+
+The client can use text or voice as the interaction develops. The client can edit every generated reflection before deciding what to share.
+
+## Screen 4 — Model review
+
+The system returns a reviewable reflection:
+
+- what appears to have happened;
+- which faculties may have been involved;
+- what evidence supports that reading;
+- possible alternative explanations;
+- open questions;
+- what could be explored next.
+
+The client can accept, edit, qualify, reject, or leave the reflection open. The practitioner sees the submitted version and the client's corrections.
+
+## Screen 5 — Changed-condition exercise
+
+The system creates a bounded variation of the lived situation. It may change:
+
+- the level of social pressure;
+- the amount of time available;
+- the information known at the time;
+- the presence of support;
+- the desired outcome;
+- the role each person is playing;
+- the consequence being considered.
+
+The variation is clearly labelled as constructed. It gives the client a place to observe what changes when the conditions change.
+
+## Screen 6 — Client report
+
+The client compares the lived situation and the changed condition:
+
+- What stayed the same?
+- What changed?
+- What became easier or harder?
+- What did the exercise reveal about the original situation?
+- What remains open?
+- What would be useful to discuss with the practitioner?
+
+The report contains the client's account, edited model reflection, response to the changed condition, transfer note, and a question or observation to carry into the next session.
+
+## Screen 7 — Practitioner review
+
+The practitioner report view organises:
+
+- the routine assigned;
+- the client's original situation;
+- the client's response and corrections;
+- the constructed exercise;
+- what changed across the two conditions;
+- recurring threads across previous routines;
+- open questions for the next session;
+- the client's own requested focus.
+
+The practitioner can add a note, adjust the faculty focus, change the exercise difficulty, or create the next routine.
+
+The report supports a session. It does not replace the practitioner's relationship, judgement, or clinical responsibility.
+
+## Screen 8 — Progress across routines
+
+Over time, the practitioner and client can review:
+
+- situations explored;
+- faculties involved;
+- conditions that change a response;
+- strategies that helped;
+- strategies that created difficulty;
+- questions that recur;
+- changes the client endorses;
+- transfer into real situations and agreed goals.
+
+Progress is tied to the faculty and client goal being exercised. Engagement and time spent describe use; they do not describe development on their own.
+
+## Screen 9 — What GenAI contributes
+
+GenAI can provide:
+
+- personalised follow-up questions;
+- continuity across a client's situations;
+- multiple interpretations for review;
+- changed-condition scenarios;
+- role-play and dialogue practice;
+- future-consequence exploration;
+- pattern retrieval across submitted reports;
+- text and voice interaction;
+- a structured draft for practitioner review.
+
+The practitioner sets the direction. The client supplies the experience and chooses what to share. The model organises and adapts the routine.
+
+## Screen 10 — Research and progress
+
+Each workout has a research card that explains:
+
+- the faculty being exercised;
+- the human goal it may support;
+- the exercise mechanism;
+- the evidence status;
+- what progress could look like;
+- how transfer will be assessed;
+- open questions for therapist and client review.
+
+The category thesis separates research-backed foundations, promising mechanisms, trends to track, product hypotheses, and research gaps.
+
+## Screen 11 — Privacy and practitioner control
+
+The product works with intimate situations, emotional responses, personal patterns, and changes across time. The client controls what becomes part of the practitioner report. The practitioner controls the routine and review layer. Hosted inference and future on-device inference have separate documented privacy properties.
+
+The current prototype validates the exercise, routine, report, safety, and distribution workflow using hosted inference. The research, validated routines, practitioner relationships, safety design, and distribution channels need to be ready when capable on-device models can support privacy-first personal AI products.
+
+## First version
+
+The first version demonstrates one complete practitioner-led routine:
+
+```text
+practitioner creates routine
+→ client completes lived-situation exercise
+→ client explores a changed condition
+→ client submits a report
+→ practitioner reviews and prepares the next routine
+```
+
+The broader workout floor remains visible as a research roadmap. Each additional workout earns its place through evidence, design, therapist review, client experience, and evaluation.
 
 ## The final story
 
-> Room to Respond is a mental gym for the faculties people use to live. It gives people different ways to practise noticing, understanding, choosing, relating, adapting, and learning. GenAI makes the exercises personal and continuous. Research determines which workouts are useful, how they should work, and how progress should be understood.
+> Room to Respond gives therapists and life coaches a way to create personalised mental workout routines for clients. Clients practise between sessions, share what they notice, and return with a clearer report. Practitioners use that report to guide the next conversation and the next workout.

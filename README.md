@@ -1,6 +1,6 @@
 # Room to Respond
 
-Room to Respond is a research prototype for turning real-life situations into short, structured practices for noticing, understanding, choosing, and adapting. Its role is reflection support; therapy and clinical judgment remain with qualified professionals.
+Room to Respond is a research prototype for therapists and life coaches to create personalised mental workout routines for clients. Clients practise between sessions using real-life situations, guided scenarios, text, and voice, then share reviewable reports with their practitioner.
 
 Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
 
@@ -17,7 +17,9 @@ Modern life also changes how people use their minds:
 
 These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
 
-Room to Respond explores mental workouts for mental faculties. The aim is to bring the relevant exercises together into a practical routine for the way a person is meeting a situation.
+Room to Respond explores mental workouts for mental faculties. Therapists and life coaches can bring the relevant exercises together into a practical routine for the way a client is meeting a situation.
+
+See [From mental healthcare to mental fitness](docs/MENTAL_FITNESS_CATEGORY_THESIS.md) for the research-backed foundations, trends worth tracking, and product hypotheses behind this direction.
 
 ## What are the mental faculties and how do we organise them?
 
@@ -32,14 +34,14 @@ These are Room to Respond's working groups. They bring together constructs studi
 
 ## Prototype: one mental workout
 
-The current prototype asks a person to bring in one real situation. They describe what happened, what they felt, thought, said, did, wanted, and noticed afterward.
+The current prototype asks the client to bring in one real situation. They describe what happened, what they felt, thought, said, did, wanted, and noticed afterward.
 
 The system then:
 
 1. reflects back a few tentative observations;
-2. lets the person keep, revise, or reject each one;
+2. lets the client keep, revise, or reject each one;
 3. changes one condition in the situation, such as the amount of time or support available;
-4. asks the person to imagine how they might respond in that changed situation;
+4. asks the client to imagine how they might respond in that changed situation;
 5. compares the two responses and asks what could be useful in real life.
 
 This workout currently invites practice in:
@@ -66,7 +68,7 @@ GenAI marks an inflection point because it can build a workout around the person
 - support text and future voice interactions;
 - help compare what changed over time.
 
-The person supplies the experience, reviews the interpretation, and decides what to carry forward. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
+The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
 
 ## Privacy: the guardrail and the roadblock
 
@@ -79,7 +81,7 @@ The go-to-market trigger is therefore a hypothesis: launch the privacy-first ver
 Until that point, Room to Respond needs to have the following in place:
 
 - validated workouts and outcome measures;
-- therapist and user review of model behaviour and safety boundaries;
+- therapist, coach, and client review of model behaviour and safety boundaries;
 - a user-controlled model of experiences, faculties, changes, and uncertainty;
 - text and voice interaction designs;
 - local storage, deletion, encryption, selective sharing, and recovery flows;
@@ -90,11 +92,11 @@ Today's prototype uses hosted inference when configured. It prepares the interac
 
 ## What the current prototype does
 
-A person brings in a real event that still feels important, confusing, charged, or unfinished. The prototype asks them to describe what happened and what they felt, thought, said, did, wanted, and noticed afterward.
+The prototype uses a seeded practitioner-and-client workflow. A practitioner selects the first routine for a client. The client brings in a real event that still feels important, confusing, charged, or unfinished, then describes what happened and what they felt, thought, said, did, wanted, and noticed afterward.
 
-The AI offers a few tentative observations. The person can accept them, qualify them, reject them, or add something the AI missed. The prototype then creates a changed version of the situation. The person responds to that version and compares it with the original.
+The AI offers a few tentative observations. The client can accept them, qualify them, reject them, or add something the AI missed. The prototype then creates a changed version of the situation. The client responds to that version and compares it with the original.
 
-The result is a small record of what may repeat, what changes with context, and what the person wants to keep exploring. For longer accounts, the input text box can be configured to analyse one event, several events within one situation, or several situations across time.
+The client reviews the reflection, completes a bounded variation, and submits a report. The practitioner can use what changed, what stayed open, and what the client wants to explore to shape the next routine. For longer accounts, the input text box can be configured to analyse one event, several events within one situation, or several situations across time.
 
 This is a research prototype. Whether the workout develops a faculty or improves mental health remains an empirical question for future evaluation.
 

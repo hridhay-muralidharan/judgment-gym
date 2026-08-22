@@ -2,12 +2,12 @@
 
 ## Product questions
 
-1. Can users describe a lived situation with enough sequence and detail to examine it?
+1. Can a practitioner create a useful routine for a client's goal?
 2. Can they distinguish what happened from what they felt, thought, said, did, wanted, and concluded?
 3. Are model claims grounded, correctable, and useful without becoming fixed labels?
 4. Does a model-guided constructed situation help users notice a meaningful similarity, difference, or uncertainty?
 5. Does transfer back to lived experience produce useful questions rather than rumination or false certainty?
-6. Can a therapist or other qualified professional use the material without inheriting unnecessary interpretive work?
+6. Can a therapist, coach, or other qualified professional use the client report without inheriting unnecessary interpretive work?
 
 ## Reflection quality
 
@@ -29,11 +29,11 @@
 
 ## Research sequence
 
-1. Therapist and lived-experience review of the model contract and prompts.
-2. 5–8 adults completing one lived situation, one probe, and one transfer review.
-3. Structured interviews focused on accuracy, agency, emotional impact, and usefulness.
-4. Red-team testing for overreach, sensitive disclosures, and misleading simulation.
-5. A larger pilot only after an appropriate ethics, privacy, and safety process is defined.
+1. Therapist, coach, and lived-experience review of the routine model, report contract, and prompts.
+2. Practitioners create one routine for 5–8 clients who complete one lived situation, one probe, and one transfer review.
+3. Structured interviews focus on routine usefulness, agency, emotional impact, report quality, and session value.
+4. Red-team testing covers overreach, sensitive disclosures, practitioner-client sharing, and misleading simulation.
+5. A larger pilot follows an appropriate ethics, privacy, and safety process.
 
 Do not infer clinical efficacy from engagement, satisfaction, or one founder case study.
 

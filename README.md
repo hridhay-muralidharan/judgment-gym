@@ -4,7 +4,7 @@ Room to Respond is a research prototype for therapists and life coaches to creat
 
 We can understand Room to Respond through a parallel with physical activity. Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
 
-Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
+The challenges arising out of physical inactivity have led us to dedicated workout routines. For example, physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine. Room to Respond is a gym for the mind.
 
 ## A Gym for the mind!
 

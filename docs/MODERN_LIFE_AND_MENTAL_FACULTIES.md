@@ -6,7 +6,7 @@ We can understand Room to Respond through a parallel with physical activity. Mod
 
 The effects depend on urban form, transport, and local context. Research shows that environments influence whether movement is built into daily routines. Reviews of urban design find relationships between access to public space, active transport, walking, and sedentary behaviour. The [WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153), the [WHO analysis of urbanization and physical inactivity](https://www.emro.who.int/emhj-volume-25-2019/volume-25-issue-12/move-for-health-addressing-the-built-environment-in-oman.html), and a [systematic review of dense urban public spaces](https://pubmed.ncbi.nlm.nih.gov/35580456/) are useful starting points.
 
-Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
+The challenges arising out of physical inactivity have led us to dedicated workout routines. For example, physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine. Room to Respond is a gym for the mind.
 
 ## A Gym for the mind!
 

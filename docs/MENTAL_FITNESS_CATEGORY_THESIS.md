@@ -40,7 +40,7 @@ Transfer into everyday life remains the important outcome for Room to Respond. A
 
 Generative AI is increasingly able to draft, compare, retrieve, plan, and execute parts of knowledge work. Research on cognitive offloading shows that external tools can improve immediate task performance while changing the demands placed on memory and metacognition ([Gilbert et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/)). OECD work on AI and the future of skills identifies creativity and social-emotional reasoning among capabilities that continue to require substantial human contribution ([OECD, AI and the Future of Skills](https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/11/ai-and-the-future-of-skills-volume-2_a3986583/a9fe53cb-en.pdf)).
 
-Room to Respond's strategic hypothesis is that AI will increase the value people place on developing judgment, taste, self-direction, communication, emotional regulation, and sense-making. Whether people will actively seek structured mental workouts for these faculties as AI adoption grows is a trend worth tracking and a product hypothesis worth testing.
+With GenAI shifting skill development toward subtler skills such as judgment, taste, self-awareness, communication, emotional regulation, and sense-making, the product hypothesis is that people will increasingly place more emphasis on active development of mental faculties. Whether people will actively seek structured mental workouts for these faculties as AI adoption grows is a trend worth tracking and a product hypothesis worth testing.
 
 The research programme should track:
 

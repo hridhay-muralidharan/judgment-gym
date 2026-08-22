@@ -30,29 +30,27 @@ The first working map groups faculties by the part they play in meeting a situat
 - **Choose** — values, motivation, judgment, decisions, and self-regulation. Self-determination research connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)). Decision research shows that structured reflection can improve the discovery of far-sighted strategies ([Becker et al.](https://doi.org/10.1017/jdm.2023.16)).
 - **Adapt** — cognitive flexibility, imagination, foresight, feedback, and learning. Executive-function research identifies flexibility as a core capacity, while prospection research connects imagining possible futures with planning and action ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750); [Szpunar](https://pmc.ncbi.nlm.nih.gov/articles/PMC4074678/)).
 
-These are Room to Respond's working groups. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single situation can move through all four.
+These are Room to Respond's working groups. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single workout can move through all four.
 
-## Prototype: one mental workout
+## Prototype: one practitioner-led mental workout
 
-The current prototype asks the client to bring in one real situation. They describe what happened, what they felt, thought, said, did, wanted, and noticed afterward.
+A practitioner assigns the first routine. The client brings in a real situation and describes what happened, what they felt, thought, said, did, wanted, and noticed afterward.
 
 The system then:
 
-1. reflects back a few tentative observations;
-2. lets the client keep, revise, or reject each one;
-3. changes one condition in the situation, such as the amount of time or support available;
-4. asks the client to imagine how they might respond in that changed situation;
-5. compares the two responses and asks what could be useful in real life.
+1. reflects back a few tentative observations for the client to keep, revise, or reject;
+2. changes one condition in the situation, such as the amount of time or support available;
+3. asks the client to respond to the changed situation;
+4. compares the two responses and asks what could be useful in real life;
+5. creates a report that the client can edit and share with the practitioner.
 
-This workout currently invites practice in:
+The practitioner reviews what changed, what stayed open, and what the client wants to explore. This informs the next routine.
 
-- emotion awareness — noticing feelings and bodily responses;
-- metacognition — examining thoughts, assumptions, and certainty;
-- cognitive flexibility — trying another interpretation or response;
-- prospection — considering what may happen next;
-- learning — comparing responses and carrying forward a question or strategy.
+The workout exercises emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may also appear in the account. More research is needed to determine which outcomes the prompts affect and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
 
-Memory, values, social cognition, and meaning-making may appear in the account. Direct development effects for these faculties remain untested. More research is needed to determine which outcomes the prompts affect and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
+For longer accounts, the input text box can be configured to analyse one event, several events within one situation, or several situations across time.
+
+This is a research prototype. Whether the workout develops a faculty or improves mental health remains an empirical question for future evaluation.
 
 ## Role of Gen AI
 
@@ -89,16 +87,6 @@ Until that point, Room to Respond needs to have the following in place:
 - distribution relationships with therapists, digital-therapy companies, and mental-health organisations.
 
 Today's prototype uses hosted inference when configured. It prepares the interaction, research foundation, and portable model layer for a future on-device product.
-
-## What the current prototype does
-
-The prototype uses a seeded practitioner-and-client workflow. A practitioner selects the first routine for a client. The client brings in a real event that still feels important, confusing, charged, or unfinished, then describes what happened and what they felt, thought, said, did, wanted, and noticed afterward.
-
-The AI offers a few tentative observations. The client can accept them, qualify them, reject them, or add something the AI missed. The prototype then creates a changed version of the situation. The client responds to that version and compares it with the original.
-
-The client reviews the reflection, completes a bounded variation, and submits a report. The practitioner can use what changed, what stayed open, and what the client wants to explore to shape the next routine. For longer accounts, the input text box can be configured to analyse one event, several events within one situation, or several situations across time.
-
-This is a research prototype. Whether the workout develops a faculty or improves mental health remains an empirical question for future evaluation.
 
 ## Boundaries
 

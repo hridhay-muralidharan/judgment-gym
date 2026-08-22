@@ -7,13 +7,10 @@ export function Welcome({ onBegin, onFloor, onPrivacy, onJourney, onPractitioner
       <h1>Exercise the parts of you<br /><em>that meet life.</em></h1>
       <p className="lede">Practitioners create the routine. Clients bring real moments, practise between sessions, and return with a clearer report of what they noticed, chose, and learned.</p>
       <div className="welcome-actions">
-        <button className="primary-button" onClick={onFloor}>Enter the workout floor <span>→</span></button>
-        <button className="text-button" onClick={onBegin}>{allComplete ? 'Review your training record' : hasHistory ? 'Continue a practice' : 'Start with a real moment'} <span>↗</span></button>
+        <button className="primary-button" onClick={onPractitioner}>Start the guided demo <span>→</span></button>
       </div>
-      <div className="principles"><span>01 / Real situations</span><span>02 / Provisional patterns</span><span>03 / Practice returns to life</span></div>
-      {hasHistory && <button className="resume-link" onClick={onThreads}>Open my threads →</button>}
-      <button className="resume-link" onClick={onPractitioner}>Open the practitioner workspace →</button>
-      <button className="resume-link" onClick={onJourney}>Map a longer account →</button>
+      <div className="principles"><span>01 / Practitioner direction</span><span>02 / Client practice</span><span>03 / Practitioner feedback</span></div>
+      <p className="demo-review-note">This seeded journey is designed for product feedback. Follow the complete routine without entering personal information.</p>
       <button className="resume-link" onClick={onPrivacy}>Read the privacy and safety boundary →</button>
     </div>
     <div className="welcome-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="sun">RR</div><div className="art-caption">Notice · understand ·<br />choose · adapt.</div></div>

@@ -2,7 +2,7 @@
 
 The guided demo is the main way a reviewer understands Room to Respond. It follows one complete routine between a practitioner and a client.
 
-The reviewer should be able to move through the whole story without creating an account or supplying private information.
+Every step contains seeded demo content, including the client’s situation and response, model observations, client corrections, the constructed response, the report, practitioner feedback, and the next routine draft. The reviewer should be able to move through the whole story without creating an account or supplying private information.
 
 ## Demo story
 
@@ -37,7 +37,7 @@ The primary action is **Begin the routine**.
 
 ### 3. Client brings in a real situation
 
-The client describes a real situation in one open writing space. The prompt asks for what happened in the client’s own words.
+The guided demo shows Maya describing a real situation in one open writing space. The prompt asks for what happened in the client’s own words.
 
 Optional prompts help the client add:
 
@@ -49,17 +49,17 @@ Optional prompts help the client add:
 - what happened afterward;
 - what they think about it now.
 
-The client submits the account for reflection.
+The reviewer can continue with Maya’s seeded account or replace it with their own text. The demo submits the seeded account for reflection.
 
 ### 4. Client reviews and corrects the reflection
 
-The product shows the client’s words first, followed by a small number of tentative observations. Each observation includes the evidence it came from and controls to mark it as:
+The product shows Maya’s words first, followed by a small number of tentative observations. Each observation includes the evidence it came from and controls to mark it as:
 
 - fits this moment;
 - depends on context;
 - needs work.
 
-The client can write what the model missed, got wrong, or oversimplified.
+The guided demo includes Maya’s correction: “The important part is not becoming calm immediately. It is noticing that I have more than one possible next step.” The reviewer can edit this correction or write their own.
 
 The reviewer should understand that the model is a mirror the client can correct. It is not presenting a personality label or a clinical conclusion.
 
@@ -67,9 +67,9 @@ The reviewer should understand that the model is a mirror the client can correct
 
 The product presents one clearly labelled constructed situation. It changes one condition from the lived situation, such as having more time or trusted support available afterward.
 
-The client responds to the changed situation and compares it with the lived account.
+The guided demo includes Maya’s response to the changed situation and her comparison with the lived account. The reviewer can edit both.
 
-The client records:
+Maya records:
 
 - what stayed the same;
 - what changed;
@@ -90,7 +90,7 @@ The report brings together:
 - the comparison between the two situations;
 - an open question or observation for the next session.
 
-The client sees what will be shared and confirms the report. The reviewer can also see that the client can return and edit it.
+The guided demo shows the completed report before sharing. The reviewer can see what will be shared and can return to edit it.
 
 The primary action is **Share report with practitioner**.
 
@@ -108,7 +108,7 @@ Client-authored content is visually distinct from model suggestions and practiti
 
 ### 8. Practitioner gives feedback and prepares the next routine
 
-The practitioner adds a short feedback note, such as:
+The guided demo includes a short practitioner feedback note:
 
 > You noticed the urge to leave before deciding what you wanted to say. In our next routine, let’s practise one direct sentence while keeping that pause available.
 

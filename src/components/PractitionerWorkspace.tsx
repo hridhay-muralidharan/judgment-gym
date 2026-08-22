@@ -37,9 +37,9 @@ export function PractitionerWorkspace({ onBack }: Props) {
     <div className="guided-demo-heading">
       <div>
         <button className="back-button" onClick={onBack}>← Home</button>
-        <p className="kicker">Guided demo · {phaseLabel}</p>
-        <h2>A practitioner sets a direction.<br /><em>Maya works through a moment.</em></h2>
-        <p className="guided-demo-lede">Follow one prepared mental workout from a development goal to the next routine. Nothing needs to be written.</p>
+        <p className="kicker">Maya’s workout · {phaseLabel}</p>
+        <h2>One session.<br /><em>More room to respond.</em></h2>
+        <p className="guided-demo-lede">Step into a prepared workout. The practitioner sets the focus, Maya works through a real moment, and the next routine takes shape.</p>
       </div>
       <div className="guided-demo-client"><span>DEMO CLIENT</span><strong>Maya R.</strong><p>More space before responding to criticism.</p></div>
     </div>
@@ -102,5 +102,5 @@ function ReviewStep({ onNext }: { onNext: () => void }) {
 }
 
 function NextStep({ onRestart }: { onRestart: () => void }) {
-  return <><StepIntro label="08 · Practitioner’s turn" title="The next routine grows from the report." copy="The practitioner keeps what helped, adds direct communication, and shapes the next exercise around the pause Maya noticed." /><div className="guided-next-routine"><div><span className="section-label">Routine 02 · Draft</span><h4>Pause, then say one direct sentence</h4><p>Keep noticing feelings and trying one change. Add practising a clear sentence for what Maya needs.</p></div><div className="guided-next-items"><span>01</span><p>Notice the urge to leave.</p><span>02</span><p>Choose one sentence that names what you need.</p><span>03</span><p>Practise saying it with more time and support available.</p></div></div><div className="guided-complete"><strong>You have seen the complete journey.</strong><p>Set a direction → work through a moment → review and continue.</p><button className="secondary-button" onClick={onRestart}>Run the demo again</button></div></>
+  return <><StepIntro label="08 · Cool down" title="Take one thing into the next moment." copy="Maya noticed that a pause can create another option. The practitioner turns that discovery into the next workout." /><div className="guided-next-routine"><div><span className="section-label">Next workout · Ready to try</span><h4>Pause, then say one direct sentence</h4><p>Keep noticing feelings and trying one change. Add practising a clear sentence for what Maya needs.</p></div><div className="guided-next-items"><span>01</span><p>Notice the urge to leave.</p><span>02</span><p>Choose one sentence that names what you need.</p><span>03</span><p>Practise saying it with more time and support available.</p></div></div><div className="guided-complete"><strong>That was a complete mental workout.</strong><p>You set a focus, worked through a moment, and found a next step.</p><button className="secondary-button" onClick={onRestart}>Do another workout</button></div></>
 }

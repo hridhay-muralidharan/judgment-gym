@@ -6,6 +6,8 @@ This document governs the prototype's visual and interaction decisions. It is wr
 
 Make the practitioner-client relationship and the workout sequence understandable within seconds. The interface should feel calm, clear, and considered. It should create enough room for personal material without becoming empty or abstract.
 
+The experience should also create the energy to begin a workout. The reviewer should feel guided into action, notice progress while moving through the routine, and finish with a useful next step they want to try. The energy comes from clear focus, coach-like instruction, variety, rhythm, and completion. It does not come from loud decoration or fitness branding copied onto a mental-health product.
+
 ## Information hierarchy
 
 Every screen should answer these questions in order:
@@ -46,6 +48,14 @@ The demo should have:
 - a compact context panel showing the workout focus and faculties.
 
 The progress indicator should describe the story, for example: “Set direction → Work through a situation → Review the report → Shape the next workout.” It should not expose implementation names such as `practitioner`, `reflection`, or `constructed` without explanation.
+
+The guided demo should have the rhythm of a workout session:
+
+- **Warm up:** arrive with a real situation and notice what is already happening;
+- **Work:** examine the moment and try one carefully bounded change;
+- **Cool down:** name what changed and carry one useful next step forward.
+
+Each phase needs a clear instruction, visible progress, and a satisfying handoff into the next phase.
 
 ## Content hierarchy
 

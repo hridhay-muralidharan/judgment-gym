@@ -1,6 +1,6 @@
 # Prototype role lenses
 
-The prototype is reviewed through four roles. Each role starts from the repository’s product thesis and extracts a different responsibility. The final interface must satisfy all four at the same time.
+The prototype is reviewed through five roles. Each role starts from the repository’s product thesis and extracts a different responsibility. The final interface must satisfy all five at the same time.
 
 ## Product Manager
 
@@ -120,9 +120,50 @@ Make the guided journey work reliably with fixture data first and hosted inferen
 
 The complete guided path can be tested from a clean browser state, the fallback path produces a meaningful report, and the build remains type-safe and deployable.
 
+## UX Writer
+
+### Goal
+
+Make the guided demo understandable, humane, and precise at every handoff.
+
+### Repository signals
+
+- The client’s lived experience comes before model interpretation.
+- Model observations are tentative and always open to correction.
+- Constructed situations are exercises for exploration, not predictions.
+- The report belongs to the client before it is shared with the practitioner.
+- Practitioner feedback guides the next routine.
+- The prototype is for feedback, so the reviewer should never wonder what to type or what a control will do.
+
+### Writing decisions
+
+- Use “guided demo” consistently for the seeded review path.
+- Use “routine” for the full sequence and “exercise” for an individual step.
+- Use “lived situation” for Maya’s account and “constructed situation” for the changed-condition exercise.
+- Say what the reviewer is seeing before asking them to continue.
+- Make authorship visible: client-authored, model suggestion, and practitioner-authored.
+- Use plain verbs: assign, open, describe, review, correct, compare, share, respond, prepare.
+- Avoid clinical labels, personality claims, diagnostic language, and inflated AI language.
+- Keep the reviewer oriented with one clear next action per step.
+
+### Copy system
+
+Every guided step should contain:
+
+1. a role and step label;
+2. a short title that states what is happening;
+3. one sentence explaining why it matters;
+4. visible seeded content;
+5. one action that advances the journey;
+6. a short handoff label explaining what comes next.
+
+### Success criteria
+
+A reviewer can tell who is speaking, what kind of content they are reading, whether the content is lived or constructed, what is provisional, and why the next step follows.
+
 ## Synthesis
 
-The four roles converge on one product shape:
+The five roles converge on one product shape:
 
 ```text
 one routine

@@ -40,18 +40,16 @@ pie title Top five countries in a global mental-health app user sample
 
 The [Target audience and market](docs/TARGET_AUDIENCE.md) document contains the source labels and market snapshot.
 
-Room to Respond brings the relevant exercises together into a practical routine for a client to exercise their mental faculties.
-
 ## What are the mental faculties and how do we organise them?
 
-The first working map groups faculties by the part they play in meeting a situation:
+We can group mental faculties by the role that they play in any situation:
 
 - **Notice** — attention, perception, emotion awareness, and bodily signals. Executive-function research describes attention, inhibition, and cognitive control as core capacities for selecting what matters and pausing before responding ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750)). Emotion-regulation research adds the importance of identifying emotional responses and the point at which a person can influence them ([Gross](https://doi.org/10.1080/1047840X.2014.940781)).
 - **Understand** — memory, meaning-making, metacognition, assumptions, and perspective. Autobiographical-memory research describes how people connect experiences with identity and life narratives ([Fivush](https://doi.org/10.1080/00207594.2011.596541)); metacognition helps people examine how they reached a conclusion.
 - **Choose** — values, motivation, judgment, decisions, and self-regulation. Self-determination research connects autonomy, competence, and relatedness with motivation and wellbeing ([Deci, Olafsen, and Ryan](https://doi.org/10.1146/annurev-orgpsych-032516-113108)). Decision research shows that structured reflection can improve the discovery of far-sighted strategies ([Becker et al.](https://doi.org/10.1017/jdm.2023.16)).
 - **Adapt** — cognitive flexibility, imagination, foresight, feedback, and learning. Executive-function research identifies flexibility as a core capacity, while prospection research connects imagining possible futures with planning and action ([Diamond](https://doi.org/10.1146/annurev-psych-113011-143750); [Szpunar](https://pmc.ncbi.nlm.nih.gov/articles/PMC4074678/)).
 
-These are Room to Respond's working groups. They bring together constructs studied in different research traditions so a workout can follow a real situation from perception through action and learning. A single workout can move through all four.
+A mental workout can follow a real situation from perception through action and learning and move across all 4 groups. Room to Respond brings the relevant exercises together into a practical routine for a client to exercise their mental faculties.
 
 ## Prototype: one practitioner-led mental workout
 

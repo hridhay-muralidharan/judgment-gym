@@ -46,7 +46,7 @@ pie title Top five countries in a global mental-health app user sample
 | Australia | 4.02% |
 | Other countries | 30.44% |
 
-This is a directional view of where digital mental-health demand can be reached. It is a product-user sample, not a population estimate for the full digital mental-health market.
+This is a directional view of where digital mental-health demand can be reached.
 
 ### Sources
 

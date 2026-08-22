@@ -49,7 +49,7 @@ Optional prompts help the client add:
 - what happened afterward;
 - what they think about it now.
 
-The reviewer can continue with Maya’s seeded account or replace it with their own text. The demo submits the seeded account for reflection.
+The demo continues with Maya’s seeded account and submits it for reflection.
 
 ### 4. Client reviews and corrects the reflection
 
@@ -59,7 +59,7 @@ The product shows Maya’s words first, followed by a small number of tentative 
 - depends on context;
 - needs work.
 
-The guided demo includes Maya’s correction: “The important part is not becoming calm immediately. It is noticing that I have more than one possible next step.” The reviewer can edit this correction or write their own.
+The guided demo includes Maya’s correction: “The important part is not becoming calm immediately. It is noticing that I have more than one possible next step.”
 
 The reviewer should understand that the model is a mirror the client can correct. It is not presenting a personality label or a clinical conclusion.
 
@@ -67,7 +67,7 @@ The reviewer should understand that the model is a mirror the client can correct
 
 The product presents one clearly labelled constructed situation. It changes one condition from the lived situation, such as having more time or trusted support available afterward.
 
-The guided demo includes Maya’s response to the changed situation and her comparison with the lived account. The reviewer can edit both.
+The guided demo includes Maya’s response to the changed situation and her comparison with the lived account.
 
 Maya records:
 

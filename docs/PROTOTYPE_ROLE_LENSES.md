@@ -22,7 +22,7 @@ Make the practitioner-client loop understandable and testable in one guided jour
 - The routine, not the model response, is the unit of continuity.
 - The report is the handoff between client and practitioner.
 - Practitioner feedback is the final step of the first loop.
-- Self-service means a practitioner and client can use the tool directly with each other. It does not mean independent mental-health support without professional involvement.
+- The prototype is a guided demo for gathering feedback, not an open self-service product.
 
 ### Success criteria
 
@@ -114,7 +114,7 @@ Make the guided journey work reliably with fixture data first and hosted inferen
 - Preserve local persistence, export, reset, and import behaviour.
 - Keep client sharing explicit in the local prototype state.
 - Do not commit private autobiographical content or credentials.
-- Keep the open workflow extensible toward real links, permissions, authentication, and secure sharing.
+- Keep the guided state explicit so future product work can later support real links, permissions, authentication, and secure sharing.
 
 ### Success criteria
 

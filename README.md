@@ -21,7 +21,24 @@ We’ve attempted to address many of these challenges through therapy. However, 
 
 Room to Respond is for therapists, life coaches, and clients who already use technology for mental health, wellbeing, coaching, journaling, meditation, habits, learning, or personal development. The practitioner is the buyer and routine creator. The client is the person who practises between sessions and shares a report. Digital mental-health, therapy, coaching, and wellbeing companies are potential distribution partners.
 
-The audience is global. In market terms, TAM is the global population that seeks mental-health services. SAM is the subset that has adopted technology-based mental-health solutions beyond virtual consultation. The [Target audience and market analysis](docs/TARGET_AUDIENCE.md) document defines the measurement model and the top-five-countries-plus-other-country view.
+The audience is global.
+
+| Market | Definition | Current global signal |
+| --- | --- | ---: |
+| **TAM** | People who seek mental-health services | **1B+ people with mental-health needs** |
+| **SAM** | People who use technology-based mental-health solutions beyond virtual consultation | **23.3% app use among people with a current mental-health disorder** |
+
+```mermaid
+pie title Top five countries in a global mental-health app user sample
+    "United States" : 40.83
+    "United Kingdom" : 10.64
+    "India" : 8.47
+    "Canada" : 5.60
+    "Australia" : 4.02
+    "Other countries" : 30.44
+```
+
+The [Target audience and market](docs/TARGET_AUDIENCE.md) document contains the source labels and market snapshot.
 
 Room to Respond brings the relevant exercises together into a practical routine for a client to exercise their mental faculties.
 

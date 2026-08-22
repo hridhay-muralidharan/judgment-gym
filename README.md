@@ -2,9 +2,9 @@
 
 Room to Respond is a research prototype for therapists and life coaches to create personalised mental workout routines for clients. Clients practise between sessions using real-life situations, guided scenarios, text, and voice, then share reviewable reports with their practitioner.
 
-Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
+We can understand Room to Respond through a parallel with physical activity. Modern life reduced some of the physical activity built into daily life. Cars replaced some walking. Elevators replaced some climbing. Machines reduced some manual work. This contributed to physical inactivity, which is studied in relation to urban design, transport, and access to public space ([WHO Global status report on physical activity](https://www.who.int/publications/i/item/9789240059153)).
 
-We can understand Room to Respond through a parallel with physical activity. Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
+Physical gyms provide physical workouts for physical muscles. They bring different exercises together in a practical routine.
 
 ## A Gym for the mind!
 

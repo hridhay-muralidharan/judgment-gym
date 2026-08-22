@@ -17,9 +17,9 @@ Modern life also changes how people use their minds:
 
 These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
 
-Mental health has a development side. People can work with therapists and life coaches to strengthen the faculties they use to meet life: attention, emotion awareness, self-regulation, perspective, motivation, judgment, communication, flexibility, foresight, and learning. The research on mental-health promotion, coaching, guided digital support, and structured reflection gives Room to Respond a foundation for exploring this development layer. The detailed evidence map is in [From mental healthcare to mental fitness](docs/MENTAL_FITNESS_CATEGORY_THESIS.md).
+We’ve attempted to address many of these challenges through therapy. However, mental health also has a development side to it. People can work with therapists and life coaches to strengthen the mental faculties: attention, emotion awareness, self-regulation, perspective, motivation, judgment, communication, flexibility, foresight, and learning. GenAI is shifting skill development toward subtler skills such as judgment, taste, self-awareness, communication, emotional regulation, and sense-making. More details can be found in [From mental healthcare to mental fitness](docs/MENTAL_FITNESS_CATEGORY_THESIS.md).
 
-Room to Respond brings the relevant exercises together into a practical routine for the way a client is meeting a situation.
+Room to Respond brings the relevant exercises together into a practical routine for a client to exercise their mental faculties.
 
 ## What are the mental faculties and how do we organise them?
 
@@ -54,11 +54,9 @@ This workout currently invites practice in:
 
 Memory, values, social cognition, and meaning-making may appear in the account. Direct development effects for these faculties remain untested. More research is needed to determine which outcomes the prompts affect and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
 
-## Why GenAI marks the inflection point for Room to Respond
+## Role of Gen AI
 
-GenAI marks an inflection point for Room to Respond in two connected ways. It gives practitioners a way to build a workout around a client's own situation and adapt the next exercise to the client's words, context, and previous practice. It also creates a new reason to think about mental development. As AI takes on more execution, people may place greater value on judgment, taste, self-direction, communication, emotional regulation, and sense-making. That connection is a trend to track and a product hypothesis to test.
-
-GenAI can:
+GenAI marks an inflection point because it can build a workout around the client's own situation and adapt the next exercise to the client's words, context, and previous practice. It can:
 
 - ask questions about a specific situation;
 - follow the person's own words and context;
@@ -70,7 +68,7 @@ GenAI can:
 - support text and future voice interactions;
 - help compare what changed over time.
 
-The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice.
+The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report.
 
 ## Privacy: the guardrail and the roadblock
 

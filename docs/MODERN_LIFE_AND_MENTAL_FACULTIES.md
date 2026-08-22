@@ -21,7 +21,7 @@ These pressures show up together in real situations. A difficult conversation ca
 
 Research on cognitive offloading shows that external tools can improve task performance while changing the demands placed on internal memory and metacognition. [Gilbert and colleagues' review](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971128/) covers reminders, GPS, written notes, search engines, and other external tools. Research on generative AI as a cognitive tool is still developing. Room to Respond treats AI-assisted offloading as an open research question.
 
-Room to Respond explores mental workouts for mental faculties. The aim is to bring the relevant exercises together into a practical routine for the way a person is meeting a situation.
+Room to Respond brings relevant exercises together into a practical routine for a client to exercise their mental faculties.
 
 For attention, experimental work has found cognitive costs associated with the presence of a smartphone. The [smartphone-presence experiment](https://pmc.ncbi.nlm.nih.gov/articles/PMC10249922/) provides a starting point for an attention workout.
 

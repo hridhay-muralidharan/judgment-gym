@@ -12,11 +12,9 @@ Modern life also changes how people use their minds. Social media, notifications
 
 These pressures show up together in real situations. A difficult conversation can involve attention, emotion regulation, memory, perspective, judgment, communication, and learning at the same time.
 
-Room to Respond explores mental workouts for mental faculties. Therapists and life coaches bring the relevant exercises together into a practical routine for the way a client is meeting a situation.
+We’ve attempted to address many of these challenges through therapy. However, mental health also has a development side to it. People can work with therapists and life coaches to strengthen the mental faculties: attention, emotion awareness, self-regulation, perspective, motivation, judgment, communication, flexibility, foresight, and learning. GenAI is shifting skill development toward subtler skills such as judgment, taste, self-awareness, communication, emotional regulation, and sense-making. More details can be found in [From mental healthcare to mental fitness](MENTAL_FITNESS_CATEGORY_THESIS.md).
 
-The category thesis, research foundations, trends, and product hypotheses are documented in [From mental healthcare to mental fitness](MENTAL_FITNESS_CATEGORY_THESIS.md).
-
-Room to Respond explores whether GenAI can make that practice personal, continuous, and interactive.
+Room to Respond brings the relevant exercises together into a practical routine for a client to exercise their mental faculties.
 
 ## What are the mental faculties and how do we organise them?
 
@@ -37,9 +35,9 @@ The current workout invites practice in emotion awareness, metacognition, cognit
 
 More research is needed to determine whether these prompts develop any faculty, which outcomes they affect, and how exercises for a wider range of faculties can be combined into complete, efficient mental workout routines.
 
-## Why GenAI marks the inflection point for Room to Respond
+## Role of Gen AI
 
-GenAI can make practitioner-designed routines personal and continuous by:
+GenAI marks an inflection point because it can build a workout around the client's own situation and adapt the next exercise to the client's words, context, and previous practice. It can:
 
 - asking context-specific questions;
 - retaining a user-correctable practice history;
@@ -50,7 +48,7 @@ GenAI can make practitioner-designed routines personal and continuous by:
 - helping compare situations across time;
 - supporting text and future voice interaction.
 
-The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report. The research question is whether this personalisation improves the quality, consistency, and transfer of mental practice. The risks are equally important: a model can misread an account, intensify rumination, create false confidence, or make a person outsource self-interpretation.
+The client supplies the experience, reviews the interpretation, and decides what to carry forward. The practitioner sets the direction and reviews the report.
 
 ## Research and validation
 

@@ -17,6 +17,12 @@ Modern life also changes how people use their minds:
 
 We’ve attempted to address many of these challenges through therapy. However, mental health also has a development side to it. People can work with therapists and life coaches to strengthen the mental faculties: attention, emotion awareness, self-regulation, perspective, motivation, judgment, communication, flexibility, foresight, and learning. With GenAI shifting skill development toward subtler skills such as judgment, taste, self-awareness, communication, emotional regulation, and sense-making, my hypothesis is that people will increasingly place more emphasis on active development of mental faculties. More details can be found in [From mental healthcare to mental fitness](docs/MENTAL_FITNESS_CATEGORY_THESIS.md).
 
+## Target Audience
+
+Room to Respond is for therapists, life coaches, and clients who already use technology for mental health, wellbeing, coaching, journaling, meditation, habits, learning, or personal development. The practitioner is the buyer and routine creator. The client is the person who practises between sessions and shares a report. Digital mental-health, therapy, coaching, and wellbeing companies are potential distribution partners.
+
+The audience is global. In market terms, TAM is the global population that seeks mental-health services. SAM is the subset that has adopted technology-based mental-health solutions beyond virtual consultation. The [Target audience and market analysis](docs/TARGET_AUDIENCE.md) document defines the measurement model and the top-five-countries-plus-other-country view.
+
 Room to Respond brings the relevant exercises together into a practical routine for a client to exercise their mental faculties.
 
 ## What are the mental faculties and how do we organise them?
@@ -93,6 +99,7 @@ Room to Respond is a reflection and exploration product. Therapy, diagnosis, cri
 - [Human Faculties Map](docs/HUMAN_FACULTIES_MAP.md)
 - [Product storyboard](docs/PRODUCT_STORYBOARD.md)
 - [Product thesis](docs/PRODUCT_THESIS.md)
+- [Target audience](docs/TARGET_AUDIENCE.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
 - [Modern life and mental faculties](docs/MODERN_LIFE_AND_MENTAL_FACULTIES.md)
 - [Professional journey model](docs/PROFESSIONAL_JOURNEY_MODEL.md)

@@ -22,15 +22,15 @@ Room to Respond should use the same information order while keeping its own poin
 
 ### Context
 
-Therapy and coaching can help people understand what is happening. The moments that matter still happen between sessions: a difficult conversation, a sharp piece of feedback, a decision, or a transition.
+Mental health has a development side. Alongside working through difficulty, people can develop the faculties they use every day: attention, emotion regulation, judgment, communication, flexibility, and learning.
 
 ### Product
 
-Room to Respond gives practitioners a way to turn a client’s goal into a short mental workout. The client works through a real situation, notices what is happening, tries one change, and brings back a clearer report.
+Room to Respond gives practitioners a way to turn a development goal into a short mental workout. The client works through real and simulated situations, notices what changes, and brings back a clearer report.
 
 ### Buyer and user
 
-The practitioner creates the routine and guides the work. The client completes it between sessions. The report gives both of them better material for the next conversation.
+The practitioner creates the workout and guides the development. The client exercises the faculties through situations from life. The report helps both of them decide what to practise next.
 
 ### Guided-demo invitation
 
@@ -54,15 +54,15 @@ Support line: `A prepared journey. Nothing to write.`
 
 ### Problem section
 
-Headline: `The session is only part of the work.`
+Headline: `Mental health has a development side.`
 
-Body: `Therapy and coaching can help people understand a pattern. Real life gives them the next chance to practise it: in a conversation, a decision, a piece of feedback, or a change they did not expect.`
+Body: `Therapy and coaching help people work through difficulty. People also want to develop the faculties they use every day: attention, emotion regulation, judgment, communication, flexibility, and learning.`
 
 ### Solution section
 
 Headline: `Turn a goal into a routine.`
 
-Body: `A practitioner chooses what the client will practise. The client brings in a real moment, checks what the reflection picked up, tries one thing changed, and brings back what they noticed.`
+Body: `A practitioner chooses what the client will develop. The client brings in a real moment, checks what the reflection picked up, tries one thing changed, and brings back what they noticed.`
 
 Three steps:
 

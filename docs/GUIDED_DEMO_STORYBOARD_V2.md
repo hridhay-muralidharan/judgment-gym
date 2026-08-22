@@ -14,11 +14,11 @@ The reviewer follows one prepared story about Maya and her practitioner. Nothing
 
 ### Main message
 
-**A practitioner creates a short mental workout for a client.**
+**Train your mind like you train your body.**
 
-**The client works through a real moment. Together, they see what changes and choose what to practise next.**
+**A practitioner creates a mental workout. A client exercises it through the moments that shape life.**
 
-This is the first explanation of the product. The landing page should not begin with research language, AI language, or a list of mental faculties.
+This is the first explanation of the product. The landing page should then explain the development side of mental health, the physical-gym parallel, the practitioner-led solution, and the role of GenAI.
 
 ### Primary action
 

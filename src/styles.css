@@ -196,6 +196,71 @@ html { scroll-behavior: smooth; }
   .landing-genai { padding-top: 75px; padding-bottom: 75px; }
 }
 
+/* Distinct workout moments inside the guided session. */
+.guided-focus-picker, .guided-arrival, .guided-warmup { border: 1px solid var(--line); background: var(--soft); }
+.focus-picker-head { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; border-bottom: 1px solid var(--line); color: var(--muted); font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .06em; }
+.focus-picker-head span { color: var(--accent); }
+.focus-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); }
+.focus-option { min-height: 150px; border: 0; background: var(--paper); color: var(--ink); padding: 20px; text-align: left; transition: background .18s, transform .18s; }
+.focus-option:hover, .focus-option.active { background: var(--accent); color: var(--paper); transform: translateY(-4px); }
+.focus-option > span { display: block; color: var(--accent); font: 10px 'DM Mono', monospace; }
+.focus-option.active > span, .focus-option:hover > span { color: #f8ded3; }
+.focus-option strong { display: block; font: 29px 'Newsreader', serif; margin-top: 44px; }
+.focus-option small { display: block; color: var(--muted); font-size: 11px; line-height: 1.35; margin-top: 7px; }
+.focus-option.active small, .focus-option:hover small { color: #f8ded3; }
+.focus-selected { display: grid; grid-template-columns: 150px 1fr 1fr; gap: 22px; align-items: center; padding: 22px; background: var(--ink); color: var(--paper); }
+.focus-selected span { color: #f0a185; font: 10px 'DM Mono', monospace; text-transform: uppercase; }
+.focus-selected strong { font: 25px/1 'Newsreader', serif; }
+.focus-selected p { color: #d7cec1; font-size: 12px; line-height: 1.4; margin: 0; }
+.guided-routine-layout { margin-top: 30px; }
+.arrival-main { padding: 35px; }
+.arrival-main h4 { font: 38px/1 'Newsreader', serif; margin: 28px 0 12px; }
+.arrival-main p { color: var(--muted); font-size: 15px; line-height: 1.5; max-width: 480px; }
+.arrival-start, .arrival-ready { border: 0; background: var(--accent); color: var(--paper); padding: 14px 18px; font-size: 12px; font-weight: 600; margin-top: 24px; }
+.arrival-ready { background: var(--green); }
+.arrival-start span, .arrival-ready span { margin-left: 28px; }
+.arrival-side { background: var(--ink); color: var(--paper); padding: 30px; display: flex; flex-direction: column; align-items: flex-start; }
+.arrival-side > span { color: #f0a185; font: 10px 'DM Mono', monospace; text-transform: uppercase; }
+.arrival-side strong { font: 25px 'Newsreader', serif; margin-top: 28px; }
+.arrival-side p { color: #d7cec1; font-size: 12px; margin: 4px 0 0; }
+.guided-warmup { display: grid; grid-template-columns: .8fr 1.2fr; background: var(--ink); color: var(--paper); }
+.warmup-prompt { padding: 35px; display: flex; flex-direction: column; align-items: flex-start; }
+.warmup-prompt > span { color: #f0a185; font: 10px 'DM Mono', monospace; text-transform: uppercase; }
+.warmup-prompt h4 { font: 36px/1 'Newsreader', serif; margin: 34px 0 14px; }
+.warmup-prompt p { color: #d7cec1; font-size: 14px; line-height: 1.5; }
+.warmup-reveal { margin-top: auto; border: 1px solid #77675d; background: transparent; color: var(--paper); padding: 12px 14px; font-size: 12px; }
+.warmup-reveal span { color: #f0a185; margin-left: 22px; }
+.warmup-account { margin: 1px; padding: 30px; }
+.warmup-account blockquote { font: 22px/1.4 'Newsreader', serif; }
+.observation-choice { border-top: 1px solid var(--line); padding: 0 !important; margin-top: 22px; }
+.observation-choice button { width: 100%; display: grid; grid-template-columns: 30px 1fr; gap: 12px; border: 0; background: transparent; text-align: left; padding: 20px 0; color: var(--ink); }
+.observation-choice button > span { width: 22px; height: 22px; border: 1px solid var(--line); display: grid; place-items: center; color: var(--accent); }
+.observation-choice.selected { background: #e5e9e2; padding: 0 15px !important; }
+.observation-choice h4 { font: 23px/1.1 'Newsreader', serif; margin: 10px 0 8px; }
+.observation-choice p { color: var(--muted); font-size: 12px; line-height: 1.45; }
+.guided-condition-picker { margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); padding-bottom: 18px; }
+.condition-options, .next-focus-option { display: flex; gap: 7px; }
+.condition-option, .next-focus-option { border: 1px solid var(--line); background: transparent; color: var(--muted); padding: 9px 11px; font-size: 11px; }
+.condition-option.active, .next-focus-option.active { border-color: var(--accent); color: var(--ink); background: #f3e4dc; }
+.guided-status.shared { color: var(--green); }
+.share-report { margin-top: 28px; border: 0; background: var(--accent); color: var(--paper); padding: 14px 18px; font-size: 12px; font-weight: 600; }
+.share-report.shared { background: var(--green); }
+.next-focus { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 24px; }
+.next-focus > div { display: flex; gap: 7px; margin-top: 15px; }
+.next-focus p { color: var(--muted); font-size: 12px; margin: 13px 0 0; }
+@media (max-width: 780px) {
+  .focus-options, .guided-warmup, .focus-selected { display: block; }
+  .focus-option { margin-top: 1px; min-height: 135px; }
+  .focus-option strong { margin-top: 28px; }
+  .focus-selected > * { display: block; margin-top: 12px; }
+  .focus-selected > *:first-child { margin-top: 0; }
+  .arrival-side { margin-top: 1px; min-height: 250px; }
+  .warmup-account { margin-top: 1px; }
+  .guided-condition-picker { display: block; }
+  .condition-options { margin-top: 15px; flex-wrap: wrap; }
+  .next-focus > div { flex-wrap: wrap; }
+}
+
 /* Workout energy: the public experience should invite action before explanation. */
 .landing-hero { background: #f4f0e8; }
 .landing-hero .kicker { color: var(--ink); }

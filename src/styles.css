@@ -230,7 +230,7 @@ html { scroll-behavior: smooth; }
 .warmup-prompt p { color: #d7cec1; font-size: 14px; line-height: 1.5; }
 .warmup-reveal { margin-top: auto; border: 1px solid #77675d; background: transparent; color: var(--paper); padding: 12px 14px; font-size: 12px; }
 .warmup-reveal span { color: #f0a185; margin-left: 22px; }
-.warmup-account { margin: 1px; padding: 30px; }
+.warmup-account { margin: 1px; padding: 30px; color: var(--ink); }
 .warmup-account blockquote { font: 22px/1.4 'Newsreader', serif; }
 .observation-choice { border-top: 1px solid var(--line); padding: 0 !important; margin-top: 22px; }
 .observation-choice button { width: 100%; display: grid; grid-template-columns: 30px 1fr; gap: 12px; border: 0; background: transparent; text-align: left; padding: 20px 0; color: var(--ink); }

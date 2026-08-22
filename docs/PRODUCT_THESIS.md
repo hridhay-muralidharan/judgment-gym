@@ -41,7 +41,7 @@ The system then:
 
 The practitioner reviews what changed, what stayed open, and what the client wants to explore. This informs the next routine.
 
-The workout exercises emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may also appear in the account. More research is needed to determine which outcomes the prompts affect and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
+The workout exercises emotion awareness, metacognition, cognitive flexibility, prospection, and learning. Memory, values, social cognition, and meaning-making may also appear in the account. This first routine is a research prototype; evaluation will examine which outcomes the prompts affect and how exercises for a wider range of faculties can be combined into efficient mental workout routines.
 
 For longer accounts, the input text box can be configured to analyse one event, several events within one situation, or several situations across time.
 

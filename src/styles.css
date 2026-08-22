@@ -213,6 +213,10 @@ html { scroll-behavior: smooth; }
 .focus-selected strong { font: 25px/1 'Newsreader', serif; }
 .focus-selected p { color: #d7cec1; font-size: 12px; line-height: 1.4; margin: 0; }
 .guided-routine-layout { margin-top: 30px; }
+.workout-card-meta { display: grid; grid-template-columns: 1fr 1.5fr 1.2fr; gap: 1px; background: var(--line); margin: 28px 0 0; }
+.workout-card-meta > div { background: var(--soft); padding: 14px; min-height: 72px; }
+.workout-card-meta small { display: block; color: var(--accent); font: 9px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .05em; }
+.workout-card-meta strong { display: block; font: 17px/1.1 'Newsreader', serif; margin-top: 9px; }
 .arrival-main { padding: 35px; }
 .arrival-main h4 { font: 38px/1 'Newsreader', serif; margin: 28px 0 12px; }
 .arrival-main p { color: var(--muted); font-size: 15px; line-height: 1.5; max-width: 480px; }
@@ -259,6 +263,8 @@ html { scroll-behavior: smooth; }
   .guided-condition-picker { display: block; }
   .condition-options { margin-top: 15px; flex-wrap: wrap; }
   .next-focus > div { flex-wrap: wrap; }
+  .workout-card-meta { display: block; background: transparent; }
+  .workout-card-meta > div { margin-top: 1px; }
 }
 
 /* Workout energy: the public experience should invite action before explanation. */

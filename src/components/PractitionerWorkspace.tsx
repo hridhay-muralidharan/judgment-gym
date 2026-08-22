@@ -4,14 +4,14 @@ type Props = { onBack: () => void }
 type DemoStep = 'routine' | 'client' | 'lived' | 'reflection' | 'constructed' | 'report' | 'review' | 'next'
 
 const steps: { id: DemoStep; label: string }[] = [
-  { id: 'routine', label: 'Choose' },
-  { id: 'client', label: 'Routine' },
-  { id: 'lived', label: 'Real moment' },
-  { id: 'reflection', label: 'Reflection' },
-  { id: 'constructed', label: 'One change' },
-  { id: 'report', label: 'Bring back' },
-  { id: 'review', label: 'Response' },
-  { id: 'next', label: 'Next' },
+  { id: 'routine', label: 'Set the goal' },
+  { id: 'client', label: 'See the workout' },
+  { id: 'lived', label: 'Warm up' },
+  { id: 'reflection', label: 'Notice' },
+  { id: 'constructed', label: 'Main movement' },
+  { id: 'report', label: 'Cooldown' },
+  { id: 'review', label: 'Trainer review' },
+  { id: 'next', label: 'Progression' },
 ]
 
 const exercises = [
@@ -31,7 +31,7 @@ export function PractitionerWorkspace({ onBack }: Props) {
   const goTo = (nextStep: DemoStep) => setStep(nextStep)
 
   const phase = currentIndex <= 0 ? 1 : currentIndex <= 5 ? 2 : 3
-  const phaseLabel = phase === 1 ? 'Set a direction' : phase === 2 ? 'Work through a moment' : 'Review and continue'
+  const phaseLabel = phase === 1 ? 'Set the workout' : phase === 2 ? 'Warm up and work' : 'Cool down and progress'
 
   return <section className="guided-demo page-narrow">
     <div className="guided-demo-heading">
@@ -75,7 +75,7 @@ function RoutineStep({ onNext }: { onNext: () => void }) {
   return <>
     <StepIntro label="01 · Choose the workout" title="Start with one thing to build." copy="A good workout has a focus. Maya’s practitioner chooses a little more space before responding to criticism." />
     <div className="guided-focus-picker"><div className="focus-picker-head"><span>Coach’s call</span><strong>Choose today’s focus</strong></div><div className="focus-options">{['Pause', 'Perspective', 'Courage'].map((focus) => <button key={focus} className={selected === focus ? 'focus-option active' : 'focus-option'} onClick={() => setSelected(focus)}><span>{focus === 'Pause' ? '01' : focus === 'Perspective' ? '02' : '03'}</span><strong>{focus}</strong><small>{focus === 'Pause' ? 'More room before responding' : focus === 'Perspective' ? 'See another side of the moment' : 'Say what matters clearly'}</small></button>)}</div><div className="focus-selected"><span>Selected for Maya</span><strong>{selected === 'Pause' ? 'More room before responding' : `${selected} in a difficult moment`}</strong><p>Four short exercises. One real situation. Something useful to carry forward.</p></div></div>
-    <div className="guided-two-column guided-routine-layout"><div className="guided-panel routine-panel"><div className="guided-panel-top"><span>Workout 01 · Prepared for Maya</span><b>Ready to assign</b></div><h4>More room before responding</h4><p className="panel-lede">The session moves from noticing to trying, then ends with one next step.</p><div className="guided-exercises">{exercises.map(([number, title, faculty, copy]) => <article key={number}><span>{number}</span><div><small>{faculty}</small><strong>{title}</strong><p>{copy}</p></div><em>Ready</em></article>)}</div><div className="guided-action-row"><ContinueButton onNext={onNext}>Assign this workout</ContinueButton><span>Next: Maya warms up</span></div></div><aside className="guided-note"><span>Coach’s eye</span><h4>Look for more options.</h4><p>Notice whether a pause becomes possible when Maya has more time, support, or language for what she wants to say.</p><dl><div><dt>Session length</dt><dd>About 8 minutes</dd></div><div><dt>Bring back</dt><dd>A real moment, what changed, and one open question.</dd></div></dl></aside></div>
+    <div className="guided-two-column guided-routine-layout"><div className="guided-panel routine-panel"><div className="guided-panel-top"><span>Workout 01 · Prepared for Maya</span><b>Ready to assign</b></div><h4>More room before responding</h4><p className="panel-lede">A Pause workout for finding one more option before acting on the first reaction.</p><div className="workout-card-meta"><div><small>Workout format</small><strong>Pause</strong></div><div><small>Faculty focus</small><strong>Emotion awareness · judgment</strong></div><div><small>Challenge</small><strong>One real work moment</strong></div></div><div className="guided-exercises">{exercises.map(([number, title, faculty, copy]) => <article key={number}><span>{number}</span><div><small>{faculty}</small><strong>{title}</strong><p>{copy}</p></div><em>Ready</em></article>)}</div><div className="guided-action-row"><ContinueButton onNext={onNext}>Assign this workout</ContinueButton><span>Next: Maya warms up</span></div></div><aside className="guided-note"><span>Coach’s eye</span><h4>Look for more options.</h4><p>Notice whether a pause becomes possible when Maya has more time, support, or language for what she wants to say.</p><dl><div><dt>Session rhythm</dt><dd>Warm-up · main movement · cooldown</dd></div><div><dt>Bring back</dt><dd>A real moment, what changed, and one open question.</dd></div><div><dt>Next progression</dt><dd>Practise one direct sentence.</dd></div></dl></aside></div>
   </>
 }
 

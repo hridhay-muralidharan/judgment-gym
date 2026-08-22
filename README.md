@@ -115,6 +115,7 @@ Room to Respond is a reflection and exploration product. Therapy, diagnosis, cri
 - [Experience specification](docs/EXPERIENCE_SPEC.md)
 - [Design source of truth](docs/DESIGN_SOURCE_OF_TRUTH.md)
 - [Acceptance review](docs/ACCEPTANCE_REVIEW.md)
+- [Mental workout model](docs/MENTAL_WORKOUT_MODEL.md)
 
 - [Human Faculties Map](docs/HUMAN_FACULTIES_MAP.md)
 - [Product storyboard](docs/PRODUCT_STORYBOARD.md)

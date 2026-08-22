@@ -113,6 +113,9 @@ Room to Respond is a reflection and exploration product. Therapy, diagnosis, cri
 
 - [Human Faculties Map](docs/HUMAN_FACULTIES_MAP.md)
 - [Product storyboard](docs/PRODUCT_STORYBOARD.md)
+- [Guided demo journey](docs/GUIDED_DEMO_JOURNEY.md)
+- [Open shared tool specification](docs/OPEN_SHARED_TOOL_SPEC.md)
+- [Prototype role lenses](docs/PROTOTYPE_ROLE_LENSES.md)
 - [Product thesis](docs/PRODUCT_THESIS.md)
 - [Target audience](docs/TARGET_AUDIENCE.md)
 - [Self-model research basis](docs/SELF_MODEL_RESEARCH.md)
